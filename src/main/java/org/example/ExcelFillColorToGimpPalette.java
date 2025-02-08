@@ -8,16 +8,18 @@ import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class ExcelFillColorToGimpPalette {
     public static void main(String[] args) {
 
         String fileName = "PaletaMiyuki";
-        String excelFilePath = "C:\\Users\\Admin\\Desktop\\PaletyMiyuki\\" + fileName + ".xlsx";; // Ścieżka do pliku Excel
-        String gimpPalettePath = "C:\\Users\\Admin\\Desktop\\PaletyMiyuki\\" + fileName + ".gpl";; // Ścieżka wyjściowa dla pliku .gpl
+        String excelFilePath = "C:\\Users\\Admin\\Desktop\\PaletyMiyuki\\" + fileName + ".xlsx"; // Ścieżka do pliku Excel
+        String gimpPalettePath = "C:\\Users\\Admin\\Desktop\\PaletyMiyuki\\" + fileName + ".gpl"; // Ścieżka wyjściowa dla pliku .gpl
 
 
-        try (Workbook workbook = new XSSFWorkbook(new FileInputStream(excelFilePath));
+        try (Workbook workbook = new XSSFWorkbook(Files.newInputStream(Paths.get(excelFilePath)));
              BufferedWriter writer = new BufferedWriter(new FileWriter(gimpPalettePath))) {
 
             // Otwórz arkusz Excela
