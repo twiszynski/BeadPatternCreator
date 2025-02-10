@@ -5,6 +5,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.nio.file.Files;
@@ -16,13 +17,20 @@ import java.util.Map;
 public class BeadVisualizer {
     private static final String TEMPLATE_FOLDER = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\DBTemplate\\";
     private static final String DEFAULT_IMAGE = "NoMatch.png";
+    private static final int BEAD_IMG_PX_WIDTH = 53;
+    private static final int BEAD_IMG_PX_HEIGHT = 66;
+    private static final int HORIZONTAL_PX_SPACING = 2;
+    private static final int VERTICAL_PX_SPACING = 1;
+    private static final int CORNER_ARC_PX_WIDTH = 15;
+    private static final int CORNER_ARC_PX_HEIGHT = 15;
+
 
     public static void main(String[] args) {
         String imageName = "fox2_M";
         String excelFilePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_Pattern.xlsx";
         String patternSheetName = "Pattern";
         String legendSheetName = "Legend";
-        String outputImagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_vis.png";
+        String outputImagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_visual.png";
 
         try {
             Map<String, String> colorSymbolToBeadMap = loadBeadNumbersFromLegendSheet(excelFilePath, legendSheetName);
@@ -105,23 +113,33 @@ public class BeadVisualizer {
      * Generuje obraz wizualizacji, łącząc odpowiednie obrazy koralików.
      */
     private static void generateVisualization(String[][] beadPattern, String outputImagePath) throws IOException {
-        int beadWidth = 52;
-        int beadHeight = 64;
+        int tileWidth = BEAD_IMG_PX_WIDTH + HORIZONTAL_PX_SPACING;
+        int tileHeight = BEAD_IMG_PX_HEIGHT + VERTICAL_PX_SPACING;
 
         int rows = beadPattern.length;
         int cols = beadPattern[0].length;
 
-        BufferedImage outputImage = new BufferedImage(cols * beadWidth, rows * beadHeight, BufferedImage.TYPE_INT_ARGB);
+        BufferedImage outputImage = new BufferedImage(cols * tileWidth, rows * tileHeight, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g2d = outputImage.createGraphics();
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 String beadNumber = beadPattern[i][j];
-                BufferedImage beadImage = loadBeadImage(beadNumber);
+                BufferedImage beadImage = roundCorners(loadBeadImage(beadNumber), CORNER_ARC_PX_WIDTH, CORNER_ARC_PX_HEIGHT);
 
                 if (beadImage != null) {
-                    g2d.drawImage(beadImage, j * beadWidth, i * beadHeight, null);
+                    // Tworzymy przezroczyste tło
+                    BufferedImage transparentBackground = new BufferedImage(tileWidth, tileHeight, BufferedImage.TYPE_INT_ARGB);
+                    Graphics2D g = transparentBackground.createGraphics();
+                    g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+                    // Wstawiamy koralik w lewym górnym rogu tła
+                    g.drawImage(beadImage, 0, 0, null);
+                    g.dispose();
+
+                    // Rysujemy gotowy element na finalnym obrazie
+                    g2d.drawImage(transparentBackground, j * tileWidth, i * tileHeight, null);
                 }
             }
         }
@@ -147,6 +165,27 @@ public class BeadVisualizer {
             e.printStackTrace();
             return null;
         }
+    }
+
+    private static BufferedImage roundCorners(BufferedImage image, int arcWidth, int arcHeight) {
+        BufferedImage rounded = new BufferedImage(image.getWidth(), image.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g2 = rounded.createGraphics();
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+        // Tworzymy przezroczystą maskę z zaokrąglonymi rogami
+        g2.setComposite(AlphaComposite.Clear);
+        g2.fillRect(0, 0, image.getWidth(), image.getHeight());
+
+        g2.setComposite(AlphaComposite.Src);
+        g2.setColor(Color.BLACK);
+        g2.fillRoundRect(0, 0, image.getWidth(), image.getHeight(), arcWidth, arcHeight);
+
+        g2.setComposite(AlphaComposite.SrcAtop);
+        g2.drawImage(image, 0, 0, null);
+
+        g2.dispose();
+
+        return rounded;
     }
 }
 
