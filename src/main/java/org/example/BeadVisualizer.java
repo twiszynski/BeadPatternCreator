@@ -15,12 +15,12 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class BeadVisualizer {
-    private static final String TEMPLATE_FOLDER = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\DBTemplate\\";
+    private static final String TEMPLATE_FOLDER = new File("src\\main\\resources\\MiyukiPNG").getAbsolutePath() + File.separator;
     private static final String DEFAULT_IMAGE = "NoMatch.png";
     private static final int BEAD_IMG_PX_WIDTH = 53;
     private static final int BEAD_IMG_PX_HEIGHT = 66;
     private static final int HORIZONTAL_PX_SPACING = 2;
-    private static final int VERTICAL_PX_SPACING = 1;
+    private static final int VERTICAL_PX_SPACING = 0;
     private static final int CORNER_ARC_PX_WIDTH = 15;
     private static final int CORNER_ARC_PX_HEIGHT = 15;
 

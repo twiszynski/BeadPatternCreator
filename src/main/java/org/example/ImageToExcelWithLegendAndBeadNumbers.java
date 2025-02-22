@@ -17,7 +17,7 @@ public class ImageToExcelWithLegendAndBeadNumbers {
         String inputFormat = ".png";
         String imagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + inputFormat;
         String excelPath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_Pattern.xlsx";
-        String paletteCsvPath = "Palettes\\MiyukiFullCSV.csv"; // Ścieżka do pliku CSV z paletą kolorów
+        String paletteCsvPath = new File("src/main/resources/Palettes/MiyukiFullCSV.csv").getAbsolutePath(); // Ścieżka do pliku CSV z paletą kolorów
 
         try {
             BufferedImage image = ImageIO.read(new File(imagePath));
