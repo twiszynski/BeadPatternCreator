@@ -13,7 +13,7 @@ public class WordChartGenerator {
 
     public static void main(String[] args) {
         // Podaj ścieżkę do pliku Excela
-        String imagePatternFileName = "sarna_M_Pattern";
+        String imagePatternFileName = "tulip_Pattern";
         String filePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imagePatternFileName + ".xlsx";
 
         // Generuj diagram słowny na podstawie pliku Excela
@@ -47,6 +47,26 @@ public class WordChartGenerator {
                 Row row = wordChartSheet.createRow(i + 1); // Tworzenie nowego wiersza w arkuszu
                 row.createCell(0).setCellValue("Row #" + (i + 1)); // Numer wiersza
                 row.createCell(1).setCellValue(wordChart); // Diagram
+            }
+
+            // Tworzymy obiekt czcionki
+            Font font = workbook.createFont();
+            font.setFontName("Calibri");
+            font.setFontHeightInPoints((short) 10); // ustawiamy rozmiar czcionki
+            font.setBold(false); // ustawiamy, żeby czcionka była pogrubiona
+
+            // Tworzymy styl
+            CellStyle style = workbook.createCellStyle();
+            style.setFont(font); // przypisujemy czcionkę do stylu
+
+            // Iteracja po wierszach w imageSheet
+            for (int i = 0; i < wordChartSheet.getPhysicalNumberOfRows(); i++) {
+                Row row = wordChartSheet.getRow(i);
+                if (row != null) {  // Sprawdzamy, czy wiersz nie jest pusty
+                    for (Cell cell : row) {
+                        cell.setCellStyle(style);
+                    }
+                }
             }
 
             // Zapisz zmiany w pliku

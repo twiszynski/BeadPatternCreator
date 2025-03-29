@@ -13,7 +13,7 @@ import org.apache.commons.csv.*;
 public class ImageToExcelWithLegendAndBeadNumbers {
 
     public static void main(String[] args) {
-        String imageName = "couple_M";
+        String imageName = "tulip";
         String inputFormat = ".png";
         String imagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + inputFormat;
         String excelPath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_Pattern.xlsx";
@@ -130,6 +130,36 @@ public class ImageToExcelWithLegendAndBeadNumbers {
                 row.createCell(5).setCellValue(color.getGreen());
                 row.createCell(6).setCellValue(color.getBlue());
 
+            }
+
+            // Tworzymy obiekt czcionki
+            Font font = workbook.createFont();
+            font.setFontName("Calibri");
+            font.setFontHeightInPoints((short) 10); // ustawiamy rozmiar czcionki
+            font.setBold(false); // ustawiamy, żeby czcionka była pogrubiona
+
+            // Tworzymy styl
+            CellStyle style = workbook.createCellStyle();
+            style.setFont(font); // przypisujemy czcionkę do stylu
+
+            // Iteracja po wierszach w imageSheet
+            for (int i = 0; i < imageSheet.getPhysicalNumberOfRows(); i++) {
+                Row row = imageSheet.getRow(i);
+                if (row != null) {  // Sprawdzamy, czy wiersz nie jest pusty
+                    for (Cell cell : row) {
+                        cell.setCellStyle(style);
+                    }
+                }
+            }
+
+            // Iteracja po wierszach w legendSheet
+            for (int i = 0; i < legendSheet.getPhysicalNumberOfRows(); i++) {
+                Row row = legendSheet.getRow(i);
+                if (row != null) {  // Sprawdzamy, czy wiersz nie jest pusty
+                    for (Cell cell : row) {
+                        cell.setCellStyle(style);
+                    }
+                }
             }
 
             // Zapisanie pliku Excela
