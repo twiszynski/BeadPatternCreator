@@ -13,7 +13,7 @@ public class WordChartGenerator {
 
     public static void main(String[] args) {
         // Podaj ścieżkę do pliku Excela
-        String imagePatternFileName = "tulip_Pattern";
+        String imagePatternFileName = "skull_M_Pattern";
         String filePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imagePatternFileName + ".xlsx";
 
         // Generuj diagram słowny na podstawie pliku Excela

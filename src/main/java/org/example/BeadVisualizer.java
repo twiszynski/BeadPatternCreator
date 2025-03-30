@@ -20,13 +20,13 @@ public class BeadVisualizer {
     private static final int BEAD_IMG_PX_WIDTH = 53;
     private static final int BEAD_IMG_PX_HEIGHT = 66;
     private static final int HORIZONTAL_PX_SPACING = 2;
-    private static final int VERTICAL_PX_SPACING = 0;
-    private static final int CORNER_ARC_PX_WIDTH = 15;
-    private static final int CORNER_ARC_PX_HEIGHT = 15;
+    private static final int VERTICAL_PX_SPACING = 1;
+    private static final int CORNER_ARC_PX_WIDTH = 20;
+    private static final int CORNER_ARC_PX_HEIGHT = 20;
 
 
     public static void main(String[] args) {
-        String imageName = "fox2_M";
+        String imageName = "ptaszek_M";
         String excelFilePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_Pattern.xlsx";
         String patternSheetName = "Pattern";
         String legendSheetName = "Legend";
