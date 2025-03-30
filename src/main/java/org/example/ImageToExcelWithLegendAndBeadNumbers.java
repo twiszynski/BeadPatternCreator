@@ -13,7 +13,7 @@ import org.apache.commons.csv.*;
 public class ImageToExcelWithLegendAndBeadNumbers {
 
     public static void main(String[] args) {
-        String imageName = "tulip";
+        String imageName = "gory_M";
         String inputFormat = ".png";
         String imagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + inputFormat;
         String excelPath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_Pattern.xlsx";
@@ -27,7 +27,7 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             Map<String, String> beadNumbers = loadBeadNumbersFromCsv(paletteCsvPath);
 
             // Tworzenie arkusza dla obrazu
-            XSSFSheet imageSheet = workbook.createSheet("Pattern");
+            XSSFSheet patternSheet = workbook.createSheet("Pattern");
 
             // Mapa kolorów do liter oraz ich liczby wystąpień
             Map<Color, String> colorLegend = new HashMap<>();
@@ -35,7 +35,7 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             char legendChar = 'A';
 
             for (int row = 0; row < image.getHeight(); row++) {
-                Row excelRow = imageSheet.createRow(row);
+                Row excelRow = patternSheet.createRow(row);
                 for (int col = 0; col < image.getWidth(); col++) {
                     Color pixelColor = new Color(image.getRGB(col, row));
 
@@ -55,12 +55,12 @@ public class ImageToExcelWithLegendAndBeadNumbers {
 
             // Ustawienia szerokości kolumn i wysokości wierszy
             for (int col = 0; col < image.getWidth(); col++) {
-                imageSheet.setColumnWidth(col, 256 * 3);
+                patternSheet.setColumnWidth(col, 256 * 3);
             }
-            imageSheet.setDefaultRowHeight((short) 300);
+            patternSheet.setDefaultRowHeight((short) 300);
 
             // Dodanie reguł formatowania warunkowego
-            XSSFSheetConditionalFormatting conditionalFormatting = imageSheet.getSheetConditionalFormatting();
+            XSSFSheetConditionalFormatting conditionalFormatting = patternSheet.getSheetConditionalFormatting();
 
             for (Map.Entry<Color, String> entry : colorLegend.entrySet()) {
                 Color color = entry.getKey();
@@ -105,14 +105,19 @@ public class ImageToExcelWithLegendAndBeadNumbers {
                 // Kolumna z literą
                 Cell letterCell = row.createCell(0);
                 letterCell.setCellValue(entry.getValue());
+                XSSFCellStyle letterCellStyle = workbook.createCellStyle();
+                setBorderAround(letterCellStyle);
+                letterCell.setCellStyle(letterCellStyle);
 
                 // Kolumna z kolorem
                 Cell colorCell = row.createCell(1);
-                XSSFCellStyle style = workbook.createCellStyle();
-                XSSFColor xssfColor = new XSSFColor(color, new DefaultIndexedColorMap());
-                style.setFillForegroundColor(xssfColor);
-                style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
-                colorCell.setCellStyle(style);
+                XSSFCellStyle colorCellStyle = workbook.createCellStyle();
+                byte[] rgb = new byte[]{(byte) color.getRed(), (byte) color.getGreen(), (byte) color.getBlue()};
+                XSSFColor xssfColor = new XSSFColor(rgb, new DefaultIndexedColorMap());
+                colorCellStyle.setFillForegroundColor(xssfColor);
+                colorCellStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+                setBorderAround(colorCellStyle);
+                colorCell.setCellStyle(colorCellStyle);
 
                 // Kolumna z numerem koralika
                 Cell beadNumberCell = row.createCell(2);
@@ -120,10 +125,16 @@ public class ImageToExcelWithLegendAndBeadNumbers {
                 System.out.println(colorRGB);
                 beadNumberCell.setCellValue(beadNumbers.getOrDefault(colorRGB, "Brak numeru"));
                 System.out.println(beadNumbers.get(colorRGB));
+                XSSFCellStyle beadNumberCellStyle = workbook.createCellStyle();
+                setBorderAround(beadNumberCellStyle);
+                beadNumberCell.setCellStyle(beadNumberCellStyle);
 
                 // Kolumna z liczbą wystąpień
                 Cell countCell = row.createCell(3);
                 countCell.setCellValue(colorCount.get(color));
+                XSSFCellStyle countCellStyle = workbook.createCellStyle();
+                setBorderAround(countCellStyle);
+                countCell.setCellStyle(countCellStyle);
 
                 // Kolumny z wartościami RGB
                 row.createCell(4).setCellValue(color.getRed());
@@ -143,8 +154,8 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             style.setFont(font); // przypisujemy czcionkę do stylu
 
             // Iteracja po wierszach w imageSheet
-            for (int i = 0; i < imageSheet.getPhysicalNumberOfRows(); i++) {
-                Row row = imageSheet.getRow(i);
+            for (int i = 0; i < patternSheet.getPhysicalNumberOfRows(); i++) {
+                Row row = patternSheet.getRow(i);
                 if (row != null) {  // Sprawdzamy, czy wiersz nie jest pusty
                     for (Cell cell : row) {
                         cell.setCellStyle(style);
@@ -188,6 +199,13 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             }
         }
         return beadNumbers;
+    }
+
+    private static void setBorderAround(XSSFCellStyle style) {
+        style.setBorderTop(BorderStyle.MEDIUM);
+        style.setBorderBottom(BorderStyle.MEDIUM);
+        style.setBorderLeft(BorderStyle.MEDIUM);
+        style.setBorderRight(BorderStyle.MEDIUM);
     }
 }
 

@@ -16,7 +16,7 @@ public class ExcelToPdfConverter {
     }
 
     public static void main(String[] args) {
-        String imagePatternFileName = "couple_M_Pattern";
+        String imagePatternFileName = "skull_M_Pattern";
         String excelFile = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imagePatternFileName + ".xlsx";
         String outputPdf = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\";
         convertExcelToPdf(excelFile, outputPdf);

@@ -16,7 +16,7 @@ public class ImageColorReplacement {
 
     public static void main(String[] args) {
         String csvFilePath = "C:\\Users\\Admin\\Desktop\\Palety\\CSV\\MiyukiFullCSV.csv";
-        String imageName = "wolf";
+        String imageName = "skull";
         String imageFormat = ".png";
         String imagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + imageFormat;
         String outputImagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_M" + imageFormat;
