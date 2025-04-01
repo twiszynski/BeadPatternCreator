@@ -13,8 +13,8 @@ public class PdfPrinter {
     static {
         ZipSecureFile.setMinInflateRatio(0.005); // Ustawienie niższego limitu
     }
-    private static final String COPYWRITE_NOTE = "©2025 Beadventure. This pattern is for personal use only. " +
-            "You may not copy, share, modify, or resell this file in any form without written permission.";
+    private static final String COPYWRITE_NOTE = "©2025 Beadventure. This pattern is for personal use only." +
+            "\nYou may not copy, share, modify, or resell this file in any form without written permission.";
 
     private final static String IMAGE_PATTERN_FILE_NAME = "fox2_M_Pattern";
     private final static String EXCEL_FILE = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + IMAGE_PATTERN_FILE_NAME + ".xlsx";
@@ -46,9 +46,9 @@ public class PdfPrinter {
 
             // Ustawienie stopki
             Footer footer = patternSheet.getFooter();
-            footer.setLeft("Bead Pattern");
-            footer.setCenter(COPYWRITE_NOTE);
-            footer.setRight("Page &P/&N");
+            footer.setLeft(COPYWRITE_NOTE);
+            footer.setCenter("");
+            footer.setRight("Bead Pattern - &P/&N");
 
             // Orientacja pozioma
             patternPS.setLandscape(false);
