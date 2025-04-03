@@ -13,7 +13,7 @@ import org.apache.commons.csv.*;
 public class ImageToExcelWithLegendAndBeadNumbers {
 
     public static void main(String[] args) {
-        String imageName = "fox_M";
+        String imageName = "lady2_M";
         String inputFormat = ".png";
         String imagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + inputFormat;
         String excelPath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_Pattern.xlsx";
@@ -29,15 +29,15 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             // Tworzenie arkusza dla obrazu
             XSSFSheet patternSheet = workbook.createSheet("Pattern");
 
-            // Tworzymy obiekt czcionki
+            // Font for default text
             Font mainFont = workbook.createFont();
             mainFont.setFontName("Montserrat");
             mainFont.setFontHeightInPoints((short) 10); // ustawiamy rozmiar czcionki
             mainFont.setBold(false); // ustawiamy, żeby czcionka nie była pogrubiona
 
-            // Tworzymy obiekt czcionki
+            // Font for headers
             Font headerFont = workbook.createFont();
-            headerFont.setFontName("Montserrat");
+            headerFont.setFontName("Montserrat SemiBold");
             headerFont.setFontHeightInPoints((short) 10); // ustawiamy rozmiar czcionki
             headerFont.setBold(true); // ustawiamy, żeby czcionka była pogrubiona
 
@@ -186,7 +186,7 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             }
 
             // Iteracja po wierszach w legendSheet
-            for (int i = 0; i < legendSheet.getPhysicalNumberOfRows(); i++) {
+            for (int i = 1; i < legendSheet.getPhysicalNumberOfRows(); i++) {
                 Row row = legendSheet.getRow(i);
                 if (row != null) {  // Sprawdzamy, czy wiersz nie jest pusty
                     for (Cell cell : row) {
@@ -225,7 +225,7 @@ public class ImageToExcelWithLegendAndBeadNumbers {
         return beadNumbers;
     }
 
-    private static void setBorderedAndCenteredStyle(XSSFCellStyle style) {
+    static void setBorderedAndCenteredStyle(XSSFCellStyle style) {
         style.setBorderTop(BorderStyle.THIN);
         style.setBorderBottom(BorderStyle.THIN);
         style.setBorderLeft(BorderStyle.THIN);

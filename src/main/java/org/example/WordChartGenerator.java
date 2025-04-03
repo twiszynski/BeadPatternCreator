@@ -1,6 +1,8 @@
 package org.example;
 
+import org.apache.poi.openxml4j.util.ZipSecureFile;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -11,9 +13,13 @@ import java.io.IOException;
 
 public class WordChartGenerator {
 
+    static {
+        ZipSecureFile.setMinInflateRatio(0.005); // Ustawienie niższego limitu
+    }
+
     public static void main(String[] args) {
         // Podaj ścieżkę do pliku Excela
-        String imagePatternFileName = "skull_M_Pattern";
+        String imagePatternFileName = "lady2_M_Pattern";
         String filePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imagePatternFileName + ".xlsx";
 
         // Generuj diagram słowny na podstawie pliku Excela
@@ -33,13 +39,32 @@ public class WordChartGenerator {
             // Wczytaj schemat z arkusza "Pattern"
             String[][] schema = readSchemaFromSheet(patternSheet);
 
+            // Usunięcie istniejącego arkusza "Legend" (jeśli istnieje)
+            int wchartSheetIndex = workbook.getSheetIndex("Word_Chart");
+            if (wchartSheetIndex != -1) {
+                workbook.removeSheetAt(wchartSheetIndex);
+            }
+
             // Utwórz nowy arkusz na diagram słowny
-            XSSFSheet wordChartSheet = workbook.createSheet("Word Chart");
+            XSSFSheet wordChartSheet = workbook.createSheet("Word_Chart");
 
             // Nagłówki
             Row headerRow = wordChartSheet.createRow(0);
             headerRow.createCell(0).setCellValue("Row No.");
             headerRow.createCell(1).setCellValue("Word Chart");
+
+            // Czcionka naglowkow
+            Font headerFont = workbook.createFont();
+            headerFont.setFontName("Montserrat SemiBold");
+            headerFont.setFontHeightInPoints((short) 10); // ustawiamy rozmiar czcionki
+            headerFont.setBold(false); // ustawiamy, żeby czcionka była pogrubiona
+
+            XSSFCellStyle headerCellStyle = workbook.createCellStyle();
+            setBorderedAndCenteredStyle(headerCellStyle);
+            headerCellStyle.setFont(headerFont);
+
+            headerRow.getCell(0).setCellStyle(headerCellStyle);
+            headerRow.getCell(1).setCellStyle(headerCellStyle);
 
             // Generowanie diagramów dla każdego wiersza
             for (int i = 0; i < schema.length; i++) {
@@ -49,25 +74,30 @@ public class WordChartGenerator {
                 row.createCell(1).setCellValue(wordChart); // Diagram
             }
 
-            // Tworzymy obiekt czcionki
-            Font font = workbook.createFont();
-            font.setFontName("Calibri");
-            font.setFontHeightInPoints((short) 10); // ustawiamy rozmiar czcionki
-            font.setBold(false); // ustawiamy, żeby czcionka była pogrubiona
+            // Czcionka diagramu
+            Font mainFont = workbook.createFont();
+            mainFont.setFontName("Montserrat");
+            mainFont.setFontHeightInPoints((short) 10); // ustawiamy rozmiar czcionki
+            mainFont.setBold(false); // ustawiamy, żeby czcionka była pogrubiona
 
             // Tworzymy styl
-            CellStyle style = workbook.createCellStyle();
-            style.setFont(font); // przypisujemy czcionkę do stylu
+            XSSFCellStyle wchartCellStyle = workbook.createCellStyle();
+            setBorderedAndLeftStyle(wchartCellStyle);
+            wchartCellStyle.setFont(mainFont); // przypisujemy czcionkę do stylu
 
-            // Iteracja po wierszach w imageSheet
-            for (int i = 0; i < wordChartSheet.getPhysicalNumberOfRows(); i++) {
+            // Iteracja po wierszach w wchartSheet
+            for (int i = 1; i < wordChartSheet.getPhysicalNumberOfRows(); i++) {
                 Row row = wordChartSheet.getRow(i);
                 if (row != null) {  // Sprawdzamy, czy wiersz nie jest pusty
                     for (Cell cell : row) {
-                        cell.setCellStyle(style);
+                        cell.setCellStyle(wchartCellStyle);
                     }
                 }
             }
+
+            // Dopasowanie szerokości kolumn do zawartości
+            wordChartSheet.autoSizeColumn(0);
+            wordChartSheet.autoSizeColumn(1);
 
             // Zapisz zmiany w pliku
             try (FileOutputStream fos = new FileOutputStream(filePath)) {
@@ -132,6 +162,24 @@ public class WordChartGenerator {
         }
 
         return result.toString().trim(); // Usuwanie nadmiarowych spacji
+    }
+
+    static void setBorderedAndCenteredStyle(XSSFCellStyle style) {
+        style.setBorderTop(BorderStyle.THIN);
+        style.setBorderBottom(BorderStyle.THIN);
+        style.setBorderLeft(BorderStyle.THIN);
+        style.setBorderRight(BorderStyle.THIN);
+        style.setAlignment(HorizontalAlignment.CENTER);
+        style.setVerticalAlignment(VerticalAlignment.CENTER);
+    }
+
+    static void setBorderedAndLeftStyle(XSSFCellStyle style) {
+        style.setBorderTop(BorderStyle.THIN);
+        style.setBorderBottom(BorderStyle.THIN);
+        style.setBorderLeft(BorderStyle.THIN);
+        style.setBorderRight(BorderStyle.THIN);
+        style.setAlignment(HorizontalAlignment.LEFT);
+        style.setVerticalAlignment(VerticalAlignment.CENTER);
     }
 
 }
