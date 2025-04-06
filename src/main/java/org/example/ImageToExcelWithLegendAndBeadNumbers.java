@@ -13,7 +13,7 @@ import org.apache.commons.csv.*;
 public class ImageToExcelWithLegendAndBeadNumbers {
 
     public static void main(String[] args) {
-        String imageName = "lady2_M";
+        String imageName = "ms3_M";
         String inputFormat = ".png";
         String imagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + inputFormat;
         String excelPath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_Pattern.xlsx";
@@ -46,31 +46,46 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             Map<Color, Integer> colorCount = new HashMap<>();
             char legendChar = 'A';
 
-            //Wypelnianie schematu symbolami
-            for (int row = 0; row < image.getHeight(); row++) {
+            // Wypełnianie schematu symbolami z uwzględnieniem numeracji
+            for (int row = 0; row <= image.getHeight(); row++) {
                 Row excelRow = patternSheet.createRow(row);
-                for (int col = 0; col < image.getWidth(); col++) {
-                    Color pixelColor = new Color(image.getRGB(col, row));
 
-                    if (!colorLegend.containsKey(pixelColor)) {
-                        colorLegend.put(pixelColor, String.valueOf(legendChar));
-                        legendChar++;
-                    }
-
-                    // Zliczanie wystąpień kolorów
-                    colorCount.put(pixelColor, colorCount.getOrDefault(pixelColor, 0) + 1);
-
-                    String colorCode = colorLegend.get(pixelColor);
+                for (int col = 0; col <= image.getWidth(); col++) {
                     Cell cell = excelRow.createCell(col);
-                    XSSFCellStyle patternCellStyle = workbook.createCellStyle();
-                    setBorderedAndCenteredStyle(patternCellStyle);
-                    cell.setCellStyle(patternCellStyle);
-                    cell.setCellValue(colorCode);
+                    XSSFCellStyle cellStyle = workbook.createCellStyle();
+                    setBorderedAndCenteredStyle(cellStyle);
+
+                    if (row == 0 && col == 0) {
+                        // Pusta lewa górna komórka
+                        cell.setCellValue("");
+                    } else if (row == 0) {
+                        // Nagłówki kolumn (1, 2, 3, ...)
+                        cell.setCellValue(col);
+                        cell.setCellStyle(cellStyle);
+                    } else if (col == 0) {
+                        // Nagłówki wierszy (1, 2, 3, ...)
+                        cell.setCellValue(row);
+                        cell.setCellStyle(cellStyle);
+                    } else {
+                        Color pixelColor = new Color(image.getRGB(col - 1, row - 1));
+
+                        if (!colorLegend.containsKey(pixelColor)) {
+                            colorLegend.put(pixelColor, String.valueOf(legendChar));
+                            legendChar++;
+                        }
+
+                        // Zliczanie wystąpień kolorów
+                        colorCount.put(pixelColor, colorCount.getOrDefault(pixelColor, 0) + 1);
+
+                        String colorCode = colorLegend.get(pixelColor);
+                        cell.setCellValue(colorCode);
+                        cell.setCellStyle(cellStyle);
+                    }
                 }
             }
 
             // Ustawienia szerokości kolumn i wysokości wierszy
-            for (int col = 0; col < image.getWidth(); col++) {
+            for (int col = 0; col <= image.getWidth(); col++) {
                 patternSheet.setColumnWidth(col, 256 * 3);
             }
             patternSheet.setDefaultRowHeight((short) 300);
@@ -91,7 +106,7 @@ public class ImageToExcelWithLegendAndBeadNumbers {
                 fill.setFillForegroundColor(xssfColor);
                 fill.setFillPattern(PatternFormatting.SOLID_FOREGROUND);
 
-                CellRangeAddress[] regions = {new CellRangeAddress(0, image.getHeight() - 1, 0, image.getWidth() - 1)};
+                CellRangeAddress[] regions = {new CellRangeAddress(0, image.getHeight(), 0, image.getWidth())};
                 conditionalFormatting.addConditionalFormatting(regions, rule);
             }
 
@@ -196,6 +211,18 @@ public class ImageToExcelWithLegendAndBeadNumbers {
                     }
                 }
             }
+
+
+            //Dodaj arkusz z wymiarami schematu
+            Sheet dimSheet = workbook.createSheet("Size");
+
+            Row rowHeader = dimSheet.createRow(0);
+            rowHeader.createCell(0).setCellValue("Width");
+            rowHeader.createCell(1).setCellValue("Height");
+
+            Row rowValues = dimSheet.createRow(1);
+            rowValues.createCell(0).setCellValue(image.getWidth());
+            rowValues.createCell(1).setCellValue(image.getHeight());
 
             // Zapisanie pliku Excela
             try (FileOutputStream fileOut = new FileOutputStream(excelPath)) {

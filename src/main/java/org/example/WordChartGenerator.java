@@ -19,7 +19,7 @@ public class WordChartGenerator {
 
     public static void main(String[] args) {
         // Podaj ścieżkę do pliku Excela
-        String imagePatternFileName = "lady2_M_Pattern";
+        String imagePatternFileName = "ms3_M_Pattern";
         String filePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imagePatternFileName + ".xlsx";
 
         // Generuj diagram słowny na podstawie pliku Excela
@@ -30,6 +30,24 @@ public class WordChartGenerator {
         try (FileInputStream fis = new FileInputStream(new File(filePath));
              XSSFWorkbook workbook = new XSSFWorkbook(fis)) {
 
+            int patternWidth = 0;
+            int patternHeight = 0;
+
+            //odczytaj wymiary schematu
+            Sheet sizeSheet = workbook.getSheet("Size");
+            if (sizeSheet != null) {
+                Row row = sizeSheet.getRow(1); // Dane są w drugim wierszu (indeks 1)
+                if (row != null) {
+                    Cell widthCell = row.getCell(0);
+                    Cell heightCell = row.getCell(1);
+
+                    patternWidth = (int) widthCell.getNumericCellValue();
+                    patternHeight = (int) heightCell.getNumericCellValue();
+                }
+            } else {
+                System.out.println("Brak arkusza 'Size'");
+            }
+
             // Znajdź arkusz o nazwie "Pattern"
             XSSFSheet patternSheet = workbook.getSheet("Pattern");
             if (patternSheet == null) {
@@ -37,9 +55,9 @@ public class WordChartGenerator {
             }
 
             // Wczytaj schemat z arkusza "Pattern"
-            String[][] schema = readSchemaFromSheet(patternSheet);
+            String[][] schema = readSchemaFromSheet(patternSheet, patternWidth, patternHeight);
 
-            // Usunięcie istniejącego arkusza "Legend" (jeśli istnieje)
+            // Usunięcie istniejącego arkusza "Word_Chart" (jeśli istnieje)
             int wchartSheetIndex = workbook.getSheetIndex("Word_Chart");
             if (wchartSheetIndex != -1) {
                 workbook.removeSheetAt(wchartSheetIndex);
@@ -112,19 +130,17 @@ public class WordChartGenerator {
     }
 
     // Metoda do odczytania schematu z arkusza
-    private static String[][] readSchemaFromSheet(Sheet sheet) {
-        int rowCount = sheet.getLastRowNum() + 1; // Liczba wierszy w arkuszu
-        String[][] schema = new String[rowCount][]; // Macierz schematu
+    private static String[][] readSchemaFromSheet(Sheet sheet, int patternWidth, int patternHeight) {
+        String[][] schema = new String[patternHeight][]; // Macierz schematu
 
-        for (int i = 0; i < rowCount; i++) {
-            Row row = sheet.getRow(i);
+        for (int i = 0; i < patternHeight; i++) {
+            Row row = sheet.getRow(i+1);
             if (row == null) continue;
 
-            int colCount = row.getLastCellNum(); // Liczba kolumn w danym wierszu
-            schema[i] = new String[colCount];
+            schema[i] = new String[patternWidth];
 
-            for (int j = 0; j < colCount; j++) {
-                Cell cell = row.getCell(j);
+            for (int j = 0; j < patternWidth; j++) {
+                Cell cell = row.getCell(j+1);
                 if (cell != null && cell.getCellType() == CellType.STRING) {
                     schema[i][j] = cell.getStringCellValue();
                 } else {

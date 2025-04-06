@@ -32,23 +32,38 @@ public class ExcelPatternToImage {
             // Wczytanie mapy symboli i kolorów RGB z arkusza "Legend"
             Map<String, int[]> colorMap = readLegendColors(workbook);
 
+            int patternRows = 0;
+            int patternColumns = 0;
+
+            //Pobranie liczby wierszy i kolumn
+            Sheet sizeSheet = workbook.getSheet("Size");
+            if (sizeSheet != null) {
+                Row row = sizeSheet.getRow(1); // Dane są w drugim wierszu (indeks 1)
+                if (row != null) {
+                    Cell widthCell = row.getCell(0);
+                    Cell heightCell = row.getCell(1);
+
+                    patternColumns = (int) widthCell.getNumericCellValue();
+                    patternRows = (int) heightCell.getNumericCellValue();
+                }
+            } else {
+                System.out.println("Brak arkusza 'Size'");
+            }
+
             // Pobranie arkusza "Pattern" (schemat)
             Sheet patternSheet = workbook.getSheet("Pattern");
 
-            // Pobranie liczby wierszy i kolumn
-            int rows = patternSheet.getPhysicalNumberOfRows();
-            int columns = patternSheet.getRow(0).getPhysicalNumberOfCells();
 
             // Tworzenie obrazu o wymiarach na podstawie schematu
-            BufferedImage image = new BufferedImage(columns, rows, BufferedImage.TYPE_INT_RGB);
+            BufferedImage image = new BufferedImage(patternColumns, patternRows, BufferedImage.TYPE_INT_RGB);
             Graphics2D graphics = image.createGraphics();
 
-            for (int r = 0; r < rows; r++) {
-                Row row = patternSheet.getRow(r);
+            for (int r = 0; r < patternRows; r++) {
+                Row row = patternSheet.getRow(r+1);
                 if (row == null) continue; // Pomijanie pustych wierszy
 
-                for (int c = 0; c < columns; c++) {
-                    Cell cell = row.getCell(c);
+                for (int c = 0; c < patternColumns; c++) {
+                    Cell cell = row.getCell(c+1);
 
                     // Odczytanie symbolu z komórki
                     String symbol = (cell != null) ? cell.getStringCellValue().toUpperCase() : "";
