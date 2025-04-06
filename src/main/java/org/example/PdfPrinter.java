@@ -2,6 +2,7 @@ package org.example;
 
 import org.apache.poi.openxml4j.util.ZipSecureFile;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFPrintSetup;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -16,7 +17,7 @@ public class PdfPrinter {
     private static final String COPYWRITE_NOTE = "©2025 Beadventure. This pattern is for personal use only.\n" +
             "You may not copy, share, modify, or resell this file in any form without written permission.";
 
-    private final static String IMAGE_PATTERN_FILE_NAME = "lady2_M_Pattern";
+    private final static String IMAGE_PATTERN_FILE_NAME = "ms3_M_Pattern";
     private final static String EXCEL_FILE = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + IMAGE_PATTERN_FILE_NAME + ".xlsx";
     private final static String OUTPUT_PDF = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\";
 
@@ -44,6 +45,8 @@ public class PdfPrinter {
                 patternSheet.setMargin(PageMargin.TOP, topMarginDefault);
                 patternSheet.setMargin(PageMargin.LEFT, leftMarginDefault);
                 patternSheet.setMargin(PageMargin.RIGHT, rightMarginDefault);
+                patternSheet.setRepeatingRows(CellRangeAddress.valueOf("1:1"));
+                patternSheet.setRepeatingColumns(CellRangeAddress.valueOf("A:A"));
 
                 // Header
                 Header header = patternSheet.getHeader();
