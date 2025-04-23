@@ -19,7 +19,7 @@ public class WordChartGenerator {
 
     public static void main(String[] args) {
         // Podaj ścieżkę do pliku Excela
-        String imagePatternFileName = "ms3_M_Pattern";
+        String imagePatternFileName = "guy_M_Pattern";
         String filePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imagePatternFileName + ".xlsx";
 
         // Generuj diagram słowny na podstawie pliku Excela
@@ -27,7 +27,7 @@ public class WordChartGenerator {
     }
 
     public static void generateWordChartFromFile(String filePath) {
-        try (FileInputStream fis = new FileInputStream(new File(filePath));
+        try (FileInputStream fis = new FileInputStream(filePath);
              XSSFWorkbook workbook = new XSSFWorkbook(fis)) {
 
             int patternWidth = 0;
