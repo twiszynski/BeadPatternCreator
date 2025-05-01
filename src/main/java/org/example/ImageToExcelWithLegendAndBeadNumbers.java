@@ -7,16 +7,17 @@ import javax.imageio.ImageIO;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.text.DecimalFormat;
 import java.util.*;
 import org.apache.commons.csv.*;
 
 public class ImageToExcelWithLegendAndBeadNumbers {
 
     public static void main(String[] args) {
-        String imageName = "ms3_M";
-        String inputFormat = ".png";
+        String imageName = "bird";
+        String inputFormat = "_M.png";
         String imagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + inputFormat;
-        String excelPath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_Pattern.xlsx";
+        String excelPath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_M_Pattern.xlsx";
         String paletteCsvPath = new File("src/main/resources/Palettes/MiyukiFullCSV.csv").getAbsolutePath(); // Ścieżka do pliku CSV z paletą kolorów
 
         try {
@@ -25,6 +26,9 @@ public class ImageToExcelWithLegendAndBeadNumbers {
 
             // Wczytanie palety kolorów z CSV
             Map<String, String> beadNumbers = loadBeadNumbersFromCsv(paletteCsvPath);
+
+            // Wczytanie nazw kolorów z CSV
+            Map<String, String> beadNames = loadBeadNamesFromCsv(paletteCsvPath);
 
             // Tworzenie arkusza dla obrazu
             XSSFSheet patternSheet = workbook.createSheet("Pattern");
@@ -88,7 +92,7 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             for (int col = 0; col <= image.getWidth(); col++) {
                 patternSheet.setColumnWidth(col, 256 * 3);
             }
-            patternSheet.setDefaultRowHeight((short) 300);
+            patternSheet.setDefaultRowHeight((short) 370);
 
             // Dodanie reguł formatowania warunkowego
             XSSFSheetConditionalFormatting conditionalFormatting = patternSheet.getSheetConditionalFormatting();
@@ -122,10 +126,12 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             headerRow.createCell(0).setCellValue("Symbol");
             headerRow.createCell(1).setCellValue("Color");
             headerRow.createCell(2).setCellValue("Number");
-            headerRow.createCell(3).setCellValue("QTY");
-            headerRow.createCell(4).setCellValue("R");
-            headerRow.createCell(5).setCellValue("G");
-            headerRow.createCell(6).setCellValue("B");
+            headerRow.createCell(3).setCellValue("Color Name");
+            headerRow.createCell(4).setCellValue("QTY");
+            headerRow.createCell(5).setCellValue("Approx. weight [g]");
+            headerRow.createCell(6).setCellValue("R");
+            headerRow.createCell(7).setCellValue("G");
+            headerRow.createCell(8).setCellValue("B");
 
             XSSFCellStyle headerCellStyle = workbook.createCellStyle();
             setBorderedAndCenteredStyle(headerCellStyle);
@@ -135,6 +141,8 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             headerRow.getCell(1).setCellStyle(headerCellStyle);
             headerRow.getCell(2).setCellStyle(headerCellStyle);
             headerRow.getCell(3).setCellStyle(headerCellStyle);
+            headerRow.getCell(4).setCellStyle(headerCellStyle);
+            headerRow.getCell(5).setCellStyle(headerCellStyle);
 
             // Generowanie legendy
             int rowIndex = 1;
@@ -169,17 +177,35 @@ public class ImageToExcelWithLegendAndBeadNumbers {
                 setBorderedAndCenteredStyle(beadNumberCellStyle);
                 beadNumberCell.setCellStyle(beadNumberCellStyle);
 
+                // Kolumna z nazwa koloru
+                Cell colorNameCell = row.createCell(3);
+                colorNameCell.setCellValue(beadNames.getOrDefault(colorRGB, "Brak koloru"));
+                XSSFCellStyle colorNameCellStyle = workbook.createCellStyle();
+                setBorderedAndCenteredStyle(colorNameCellStyle);
+                colorNameCell.setCellStyle(colorNameCellStyle);
+
                 // Kolumna z liczbą wystąpień
-                Cell countCell = row.createCell(3);
+                Cell countCell = row.createCell(4);
                 countCell.setCellValue(colorCount.get(color));
                 XSSFCellStyle countCellStyle = workbook.createCellStyle();
                 setBorderedAndCenteredStyle(countCellStyle);
                 countCell.setCellStyle(countCellStyle);
 
+                // Kolumna z wagą
+                Cell weightCell = row.createCell(5);
+                Integer colorQty = colorCount.get(color);
+                Double weight = (double) (colorQty*0.005);
+                DecimalFormat df = new DecimalFormat("#.##");
+                String roundedWeight = df.format(weight);
+                weightCell.setCellValue(roundedWeight);
+                XSSFCellStyle weightCellStyle = workbook.createCellStyle();
+                setBorderedAndCenteredStyle(weightCellStyle);
+                weightCell.setCellStyle(weightCellStyle);
+
                 // Kolumny z wartościami RGB
-                row.createCell(4).setCellValue(color.getRed());
-                row.createCell(5).setCellValue(color.getGreen());
-                row.createCell(6).setCellValue(color.getBlue());
+                row.createCell(6).setCellValue(color.getRed());
+                row.createCell(7).setCellValue(color.getGreen());
+                row.createCell(8).setCellValue(color.getBlue());
 
             }
 
@@ -211,6 +237,12 @@ public class ImageToExcelWithLegendAndBeadNumbers {
                     }
                 }
             }
+
+            legendSheet.setColumnHidden(6,true);
+            legendSheet.setColumnHidden(7,true);
+            legendSheet.setColumnHidden(8,true);
+            legendSheet.autoSizeColumn(3);
+            legendSheet.autoSizeColumn(5);
 
 
             //Dodaj arkusz z wymiarami schematu
@@ -250,6 +282,22 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             }
         }
         return beadNumbers;
+    }
+
+    private static Map<String, String> loadBeadNamesFromCsv(String csvPath) throws IOException {
+        Map<String, String> beadNames = new HashMap<>();
+        try (Reader reader = new FileReader(csvPath)) {
+            Iterable<CSVRecord> records = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(reader);
+            for (CSVRecord record : records) {
+                String red = record.get("R");
+                String green = record.get("G");
+                String blue = record.get("B");
+                String rgbKey = red + "_" + green + "_" + blue;
+                String colorName = record.get("Name");
+                beadNames.put(rgbKey, colorName);
+            }
+        }
+        return beadNames;
     }
 
     static void setBorderedAndCenteredStyle(XSSFCellStyle style) {

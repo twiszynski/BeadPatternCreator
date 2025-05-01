@@ -2,7 +2,6 @@ package org.example;
 
 import org.apache.poi.openxml4j.util.ZipSecureFile;
 import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFColor;
 
@@ -15,16 +14,17 @@ import java.util.Map;
 public class PatternToPageMap {
 
     static {
-        ZipSecureFile.setMinInflateRatio(0.005); // Ustawienie niższego limitu
+        ZipSecureFile.setMinInflateRatio(0.003); // Ustawienie niższego limitu
     }
 
     public static void main(String[] args) {
-        String fileName = "_M";
-        String excelFilePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + fileName + "_Pattern.xlsx";
+        String fileName = "bird";
+        String excelFilePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + fileName + "_M_Pattern.xlsx";
 
         // **Podaj liczbę wierszy i kolumn na pojedynczej stronie wydruku**
-        int rowsPerPage = 20;  // Liczba wierszy na stronę (sprawdzone po wydruku)
-        int colsPerPage = 15;  // Liczba kolumn na stronę (sprawdzone po wydruku)
+        int colsPerPage = 30;  // Liczba kolumn na stronę (sprawdzone po wydruku)
+        int rowsPerPage = 37;  // Liczba wierszy na stronę (sprawdzone po wydruku)
+
 
         convertExcelToPageMap(excelFilePath, rowsPerPage, colsPerPage);
     }
@@ -51,6 +51,11 @@ public class PatternToPageMap {
                 System.out.println("Brak arkusza 'Size'");
                 return;
             }
+
+
+            // Indeks wybranego koloru z predefiniowanej palety kolorow
+        short borderColorIndex = IndexedColors.RED.getIndex();
+
 
             // **Usunięcie istniejącego arkusza "PageMap", jeśli istnieje**
             int pageMapIndex = workbook.getSheetIndex("PageMap");
@@ -94,15 +99,21 @@ public class PatternToPageMap {
                     int endCol = Math.min(c + colsPerPage - 1, patternColumns - 1);
 
                     // **Dodanie wyraźnego obramowania wokół zakresu**
-                    addSelectiveBorders(pageMapSheet, startRow, endRow, startCol, endCol);
+                    addSelectiveBorders(pageMapSheet, startRow, endRow, startCol, endCol, borderColorIndex);
 
                     // **Dodanie numeru strony w lewym górnym rogu zakresu**
                     Row row = pageMapSheet.getRow(startRow);
                     Cell cell = row.createCell(startCol);
-                    cell.setCellValue("Page " + pageNumber);
+                    cell.setCellValue("" + pageNumber);
                     pageNumber++;
                 }
             }
+
+            // Ustawienia szerokości kolumn i wysokości wierszy
+            for (int col = 0; col < patternColumns; col++) {
+                pageMapSheet.setColumnWidth(col, 256 * 3);
+            }
+            pageMapSheet.setDefaultRowHeight((short) 370);
 
             // **Zapisanie zmian w tym samym pliku**
             try (FileOutputStream fos = new FileOutputStream(excelFilePath)) {
@@ -133,9 +144,9 @@ public class PatternToPageMap {
             }
 
             Cell symbolCell = row.getCell(0);
-            Cell redCell = row.getCell(4);
-            Cell greenCell = row.getCell(5);
-            Cell blueCell = row.getCell(6);
+            Cell redCell = row.getCell(6);
+            Cell greenCell = row.getCell(7);
+            Cell blueCell = row.getCell(8);
 
             if (symbolCell != null && redCell != null && greenCell != null && blueCell != null) {
                 String symbol = symbolCell.getStringCellValue();
@@ -151,8 +162,7 @@ public class PatternToPageMap {
     /**
      * Dodaje odpowiednie obramowanie tylko do zewnętrznych krawędzi zakresu strony.
      */
-    private static void addSelectiveBorders(Sheet sheet, int startRow, int endRow, int startCol, int endCol) {
-        Workbook workbook = sheet.getWorkbook();
+    private static void addSelectiveBorders(Sheet sheet, int startRow, int endRow, int startCol, int endCol, short borderColor) {
 
         for (int r = startRow; r <= endRow; r++) {
             Row row = sheet.getRow(r);
@@ -162,16 +172,25 @@ public class PatternToPageMap {
                 Cell cell = row.getCell(c);
                 if (cell == null) cell = row.createCell(c);
 
-                CellStyle style = cell.getCellStyle();
-                if (style == null) style = workbook.createCellStyle();
 
                 // Ustawienie obramowań tylko dla krawędzi
-                if (r == startRow) style.setBorderTop(BorderStyle.THICK); // Góra
-                if (r == endRow) style.setBorderBottom(BorderStyle.THICK); // Dół
-                if (c == startCol) style.setBorderLeft(BorderStyle.THICK); // Lewa
-                if (c == endCol) style.setBorderRight(BorderStyle.THICK); // Prawa
+                if (r == startRow) {
+                    cell.getCellStyle().setBorderTop(BorderStyle.DOUBLE); // Góra
+                    cell.getCellStyle().setTopBorderColor(borderColor); // Góra
+                }
+                if (r == endRow) {
+                    cell.getCellStyle().setBorderBottom(BorderStyle.THICK);
+                    cell.getCellStyle().setBottomBorderColor(borderColor);// Dół
+                }
+                if (c == startCol) {
+                    cell.getCellStyle().setBorderLeft(BorderStyle.THICK);
+                    cell.getCellStyle().setLeftBorderColor(borderColor);// Lewa
+                }
+                if (c == endCol) {
+                    cell.getCellStyle().setBorderRight(BorderStyle.THICK);
+                    cell.getCellStyle().setRightBorderColor(borderColor);// Prawa
+                }
 
-                cell.setCellStyle(style);
             }
         }
     }

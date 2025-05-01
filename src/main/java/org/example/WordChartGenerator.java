@@ -14,13 +14,13 @@ import java.io.IOException;
 public class WordChartGenerator {
 
     static {
-        ZipSecureFile.setMinInflateRatio(0.005); // Ustawienie niższego limitu
+        ZipSecureFile.setMinInflateRatio(0.003); // Ustawienie niższego limitu
     }
 
     public static void main(String[] args) {
         // Podaj ścieżkę do pliku Excela
-        String imagePatternFileName = "guy_M_Pattern";
-        String filePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imagePatternFileName + ".xlsx";
+        String imageName = "bird";
+        String filePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_M_Pattern.xlsx";
 
         // Generuj diagram słowny na podstawie pliku Excela
         generateWordChartFromFile(filePath);
@@ -89,7 +89,7 @@ public class WordChartGenerator {
                 String wordChart = generateRowChart(schema[i]); // Diagram dla wiersza
                 Row row = wordChartSheet.createRow(i + 1); // Tworzenie nowego wiersza w arkuszu
                 row.createCell(0).setCellValue("Row #" + (i + 1)); // Numer wiersza
-                row.createCell(1).setCellValue(wordChart); // Diagram
+                row.createCell(1).setCellValue(wordChart.substring(0, wordChart.length()-1)); // Diagram
             }
 
             // Czcionka diagramu

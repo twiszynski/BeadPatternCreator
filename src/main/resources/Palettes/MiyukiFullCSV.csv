@@ -1,1247 +1,1247 @@
-Number,R,G,B,Type,Comments
-DB0001,51,51,59,,multi
-DB0002,30,37,47,,multi
-DB0003,41,43,40,,multi
-DB0004,37,37,39,,multi
-DB0005,44,53,62,,multi
-DB0006,55,62,68,,multi
-DB0007,51,40,34,,multi
-DB0010,23,23,23,,
-DB0011,60,57,38,,
-DB0012,67,38,40,,
-DB0021,100,92,89,,
-DB0022,75,57,47,,
-DB0023,74,61,55,,multi
-DB0024,80,82,61,,multi
-DB0025,41,55,66,,multi
-DB0026,67,66,64,,multi
-DB0027,57,68,62,,multi
-DB0029,97,84,68,,multi
-DB0031,181,135,75,,
-DB0033,169,120,64,,
-DB0034,149,119,83,,
-DB0035,161,152,135,,
-DB0037,131,97,87,,
-DB0038,122,116,116,,
-DB0040,133,89,76,,
-DB0041,147,141,141,,
-DB0042,178,128,69,,
-DB0043,172,46,24,,
-DB0044,88,136,158,,
-DB0045,194,96,21,,
-DB0046,50,99,52,,
-DB0047,47,45,118,,
-DB0048,87,86,84,,
-DB0050,153,153,165,,
-DB0051,225,226,231,,
-DB0052,237,218,203,,
-DB0053,242,212,126,,
-DB0054,191,126,106,,
-DB0055,235,212,228,,
-DB0056,108,73,105,,glossy/ multi
-DB0057,73,161,197,,
-DB0058,66,108,132,,glossy/ multi
-DB0059,80,78,99,,glossy/ multi
-DB0060,72,115,106,,glossy/ multi
-DB0061,74,52,54,,glossy/ multi
-DB0062,146,44,57,,glossy/ multi
-DB0063,57,66,157,,glossy/ multi
-DB0064,102,91,85,,glossy/ multi
-DB0065,134,84,33,,
-DB0066,222,221,216,,
-DB0067,215,146,117,,
-DB0068,216,129,109,,
-DB0069,160,121,104,,
-DB0070,214,109,116,,
-DB0071,227,211,224,,
-DB0072,179,109,146,,
-DB0073,128,60,133,,
-DB0074,151,55,116,,
-DB0075,203,69,93,,
-DB0076,54,142,206,,
-DB0077,49,102,170,,
-DB0078,150,200,211,,
-DB0079,62,147,152,,
-DB0080,157,152,174,,
-DB0081,93,98,102,,
-DB0082,228,222,226,,
-DB0083,179,216,225,,
-DB0084,100,124,128,,glossy/ multi
-DB0085,59,78,93,,glossy/ multi
-DB0086,66,73,91,,glossy/ multi
-DB0087,81,68,62,,glossy/ multi
-DB0088,121,76,70,,glossy/ multi
-DB0089,82,82,74,,glossy/ multi
-DB0098,193,53,62,,
-DB0099,199,139,87,,
-DB0100,195,135,83,,
-DB0101,179,125,89,,
-DB0102,122,84,61,,
-DB0103,106,64,65,,glossy/ multi
-DB0104,76,53,59,,glossy/ multi
-DB0105,75,36,39,,glossy/ multi
-DB0106,212,133,128,,
-DB0107,117,115,116,,glossy/ multi
-DB0108,98,64,65,,
-DB0109,225,210,179,,
-DB0110,136,150,161,,
-DB0111,84,93,102,,glossy/ multi
-DB0112,70,111,113,,
-DB0113,38,102,148,,
-DB0114,128,127,125,,
-DB0115,108,74,49,,
-DB0116,96,40,39,,
-DB0117,82,59,69,,
-DB0118,131,82,41,,
-DB0119,138,79,35,,
-DB0120,89,42,48,,
-DB0121,112,73,44,,
-DB0122,81,70,64,,glossy/ multi
-DB0123,78,64,53,,
-DB0124,132,121,67,,
-DB0125,62,74,62,,glossy/ multi
-DB0126,101,78,70,,glossy/ multi
-DB0127,90,79,75,,glossy/ multi
-DB0128,84,70,87,,glossy/ multi
-DB0129,93,68,74,,multi
-DB0131,68,61,53,,multi
-DB0132,73,79,93,,multi
-DB0133,110,96,57,,multi
-DB0134,82,81,95,,multi
-DB0135,60,56,91,,multi
-DB0141,151,150,158,,
-DB0144,103,58,29,,
-DB0145,190,166,40,,
-DB0146,116,87,89,,
-DB0147,146,148,51,,
-DB0148,33,65,44,,
-DB0149,42,87,118,,
-DB0150,70,52,38,,
-DB0151,231,100,46,,
-DB0152,43,106,75,,
-DB0157,233,197,149,,
-DB0158,148,122,133,,
-DB0159,214,47,57,,
-DB0160,238,221,43,,
-DB0161,226,85,57,,
-DB0162,162,43,62,,
-DB0163,77,127,78,,
-DB0164,65,161,209,,
-DB0165,51,52,132,,
-DB0166,56,145,149,,
-DB0167,96,112,197,,
-DB0168,105,106,108,,
-DB0169,157,173,85,,
-DB0170,104,67,58,,
-DB0171,222,183,62,,
-DB0172,177,44,61,,
-DB0173,118,95,115,,
-DB0174,160,179,74,,
-DB0175,44,77,68,,
-DB0176,75,153,215,,
-DB0177,38,99,146,,
-DB0178,55,56,146,,
-DB0179,89,97,108,,
-DB0180,74,65,68,,
-DB0181,127,80,50,,
-DB0182,50,64,39,,
-DB0183,45,41,76,,
-DB0184,74,63,57,,
-DB0191,147,114,109,,
-DB0200,239,239,241,,
-DB0201,237,235,236,,
-DB0202,237,235,236,,
-DB0203,231,214,188,,
-DB0204,218,177,145,,
-DB0205,210,164,130,,
-DB0206,237,154,136,,
-DB0207,232,144,130,,
-DB0208,202,148,120,,
-DB0209,172,175,190,,
-DB0210,182,129,149,,
-DB0211,206,197,180,,
-DB0214,169,34,48,,
-DB0215,67,159,200,,
-DB0216,41,41,127,,
-DB0217,75,146,166,,
-DB0218,69,135,169,,
-DB0220,232,230,233,,
-DB0221,199,188,182,,
-DB0222,229,227,228,,
-DB0223,184,173,169,,
-DB0230,187,139,91,,
-DB0231,199,198,206,,
-DB0232,238,222,137,,
-DB0233,241,189,87,,
-DB0234,238,192,194,,
-DB0235,234,119,100,,
-DB0236,219,112,132,,
-DB0237,129,199,162,,
-DB0238,51,142,135,,
-DB0239,108,202,228,,
-DB0240,79,118,213,,
-DB0241,169,156,184,,
-DB0242,120,125,145,,
-DB0243,86,101,160,,
-DB0244,246,186,214,,
-DB0245,246,168,208,,
-DB0246,245,147,194,,
-DB0247,211,97,185,,
-DB0248,221,154,221,,
-DB0249,134,110,184,,
-DB0250,103,95,136,,
-DB0251,129,128,126,,
-DB0252,150,151,153,,
-DB0253,147,98,127,,
-DB0254,87,76,70,,
-DB0256,157,127,127,,
-DB0257,153,167,204,,
-DB0261,187,170,152,,
-DB0262,156,159,72,,
-DB0263,107,112,82,,
-DB0264,70,99,103,,
-DB0265,118,91,108,,
-DB0266,95,109,146,,
-DB0267,82,93,123,,
-DB0268,88,88,90,,
-DB0271,184,188,200,,
-DB0272,153,102,45,,
-DB0273,66,68,54,,
-DB0274,59,110,51,,
-DB0275,37,61,65,,
-DB0276,50,72,85,,
-DB0277,52,45,89,,
-DB0278,66,63,84,,
-DB0279,63,62,68,,
-DB0280,103,56,62,,
-DB0281,108,54,103,,
-DB0282,110,54,57,,
-DB0283,128,71,80,,
-DB0284,72,73,129,,
-DB0285,52,67,126,,
-DB0286,50,64,75,,
-DB0287,93,71,57,,
-DB0288,127,101,74,,
-DB0295,130,40,40,,
-DB0296,65,40,46,,
-DB0297,63,47,50,,
-DB0301,73,77,89,,
-DB0306,71,71,73,,
-DB0307,85,84,82,,
-DB0310,34,34,32,,
-DB0311,57,50,44,,
-DB0312,69,56,63,,
-DB0321,116,105,103,,
-DB0322,89,70,55,,
-DB0323,62,58,72,,
-DB0324,91,92,84,,
-DB0325,57,65,76,,
-DB0327,32,36,30,,??
-DB0331,198,147,95,,??
-DB0334,192,162,133,,??
-DB0335,222,211,199,,??
-DB0340,125,85,75,,
-DB0351,235,233,236,,
-DB0352,233,217,191,,
-DB0353,219,178,148,,
-DB0354,209,166,149,,
-DB0355,170,126,143,,
-DB0356,159,144,165,,
-DB0357,185,185,197,,
-DB0361,66,69,136,,
-DB0362,183,48,78,,
-DB0371,124,106,68,,
-DB0372,115,108,79,,
-DB0373,82,97,90,,
-DB0374,107,132,126,,
-DB0375,89,138,145,,
-DB0376,88,105,123,,
-DB0377,62,66,103,,
-DB0378,128,42,41,,
-DB0379,142,111,119,,
-DB0380,92,73,69,,
-DB0381,110,123,142,,
-DB0382,192,156,104,,
-DB0383,138,132,120,,
-DB0384,77,65,49,,
-DB0385,96,128,123,,
-DB0386,75,67,82,,
-DB0387,66,75,84,,
-DB0388,181,165,139,,
-DB0389,188,138,105,,
-DB0390,121,104,74,,
-DB0391,94,97,68,,
-DB0410,169,126,81,Galvanised,
-DB0411,170,129,101,"Dyed Colour,Galvanised",
-DB0412,165,150,95,"Dyed Colour,Galvanised",
-DB0413,124,139,110,,
-DB0414,106,136,134,,
-DB0415,106,138,133,,
-DB0416,100,131,134,,
-DB0417,158,135,129,,
-DB0418,176,140,142,,
-DB0419,147,126,135,,
-DB0420,171,97,112,,
-DB0421,147,83,39,,
-DB0422,146,47,127,,
-DB0423,140,84,83,,
-DB0424,175,149,56,,
-DB0425,152,60,133,,
-DB0426,76,144,123,,
-DB0427,49,111,124,,
-DB0428,143,70,81,,
-DB0429,145,128,136,,
-DB0430,94,71,117,,
-DB0431,117,49,122,,
-DB0432,79,107,110,,
-DB0433,168,138,112,,
-DB0434,165,113,89,,
-DB0435,170,118,122,,
-DB0436,126,114,98,,
-DB0451,45,63,73,,
-DB0452,80,75,71,,
-DB0453,61,61,73,,
-DB0454,94,71,77,,
-DB0455,77,63,76,,
-DB0456,86,76,49,,
-DB0457,76,76,74,,
-DB0458,52,75,69,,
-DB0459,36,62,77,,
-DB0460,83,61,48,,
-DB0461,83,50,33,,
-DB0462,108,84,82,,
-DB0463,80,35,74,,
-DB0464,69,54,75,,
-DB0465,51,60,69,,
-DB0501,143,106,54,,multi
-DB0505,118,78,42,,multi
-DB0506,106,73,56,,multi
-DB0507,127,98,66,,multi
-DB0508,117,105,79,,multi
-DB0514,59,76,94,,multi
-DB0541,104,89,92,,multi
-DB0542,86,73,80,,multi
-DB0543,77,79,100,,multi
-DB0544,99,107,118,,multi
-DB0545,97,106,105,,multi
-DB0546,124,115,98,,multi
-DB0551,186,182,173,,
-DB0601,112,35,25,silver lined,
-DB0602,138,28,27,silver lined,
-DB0603,109,32,26,silver lined,
-DB0604,83,65,29,silver lined,
-DB0605,26,75,53,silver lined,
-DB0606,51,53,50,silver lined,
-DB0607,41,77,77,silver lined,
-DB0608,36,64,88,silver lined,
-DB0609,50,34,60,silver lined,
-DB0610,59,34,102,silver lined,
-DB0611,53,36,44,silver lined,
-DB0612,69,41,27,silver lined,
-DB0613,52,52,44,silver lined,
-DB0621,207,164,111,"dyed color, silver lined",
-DB0622,169,98,80,"dyed color, silver lined",
-DB0623,205,181,95,"dyed color, silver lined",
-DB0624,203,154,147,"dyed color, silver lined",
-DB0625,190,107,127,"dyed color, silver lined",
-DB0626,104,174,163,"dyed color, silver lined",
-DB0627,42,153,136,"dyed color, silver lined",
-DB0628,103,150,168,"dyed color, silver lined",
-DB0629,158,131,164,"dyed color, silver lined",
-DB0630,125,118,112,"dyed color, silver lined",
-DB0631,95,90,84,"dyed color, silver lined",
-DB0651,230,135,27,opaque,
-DB0652,101,101,101,"dyed color, opaque",
-DB0653,146,89,20,opaque,
-DB0654,116,29,37,opaque,
-DB0655,24,115,56,"dyed color, opaque",
-DB0656,15,87,65,opaque,
-DB0657,77,68,50,"dyed color, opaque",
-DB0658,19,162,178,"dyed color, opaque",
-DB0659,18,125,193,dyed color,
-DB0660,107,84,126,"dyed color, opaque",
-DB0661,77,83,171,"dyed color, opaque",
-DB0662,91,76,95,dyed color,
-DB0663,46,60,35,dyed color,
-DB0670,203,204,209,"ab, silk",
-DB0671,129,110,78,silver lined,
-DB0672,226,218,182,silk,
-DB0673,207,181,154,silk,
-DB0674,217,167,130,silk,
-DB0675,223,185,206,silk,
-DB0676,200,200,212,silk,
-DB0677,174,180,202,silk,
-DB0678,168,124,137,silk,
-DB0679,150,144,144,silk,
-DB0680,148,127,110,"dyed colour, silk",
-DB0681,184,103,22,"Dyed Colour,Matte,Silver Lined",
-DB0682,186,82,27,"Dyed Colour,Matte,Silver Lined",
-DB0683,157,42,35,"Dyed Colour,Matte,Silver Lined",
-DB0684,195,103,80,"Dyed Colour,Matte,Silver Lined",
-DB0685,155,92,75,"Dyed Colour,Matte,Silver Lined",
-DB0686,151,124,79,"Dyed Colour,Matte,Silver Lined",
-DB0687,160,127,73,"Dyed Colour,Matte,Silver Lined",
-DB0688,41,99,59,"Dyed Colour,Matte,Silver Lined",
-DB0689,87,93,93,"Dyed Colour,Matte,Silver Lined",
-DB0690,52,75,57,"Dyed Colour,Matte,Silver Lined",
-DB0691,77,140,155,"Dyed Colour,Matte,Silver Lined",
-DB0692,68,131,166,"Dyed Colour,Matte,Silver Lined",
-DB0693,42,54,106,"Dyed Colour,Matte,Silver Lined",
-DB0694,95,101,159,"Dyed Colour,Matte,Silver Lined",
-DB0695,88,71,89,"Dyed Colour,Matte,Silver Lined",
-DB0696,55,44,122,"Dyed Colour,Matte,Silver Lined",
-DB0697,90,92,91,"Dyed Colour,Matte,Silver Lined",
-DB0702,199,123,37,transparent,
-DB0703,237,95,13,transparent,
-DB0704,191,17,18,transparent,
-DB0705,18,75,32,transparent,
-DB0706,28,128,206,transparent,
-DB0707,33,19,117,transparent,
-DB0708,63,69,69,transparent,
-DB0709,76,32,23,transparent,
-DB0710,226,188,27,transparent,
-DB0711,96,60,72,transparent,
-DB0712,144,165,24,transparent,
-DB0713,24,51,34,transparent,
-DB0714,22,72,123,transparent,
-DB0715,54,39,34,transparent,
-DB0721,237,221,12,opaque,
-DB0722,239,74,18,opaque,
-DB0723,189,22,32,opaque,
-DB0724,69,121,59,opaque,
-DB0725,69,161,198,opaque,
-DB0726,34,24,123,opaque,
-DB0727,223,37,25,opaque,
-DB0728,149,119,131,opaque,
-DB0729,49,147,148,opaque,
-DB0730,87,103,201,opaque,
-DB0731,104,103,101,opaque,
-DB0732,232,203,163,opaque,
-DB0733,157,175,73,opaque,
-DB0734,53,29,27,opaque,
-DB0741,211,210,218,"Matte,Transparent",
-DB0742,206,128,53,"Matte,Transparent",
-DB0743,228,200,31,"Matte,Transparent",
-DB0744,247,108,13,"Matte,Transparent",
-DB0745,190,24,28,"Matte,Transparent",
-DB0746,19,90,46,"Matte,Transparent",
-DB0747,54,144,222,"Matte,Transparent",
-DB0748,39,21,131,"Matte,Transparent",
-DB0749,80,86,86,"Matte,Transparent",
-DB0751,240,219,4,"Matte,Opaque",
-DB0752,238,68,17,"Matte,Opaque",
-DB0753,194,18,31,"Matte,Opaque",
-DB0754,64,120,55,"Matte,Opaque",
-DB0755,53,163,216,"Matte,Opaque",
-DB0756,35,27,138,"Matte,Opaque",
-DB0757,216,20,21,"Matte,Opaque",
-DB0758,141,110,126,"Matte,Opaque",
-DB0759,55,148,155,"Matte,Opaque",
-DB0760,98,112,209,"Matte,Opaque",
-DB0761,107,106,104,"Matte,Opaque",
-DB0762,234,210,174,"Matte,Opaque",
-DB0763,163,181,79,"Matte,Opaque",
-DB0764,93,50,33,"Matte,Transparent",
-DB0765,115,79,91,"Matte,Transparent",
-DB0766,165,179,40,"Matte,Transparent",
-DB0767,25,58,39,"Matte,Transparent",
-DB0768,18,77,135,"Matte,Transparent",
-DB0769,57,42,37,"Matte,Transparent",
-DB0771,136,120,84,"Dyed Colour,Matte,Transparent",
-DB0772,96,76,69,"Dyed Colour,Matte,Transparent",
-DB0773,110,55,52,"Dyed Colour,Matte,Transparent",
-DB0774,147,24,27,"Dyed Colour,Matte,Transparent",
-DB0775,149,20,50,"Dyed Colour,Matte,Transparent",
-DB0776,20,67,49,"Dyed Colour,Matte,Transparent",
-DB0777,167,84,40,"Dyed Colour,Matte,Transparent",
-DB0778,156,78,74,"Dyed Colour,Matte,Transparent",
-DB0779,169,44,40,"Dyed Colour,Matte,Transparent",
-DB0780,211,53,86,"Dyed Colour,Matte,Transparent",
-DB0781,181,88,45,"Dyed Colour,Matte,Transparent",
-DB0782,62,44,58,"Dyed Colour,Matte,Transparent",
-DB0783,102,68,188,"Dyed Colour,Matte,Transparent",
-DB0784,58,41,49,"Dyed Colour,Matte,Transparent",
-DB0785,48,37,93,"Dyed Colour,Matte,Transparent",
-DB0786,8,111,118,"Dyed Colour,Matte,Transparent",
-DB0787,12,86,161,"Dyed Colour,Matte,Transparent",
-DB0788,27,67,77,"Dyed Colour,Matte,Transparent",
-DB0791,156,20,34,Opaque,
-DB0792,79,109,120,"Dyed Colour,Matte",
-DB0793,9,150,159,"Dyed Colour,Matte,Opaque",
-DB0794,123,64,32,"Matte,Opaque",
-DB0795,175,53,29,"Dyed Colour,Matte,Opaque",
-DB0796,151,40,46,"Dyed Colour,Matte,Opaque",
-DB0797,61,79,53,"Dyed Colour,Matte,Opaque",
-DB0798,55,119,144,"Dyed Colour,Matte,Opaque",
-DB0799,92,92,126,"Dyed Colour,Matte,Opaque",
-DB0800,153,103,128,"Matte,Opaque",
-DB0820,213,175,196,Silk,
-DB0821,242,190,153,Silk,
-DB0822,164,152,154,Silk,
-DB0823,245,225,138,Silk,
-DB0824,238,170,147,Silk,
-DB0825,238,152,139,Silk,
-DB0826,167,133,124,Silk,
-DB0827,138,124,123,Silk,
-DB0828,149,185,157,Silk,
-DB0829,146,158,146,Silk,
-DB0830,181,208,235,Silk,
-DB0831,154,171,217,Silk,
-DB0832,183,186,221,Silk,
-DB0833,200,162,183,Silk,
-DB0852,216,152,106,"AB,Matte",multi
-DB0853,121,85,87,"AB,Matte",multi
-DB0854,225,200,97,"AB,Matte",multi
-DB0855,245,119,68,"AB,Matte",multi
-DB0856,212,65,83,"AB,Matte",multi
-DB0857,133,109,125,"AB,Matte",multi
-DB0858,63,121,96,"AB,Matte",multi
-DB0859,60,92,89,"AB,Matte",multi
-DB0860,172,189,95,"AB,Matte",multi
-DB0861,95,166,230,"AB,Matte",multi
-DB0862,49,109,163,"AB,Matte",multi
-DB0863,104,112,125,"AB,Matte",multi
-DB0864,75,71,158,"AB,Matte",multi
-DB0865,87,80,88,"AB,Matte",multi
-DB0867,143,66,84,"AB,Matte,Transparent",multi
-DB0868,236,200,202,"AB,Matte,Transparent",multi
-DB0869,103,86,104,"AB,Matte,Transparent",multi
-DB0870,110,105,128,"Matte,Transparent",multi
-DB0871,67,74,92,"AB,Matte,Opaque",multi
-DB0872,240,95,76,"AB,Matte",multi
-DB0873,214,65,84,"AB,Matte,Opaque",multi
-DB0874,188,60,83,"AB,Matte,Opaque",multi
-DB0875,150,127,147,"AB,Matte,Opaque",
-DB0876,165,184,102,"AB,Matte,Opaque",
-DB0877,85,132,96,"AB,Matte,Opaque",multi
-DB0878,79,153,162,"AB,Matte,Opaque",
-DB0879,85,168,212,"AB,Matte,Opaque",
-DB0880,76,75,143,"AB,Matte,Opaque",multi
-DB0881,110,127,209,"AB,Matte,Opaque",
-DB0882,119,119,121,"AB,Matte,Opaque",
-DB0883,233,210,176,"AB,Matte,Opaque",
-DB0884,95,74,83,"AB,Matte,Opaque",multi
-DB0901,154,113,85,N/A,
-DB0902,171,98,128,N/A,
-DB0903,167,163,115,N/A,
-DB0904,41,130,124,N/A,
-DB0905,50,117,162,N/A,
-DB0906,95,75,128,N/A,
-DB0907,140,119,102,N/A,
-DB0908,128,119,76,N/A,
-DB0909,128,102,53,N/A,
-DB0910,158,154,91,N/A,
-DB0911,155,120,64,N/A,
-DB0912,108,85,91,N/A,
-DB0913,148,85,78,N/A,
-DB0914,174,79,109,N/A,
-DB0915,131,87,78,N/A,
-DB0916,61,117,78,N/A,
-DB0917,79,103,79,N/A,
-DB0918,38,114,112,N/A,
-DB0919,40,86,84,N/A,
-DB0920,43,99,148,N/A,
-DB0921,58,78,87,N/A,
-DB0922,104,83,124,N/A,
-DB0923,85,73,113,N/A,
-DB0924,125,68,77,N/A,
-DB0925,75,75,87,N/A,
-DB0981,123,97,70,Metallic,multi
-DB0982,136,96,104,N/A,multi
-DB0983,146,146,74,N/A,multi
-DB0984,59,116,99,N/A,multi
-DB0985,55,99,108,N/A,multi
-DB0986,104,100,114,N/A,multi
-DB1001,61,61,69,Metallic,
-DB1002,59,38,35,Metallic,
-DB1003,41,48,54,Metallic,
-DB1004,66,54,58,Metallic,
-DB1005,44,60,83,Metallic,
-DB1006,50,70,71,Metallic,
-DB1010,109,83,70,"Luster,Metallic",
-DB1011,96,85,83,Luster,
-DB1012,90,64,75,Luster,
-DB1013,107,73,71,Luster,
-DB1014,95,74,83,"Luster,Metallic",
-DB1015,121,77,94,Luster,
-DB1016,119,69,72,"Luster,Metallic",
-DB1051,73,41,28,"Matte,Metallic",
-DB1052,56,67,85,"Matte,Metallic",
-DB1053,64,61,68,"Matte,Metallic",
-DB1054,65,70,92,"Matte,Metallic",
-DB1055,89,75,72,"Matte,Metallic",
-DB1056,95,83,87,"Matte,Metallic",
-DB1061,123,99,97,"AB,Matte,Metallic",
-DB1062,104,91,101,"AB,Matte,Metallic",
-DB1063,108,112,123,"AB,Matte,Metallic",
-DB1064,115,94,103,"AB,Matte,Metallic",
-DB1065,122,108,125,"AB,Matte,Metallic",
-DB1066,135,99,113,"Luster,Matte,Metallic",
-DB1067,117,100,106,"AB,Matte,Metallic",
-DB1101,137,65,25,Transparent,
-DB1102,118,21,30,Transparent,
-DB1103,226,172,160,Transparent,
-DB1104,67,44,52,Transparent,
-DB1105,74,58,84,Transparent,
-DB1106,71,132,39,Transparent,
-DB1107,55,71,35,Transparent,
-DB1108,19,86,94,Transparent,
-DB1109,14,125,204,Transparent,
-DB1110,41,77,187,Transparent,
-DB1111,142,135,127,Transparent,
-DB1112,209,162,90,Transparent,
-DB1131,212,169,118,Opaque,
-DB1132,247,191,10,Opaque,
-DB1133,245,135,12,Opaque,
-DB1134,99,30,33,Opaque,
-DB1135,77,88,56,Opaque,
-DB1136,69,156,147,Opaque,
-DB1137,137,155,227,Opaque,
-DB1138,62,66,166,Opaque,
-DB1139,133,131,144,Opaque,
-DB1151,168,154,117,"Frosted,Galvanised",
-DB1152,180,146,121,"Frosted,Galvanised",
-DB1153,182,144,105,"Frosted,Galvanised",
-DB1154,185,155,83,"Frosted,Galvanised",
-DB1155,174,132,110,"Frosted,Galvanised",
-DB1156,165,119,119,"Frosted,Galvanised",
-DB1157,138,102,104,"Frosted,Galvanised",
-DB1158,160,142,132,"Frosted,Galvanised",
-DB1159,136,124,108,Galvanised,
-DB1162,146,115,97,"Galvanised,Matte",
-DB1163,152,116,82,"Galvanised,Matte",
-DB1164,172,147,91,"Galvanised,Matte",
-DB1165,151,112,97,"Galvanised,Matte",
-DB1166,156,115,113,"Galvanised,Matte",
-DB1167,121,84,91,"Galvanised,Matte",
-DB1168,132,121,117,"Galvanised,Matte",
-DB1169,119,109,99,"Galvanised,Matte",
-DB1170,123,118,99,"Galvanised,Matte",
-DB1171,83,127,110,"Galvanised,Matte",
-DB1172,78,106,109,"Galvanised,Matte",
-DB1173,130,92,117,"Galvanised,Matte",
-DB1174,94,77,96,"Galvanised,Matte",
-DB1175,88,87,82,"Galvanised,Matte",
-DB1181,150,143,117,"Frosted,Galvanised",
-DB1182,72,140,119,"Frosted,Galvanised",
-DB1183,77,126,131,"Frosted,Galvanised",
-DB1184,147,84,127,"Frosted,Galvanised",
-DB1185,108,88,115,"Frosted,Galvanised",
-DB1186,92,87,83,"Frosted,Galvanised",
-DB1201,143,87,38,Silver Lined,
-DB1202,79,42,33,Silver Lined,
-DB1203,181,149,136,Silver Lined,
-DB1204,88,63,66,Silver Lined,
-DB1205,99,86,93,Silver Lined,
-DB1206,98,132,56,Silver Lined,
-DB1207,77,91,55,Silver Lined,
-DB1208,41,99,100,Silver Lined,
-DB1209,61,125,153,Silver Lined,
-DB1210,65,99,144,Silver Lined,
-DB1211,144,133,127,Silver Lined,
-DB1212,180,150,96,Silver Lined,
-DB1221,147,93,69,"Luster,Transparent",
-DB1222,120,62,74,"Luster,Transparent",
-DB1223,220,179,173,"Luster,Transparent",
-DB1224,94,80,97,"Luster,Transparent",
-DB1225,104,100,125,"Luster,Transparent",
-DB1226,100,151,92,"Luster,Transparent",
-DB1227,86,103,87,"Luster,Transparent",
-DB1228,42,106,118,"Luster,Transparent",
-DB1229,51,146,204,"Luster,Transparent",
-DB1230,67,103,187,"Luster,Transparent",
-DB1231,149,149,149,"Luster,Transparent",
-DB1241,154,100,72,"AB,Transparent",
-DB1242,104,53,62,AB,
-DB1243,221,180,174,"AB,Transparent",
-DB1244,90,76,89,"AB,Transparent",
-DB1245,97,92,114,"AB,Transparent",
-DB1246,95,150,85,"AB,Transparent",
-DB1247,77,101,77,"AB,Transparent",
-DB1249,45,144,201,"AB,Transparent",
-DB1250,67,106,183,"AB,Transparent",
-DB1251,152,150,151,"AB,Transparent",
-DB1252,211,174,119,"Luster,Transparent",
-DB1261,149,77,27,"Matte,Transparent",
-DB1262,127,25,36,"Matte,Transparent",
-DB1263,231,182,175,"Matte,Transparent",
-DB1264,71,48,56,"Matte,Transparent",
-DB1265,89,73,100,"Matte,Transparent",
-DB1266,74,135,42,"Matte,Transparent",
-DB1267,65,81,44,"Matte,Transparent",
-DB1268,13,88,91,"Matte,Transparent",
-DB1269,12,134,211,"Matte,Transparent",
-DB1270,53,90,196,"Matte,Transparent",
-DB1271,147,142,138,"Matte,Transparent",
-DB1272,223,179,106,"Matte,Transparent",
-DB1281,107,159,95,"AB,Matte,Transparent",multi
-DB1282,96,115,95,"AB,Matte,Transparent",multi
-DB1283,40,118,130,"AB,Matte,Transparent",multi
-DB1284,52,153,221,"AB,Matte,Transparent",multi
-DB1285,82,119,200,"AB,Matte,Transparent",multi
-DB1286,162,160,161,"AB,Matte,Transparent",multi
-DB1287,227,191,139,"Luster,Matte,Transparent",
-DB1301,246,190,9,"Dyed Colour,Transparent",
-DB1302,180,74,52,"Dyed Colour,Transparent",
-DB1304,7,143,131,"Dyed Colour,Transparent",
-DB1308,205,45,79,"Dyed Colour,Transparent",
-DB1310,177,17,117,"Dyed Colour,Transparent",
-DB1312,71,33,46,"Dyed Colour,Transparent",
-DB1315,87,31,122,"Dyed Colour,Transparent",
-DB1318,11,91,150,"Dyed Colour,Transparent",
-DB1319,47,46,44,"Dyed Colour,Transparent",
-DB1333,145,72,31,"Dyed Colour,Silver Lined",
-DB1335,190,165,171,"Dyed Colour,Silver Lined",
-DB1338,183,67,86,"Dyed Colour,Silver Lined",
-DB1340,152,39,119,"Dyed Colour,Silver Lined",
-DB1341,133,50,68,"Dyed Colour,Silver Lined",
-DB1342,92,45,63,"Dyed Colour,Silver Lined",
-DB1343,121,83,142,"Dyed Colour,Silver Lined",
-DB1345,113,55,131,Silver Lined,
-DB1347,104,79,137,"Dyed Colour,Silver Lined",
-DB1363,208,122,105,"Dyed Colour,Opaque",
-DB1371,230,105,145,Opaque,
-DB1376,147,74,101,"Dyed Colour,Opaque",
-DB1379,120,81,172,"Dyed Colour,Opaque",
-DB1401,239,215,89,Transparent,
-DB1402,174,126,150,Transparent,
-DB1403,165,106,128,Transparent,
-DB1404,190,205,172,Transparent,
-DB1405,93,122,198,Transparent,
-DB1406,110,109,123,Transparent,
-DB1407,142,144,195,Transparent,
-DB1408,132,130,131,Transparent,
-DB1409,232,195,153,Transparent,
-DB1410,228,159,130,Transparent,
-DB1411,222,104,76,Transparent,
-DB1412,212,85,68,Transparent,
-DB1413,137,81,108,Transparent,
-DB1414,87,132,93,Transparent,
-DB1415,83,106,90,Transparent,
-DB1416,110,95,92,Transparent,
-DB1417,85,70,65,Transparent,
-DB1431,164,166,145,Silver Lined,
-DB1432,168,153,122,Silver Lined,
-DB1433,163,133,141,Silver Lined,
-DB1434,151,115,125,Silver Lined,
-DB1435,145,145,157,Silver Lined,
-DB1451,201,181,156,Silver Lined,
-DB1452,202,169,150,Silver Lined,
-DB1453,175,171,144,Silver Lined,
-DB1454,161,173,153,Silver Lined,
-DB1455,144,142,143,Silver Lined,
-DB1456,137,126,122,Silver Lined,
-DB1457,190,154,164,Silver Lined,
-DB1458,183,153,117,Silver Lined,
-DB1459,156,119,110,Silver Lined,
-DB1460,132,112,105,Silver Lined,
-DB1471,237,216,127,"Luster,Transparent",
-DB1472,188,149,168,"Luster,Transparent",
-DB1473,169,129,155,"Luster,Transparent",
-DB1474,194,208,182,"Luster,Transparent",
-DB1475,122,144,202,"Luster,Transparent",
-DB1476,151,153,191,"Luster,Transparent",
-DB1477,157,155,158,"Luster,Transparent",
-DB1478,235,186,127,"Luster,Transparent",
-DB1479,225,169,146,"Luster,Transparent",
-DB1480,222,131,112,"Luster,Transparent",
-DB1481,201,111,110,"Luster,Transparent",
-DB1482,159,119,145,"Luster,Transparent",
-DB1483,114,150,124,"Luster,Transparent",
-DB1484,111,128,122,"Luster,Transparent",
-DB1485,130,121,126,"Luster,Transparent",
-DB1486,110,104,106,"Luster,Transparent",
-DB1490,236,214,201,Opaque,
-DB1491,246,233,163,Opaque,
-DB1492,245,194,167,Opaque,
-DB1493,227,169,165,Opaque,
-DB1494,208,180,202,Opaque,
-DB1495,201,167,158,Opaque,
-DB1496,171,199,176,Opaque,
-DB1497,179,197,235,Opaque,
-DB1498,152,150,151,Opaque,
-DB1500,238,216,203,"AB,Opaque",
-DB1501,243,231,159,"AB,Opaque",
-DB1502,240,189,160,"AB,Opaque",
-DB1503,223,160,153,"AB,Opaque",
-DB1504,207,175,198,"AB,Opaque",
-DB1505,193,159,157,"AB,Opaque",
-DB1506,163,196,175,"AB,Opaque",
-DB1507,177,193,226,"AB,Opaque",
-DB1508,154,152,155,"AB,Opaque",
-DB1510,245,222,214,"Matte,Opaque",
-DB1511,247,231,156,"Matte,Opaque",
-DB1512,244,185,155,"Matte,Opaque",
-DB1513,231,163,162,"Matte,Opaque",
-DB1514,209,181,203,"Matte,Opaque",
-DB1515,199,164,162,"Matte,Opaque",
-DB1516,175,208,187,"Matte,Opaque",
-DB1517,176,197,240,"Matte,Opaque",
-DB1518,152,150,153,"Matte,Opaque",
-DB1520,238,215,207,"AB,Matte,Opaque",
-DB1521,244,231,163,"AB,Matte,Opaque",
-DB1522,240,186,158,"AB,Matte,Opaque",
-DB1523,226,162,160,"AB,Matte,Opaque",
-DB1524,211,183,205,"AB,Matte,Opaque",
-DB1525,200,166,167,"AB,Matte,Opaque",
-DB1526,167,202,182,"AB,Matte,Opaque",
-DB1527,170,194,232,"AB,Matte,Opaque",
-DB1528,152,150,153,"AB,Matte,Opaque",
-DB1530,236,215,198,"Ceylon,Opaque",
-DB1531,243,230,162,"Ceylon,Opaque",
-DB1532,240,189,160,"Ceylon,Opaque",
-DB1533,232,169,160,"Ceylon,Opaque",
-DB1534,204,172,195,"Ceylon,Opaque",
-DB1535,187,158,154,"Ceylon,Opaque",
-DB1536,166,193,174,"Ceylon,Opaque",
-DB1537,178,194,227,"Ceylon,Opaque",
-DB1538,150,148,151,"Ceylon,Opaque",
-DB1561,206,167,126,"Luster,Opaque",
-DB1562,243,191,56,"Luster,Opaque",
-DB1563,230,134,58,"Luster,Opaque",
-DB1564,155,62,83,"Luster,Opaque",
-DB1565,106,68,79,"Luster,Opaque",
-DB1566,95,103,90,"Luster,Opaque",
-DB1567,91,166,169,"Luster,Opaque",
-DB1568,144,159,218,"Luster,Opaque",
-DB1569,85,87,172,"Luster,Opaque",
-DB1570,136,136,144,"Luster,Opaque",
-DB1571,211,169,119,"AB,Opaque",
-DB1572,245,190,38,"AB,Opaque",
-DB1573,242,141,51,"AB,Opaque",
-DB1574,105,62,71,"AB,Opaque",multi shine
-DB1575,82,98,87,"AB,Opaque",multi shine
-DB1576,81,166,171,"AB,Opaque",
-DB1577,144,159,218,"AB,Opaque",
-DB1578,77,83,171,"AB,Opaque",multi shine
-DB1579,135,135,147,"AB,Opaque",
-DB1581,218,171,119,"Matte,Opaque",
-DB1582,247,186,7,"Matte,Opaque",
-DB1583,249,138,7,"Matte,Opaque",
-DB1584,103,37,39,"Matte,Opaque",
-DB1585,80,90,63,"Matte,Opaque",
-DB1586,73,166,171,"Matte,Opaque",
-DB1587,140,159,227,"Matte,Opaque",
-DB1588,67,65,174,"Matte,Opaque",
-DB1589,133,133,145,"Matte,Opaque",
-DB1591,212,174,135,"AB,Matte,Opaque",
-DB1592,243,191,53,"AB,Matte,Opaque",
-DB1593,243,139,66,"AB,Matte,Opaque",
-DB1594,95,107,95,"AB,Matte,Opaque",
-DB1595,90,170,179,"AB,Matte,Opaque",
-DB1596,144,163,222,"AB,Matte,Opaque",
-DB1597,92,94,181,"AB,Matte,Opaque",
-DB1598,145,145,157,"AB,Matte,Opaque",
-DB1671,209,208,206,"AB,Transparent",
-DB1672,130,193,208,"AB,Transparent",
-DB1673,203,144,164,"AB,Transparent",
-DB1674,194,171,163,"AB,Transparent",
-DB1675,157,201,188,"AB,Transparent",
-DB1676,215,202,157,"AB,Transparent",
-DB1677,153,165,181,"AB,Transparent",
-DB1681,113,81,40,Silver Lined,
-DB1682,110,75,35,Silver Lined,
-DB1683,96,53,36,Silver Lined,
-DB1684,69,50,36,Silver Lined,
-DB1685,72,43,37,Silver Lined,
-DB1691,117,85,64,"AB,Silver Lined",multi
-DB1692,107,79,68,"AB,Silver Lined",multi
-DB1694,83,57,68,"AB,Silver Lined",multi
-DB1701,232,222,212,"AB,Transparent",
-DB1702,173,107,57,N/A,glossy
-DB1703,124,90,63,N/A,glossy
-DB1704,136,87,80,N/A,glossy
-DB1705,100,58,62,Transparent,glossy
-DB1706,97,82,87,N/A,glossy
-DB1707,112,196,183,N/A,glossy
-DB1708,58,153,173,N/A,glossy
-DB1709,51,115,159,N/A,glossy
-DB1710,75,64,58,N/A,glossy
-DB1711,162,162,152,N/A,glossy
-DB1712,108,109,111,N/A,glossy
-DB1731,149,128,111,N/A,glossy
-DB1732,118,92,79,AB,multi a bit
-DB1733,154,98,85,AB,multi a bit
-DB1734,148,90,44,AB,multi a bit
-DB1735,122,83,50,AB,multi a bit
-DB1736,118,71,55,AB,multi a bit
-DB1737,127,86,80,AB,multi a bit
-DB1738,119,95,61,AB,multi a bit
-DB1739,87,76,56,AB,multi a bit
-DB1740,78,74,65,AB,multi
-DB1741,74,65,47,AB,multi
-DB1742,175,91,117,AB,
-DB1743,163,43,105,AB,
-DB1744,154,76,136,AB,multi a bit
-DB1745,133,95,108,AB,
-DB1746,142,82,92,AB,
-DB1747,92,45,77,AB,multi
-DB1748,79,58,55,AB,multi
-DB1749,123,102,99,AB,multi a bit
-DB1750,91,57,48,AB,multi
-DB1751,66,43,53,AB,multi
-DB1752,153,120,139,AB,
-DB1753,115,97,155,AB,
-DB1754,99,81,121,AB,multi a bit
-DB1755,66,51,108,AB,multi
-DB1756,67,60,93,AB,multi
-DB1757,107,74,91,AB,multi a bit
-DB1758,86,70,99,AB,multi
-DB1759,103,80,72,AB,
-DB1760,91,78,85,AB,
-DB1761,64,126,163,AB,
-DB1762,72,109,135,AB,
-DB1763,36,55,87,AB,multi
-DB1764,27,84,95,AB,multi a bit
-DB1765,162,165,136,AB,
-DB1766,147,137,112,AB,
-DB1767,85,131,129,AB,
-DB1768,71,103,100,AB,
-DB1769,39,84,90,AB,multi a bit
-DB1770,128,129,131,AB,
-DB1771,146,134,138,AB,
-DB1772,126,115,113,AB,multi a bit
-DB1773,87,80,72,AB,multi a bit
-DB1774,88,88,96,AB,multi
-DB1775,74,73,71,AB,multi a bit
-DB1776,222,200,78,AB,
-DB1777,235,125,36,AB,
-DB1778,169,114,58,AB,
-DB1779,128,81,51,AB,
-DB1780,184,65,41,AB,
-DB1781,116,52,52,AB,
-DB1782,32,129,138,AB,
-DB1783,53,114,158,AB,
-DB1784,83,126,194,AB,
-DB1785,60,65,157,AB,
-DB1786,96,117,78,AB,
-DB1787,54,130,83,AB,
-DB1788,32,94,71,AB,
-DB1789,119,103,129,AB,
-DB1790,99,79,70,AB,
-DB1791,146,116,128,AB,
-DB1792,111,88,98,AB,
-DB1793,115,120,124,AB,
-DB1801,215,171,96,"Dyed Colour,Silk",
-DB1802,151,121,95,"Dyed Colour,Silk",
-DB1803,177,129,107,"Dyed Colour,Silk",
-DB1804,164,98,66,"Dyed Colour,Silk",
-DB1805,149,69,72,"Dyed Colour,Silk",
-DB1806,153,103,128,"Dyed Colour,Silk",
-DB1807,177,72,105,"Dyed Colour,Silk",
-DB1808,158,62,125,"Dyed Colour,Silk",
-DB1809,102,82,133,"Dyed Colour,Silk",
-DB1810,86,63,117,"Dyed Colour,Silk",
-DB1811,59,84,125,"Dyed Colour,Silk",
-DB1812,79,151,148,"Dyed Colour,Silk",
-DB1813,23,129,117,"Dyed Colour,Silk",
-DB1814,50,94,79,"Dyed Colour,Silk",
-DB1815,160,159,128,"Dyed Colour,Silk",
-DB1816,161,160,166,"Dyed Colour,Silk",
-DB1817,123,121,122,"Dyed Colour,Silk",
-DB1818,69,69,71,"Dyed Colour,Silk",
-DB1831,177,166,138,"Duracoat,Galvanised",
-DB1832,168,128,67,"Duracoat,Galvanised",
-DB1833,155,105,54,"Duracoat,Galvanised",
-DB1834,146,109,80,"Duracoat,Galvanised",
-DB1835,168,147,68,"Duracoat,Galvanised",
-DB1836,153,97,70,"Duracoat,Galvanised",
-DB1837,142,73,58,"Duracoat,Galvanised",
-DB1838,138,58,49,"Duracoat,Galvanised",
-DB1839,157,101,100,"Duracoat,Galvanised",
-DB1840,151,83,108,"Duracoat,Galvanised",
-DB1841,157,65,76,"Duracoat,Galvanised",
-DB1842,112,63,56,"Duracoat,Galvanised",
-DB1843,102,73,67,"Duracoat,Galvanised",
-DB1844,98,146,106,"Duracoat,Galvanised",
-DB1845,90,108,92,"Duracoat,Galvanised",
-DB1846,98,119,114,"Duracoat,Galvanised",
-DB1847,59,104,109,"Duracoat,Galvanised",
-DB1848,132,85,103,"Duracoat,Galvanised",
-DB1849,128,69,87,"Duracoat,Galvanised",
-DB1850,99,75,91,"Duracoat,Galvanised",
-DB1851,134,126,107,"Duracoat,Galvanised",
-DB1852,99,86,70,"Duracoat,Galvanised",
-DB1855,252,217,73,"Dyed Colour,Silk",
-DB1856,251,159,136,"Dyed Colour,Silk",
-DB1857,238,243,117,"Dyed Colour,Silk",
-DB1858,194,238,163,"Dyed Colour,Silk",
-DB1859,153,221,240,"Dyed Colour,Silk",
-DB1860,21,101,160,"Dyed Colour,Silk",
-DB1861,246,194,74,"AB,Dyed Colour,Silk",
-DB1862,133,112,95,"AB,Dyed Colour,Silk",
-DB1863,210,133,117,"AB,Dyed Colour,Silk",
-DB1864,196,117,76,"AB,Dyed Colour,Silk",
-DB1865,167,64,83,"AB,Dyed Colour,Silk",
-DB1866,185,116,173,"AB,Dyed Colour,Silk",
-DB1867,215,95,143,"AB,Dyed Colour,Silk",
-DB1868,134,111,183,"AB,Dyed Colour,Silk",
-DB1869,27,163,151,"AB,Dyed Colour,Silk",
-DB1870,64,119,116,"AB,Dyed Colour,Silk",
-DB1871,155,156,161,"AB,Dyed Colour,Silk",
-DB1872,91,91,91,"AB,Dyed Colour,Silk",
-DB1873,233,229,121,"AB,Dyed Colour,Silk",
-DB1874,212,186,163,"AB,Dyed Colour,Silk",
-DB1875,225,122,169,"AB,Dyed Colour,Silk",
-DB1876,131,120,100,"AB,Dyed Colour,Silk",
-DB1877,134,127,121,"AB,Dyed Colour,Pewter,Silk",
-DB1878,118,78,86,"AB,Dyed Colour,Silk",
-DB1879,153,119,110,"AB,Dyed Colour,Silk",
-DB1880,137,89,111,"AB,Dyed Colour,Silk",
-DB1881,80,68,108,"AB,Dyed Colour,Silk",
-DB1882,75,100,130,"AB,Dyed Colour,Silk",
-DB1886,218,195,79,"Luster,Transparent",
-DB1887,229,115,44,"Luster,Transparent",
-DB1888,170,182,70,"Luster,Transparent",
-DB1889,42,112,78,"Luster,Transparent",
-DB1890,74,154,207,"Luster,Transparent",
-DB1891,88,54,45,"Luster,Transparent",
-DB1892,64,52,54,"Luster,Transparent",
-DB1893,122,91,109,"Luster,Transparent",
-DB1894,29,67,52,"Luster,Transparent",
-DB1895,29,88,146,"Luster,Transparent",
-DB1896,51,36,141,"Luster,Transparent",
-DB1897,77,86,95,"Luster,Transparent",
-DB1900,231,214,184,Opaque,"opaque, bit glossy"
-DB1906,217,148,166,Opaque,
-DB1907,212,154,168,"Luster,Opaque",
-DB1910,74,44,44,"Matte,Opaque",
-DB1991,54,41,48,Metallic,
-DB2031,216,238,33,Luminous,glossy
-DB2032,251,203,41,Luminous,glossy
-DB2033,251,153,66,Luminous,glossy
-DB2034,250,122,113,Luminous,glossy
-DB2035,248,72,173,Luminous,glossy
-DB2036,246,101,170,Luminous,glossy
-DB2037,234,80,176,Luminous,glossy
-DB2038,186,75,169,Luminous,glossy
-DB2039,78,173,227,Luminous,glossy
-DB2040,83,218,113,Luminous,glossy
-DB2041,199,162,71,N/A,multi a bit?
-DB2042,191,121,113,N/A,multi a bit?
-DB2043,171,124,72,N/A,multi a bit?
-DB2044,158,101,84,N/A,multi a bit?
-DB2045,232,137,53,N/A,multi a bit?
-DB2046,123,111,61,N/A,multi a bit?
-DB2047,247,101,42,Luminous,glossy
-DB2048,181,83,130,N/A,multi a bit?
-DB2049,174,70,157,N/A,multi a bit?
-DB2050,182,62,136,N/A,multi a bit?
-DB2051,229,64,62,Luminous,glossy
-DB2052,130,135,112,N/A,
-DB2053,53,155,133,N/A,multi a bit?
-DB2054,67,102,124,N/A,
-DB2061,212,150,37,N/A,multi
-DB2062,222,122,73,N/A,multi max
-DB2063,192,86,46,N/A,multi max
-DB2064,203,59,120,N/A,multi max
-DB2065,124,87,138,N/A,multi max
-DB2066,150,164,69,N/A,multi max
-DB2067,72,137,143,N/A,multi max
-DB2068,93,111,135,N/A,multi max
-DB2101,243,222,139,"Duracoat,Opaque",
-DB2102,221,166,66,"Duracoat,Opaque",
-DB2103,243,153,15,"Duracoat,Opaque",
-DB2104,226,124,24,"Duracoat,Opaque",
-DB2105,148,116,103,"Duracoat,Opaque",
-DB2106,164,109,26,"Duracoat,Opaque",
-DB2107,160,100,66,"Duracoat,Opaque",
-DB2108,156,88,25,"Duracoat,Opaque",
-DB2109,135,85,36,"Duracoat,Opaque",
-DB2110,143,93,30,"Duracoat,Opaque",
-DB2111,223,146,118,"Duracoat,Opaque",
-DB2112,234,128,114,"Duracoat,Opaque",
-DB2113,226,136,135,"Duracoat,Opaque",
-DB2114,206,103,96,"Duracoat,Opaque",
-DB2115,219,109,122,"Duracoat,Opaque",
-DB2116,238,138,162,"Duracoat,Opaque",
-DB2117,232,111,142,"Duracoat,Opaque",
-DB2118,146,74,96,"Duracoat,Opaque",
-DB2119,126,41,38,"Duracoat,Opaque",
-DB2120,110,43,34,"Duracoat,Opaque",
-DB2121,106,186,25,"Duracoat,Opaque",
-DB2122,86,219,202,"Duracoat,Opaque",
-DB2123,148,154,110,"Duracoat,Opaque",
-DB2124,143,130,85,"Duracoat,Opaque",
-DB2125,89,157,136,"Duracoat,Opaque",
-DB2126,52,144,81,"Duracoat,Opaque",
-DB2127,38,110,88,"Duracoat,Opaque",
-DB2128,71,153,175,"Duracoat,Opaque",
-DB2129,107,129,142,"Duracoat,Opaque",
-DB2130,25,155,171,"Duracoat,Opaque",
-DB2131,65,109,108,"Duracoat,Opaque",
-DB2132,72,109,138,"Duracoat,Opaque",
-DB2133,18,122,151,"Duracoat,Opaque",
-DB2134,25,106,187,"Duracoat,Opaque",
-DB2135,36,94,134,"Duracoat,Opaque",
-DB2136,157,120,171,"Duracoat,Opaque",
-DB2137,151,98,118,"Duracoat,Opaque",
-DB2138,157,126,196,"Duracoat,Opaque",
-DB2139,119,89,123,"Duracoat,Opaque",
-DB2140,104,73,117,"Duracoat,Opaque",
-DB2141,122,98,24,"Duracoat,Opaque",
-DB2142,101,70,42,"Duracoat,Opaque",
-DB2143,43,57,94,"Duracoat,Dyed Colour,Opaque",
-DB2144,34,37,78,"Duracoat,Dyed Colour,Matte,Opaque",bit glossy
-DB2151,164,100,75,"Duracoat,Silver Lined",glossy
-DB2152,146,60,59,"Duracoat,Silver Lined",glossy
-DB2153,168,75,119,"Duracoat,Silver Lined",glossy
-DB2154,183,72,78,"Duracoat,Silver Lined",glossy
-DB2155,153,112,94,"Duracoat,Silver Lined",glossy
-DB2156,144,79,109,"Duracoat,Silver Lined",glossy
-DB2157,159,101,38,"Duracoat,Silver Lined",glossy
-DB2158,174,70,41,"Duracoat,Silver Lined",glossy
-DB2159,169,71,58,"Duracoat,Silver Lined",glossy
-DB2160,111,55,54,"Duracoat,Silver Lined",glossy
-DB2161,128,63,69,"Duracoat,Silver Lined",glossy
-DB2162,121,68,88,"Duracoat,Silver Lined",glossy
-DB2163,109,112,83,"Duracoat,Silver Lined",glossy
-DB2164,127,105,58,"Duracoat,Silver Lined",glossy
-DB2165,91,108,92,"Duracoat,Silver Lined",glossy
-DB2166,73,79,79,"Duracoat,Silver Lined",glossy
-DB2167,77,77,89,"Duracoat,Silver Lined",glossy
-DB2168,106,79,122,"Duracoat,Silver Lined",glossy
-DB2169,109,76,93,"Duracoat,Silver Lined",glossy
-DB2170,90,66,66,"Duracoat,Silver Lined",glossy
-DB2171,183,131,81,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2172,172,108,83,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2173,150,60,59,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2174,173,86,129,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2175,188,77,94,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2176,83,115,140,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2177,158,117,99,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2178,163,84,69,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2179,121,72,68,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2180,150,89,122,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2181,136,83,103,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2182,117,85,108,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2183,107,77,77,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2184,109,96,90,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2185,98,93,89,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2186,192,157,101,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2187,183,164,61,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2188,83,157,122,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2189,181,107,122,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2190,99,111,101,"Duracoat,Frosted,Silver Lined",matte/ silk
-DB2191,38,43,65,"Duracoat,Dyed Colour,Silver Lined",glossy
-DB2192,40,40,52,"Duracoat,Dyed Colour,Silver Lined",glossy
-DB2201,91,80,74,N/A,glossy/ colorful sides
-DB2203,104,103,101,Matte,matte/ colorful sides
-DB2204,137,136,142,Matte,
-DB2205,70,69,64,N/A,glossy/ colorful sides
-DB2206,67,68,73,N/A,glossy/ colorful sides
-DB2207,78,63,60,N/A,glossy/ colorful sides
-DB2261,43,42,40,"Matte,Picasso",multi
-DB2262,152,129,95,"Matte,Picasso",multi
-DB2263,71,43,42,"Matte,Opaque,Picasso",multi
-DB2264,90,112,99,"Matte,Picasso",multi
-DB2265,124,122,63,"Matte,Picasso",multi
-DB2267,97,80,62,"Matte,Picasso",multi
-DB2271,146,112,103,Opaque,glossy/ bit multi
-DB2272,146,118,53,Opaque,glossy/ bit multi
-DB2273,154,104,53,Opaque,glossy/ bit multi
-DB2274,178,97,52,Opaque,glossy/ bit multi
-DB2275,139,60,63,Opaque,glossy/ bit multi
-DB2281,139,149,151,Opaque,matte/ neutral
-DB2282,139,133,119,Opaque,matte/ neutral
-DB2283,198,182,45,Opaque,matte/ neutral
-DB2284,212,167,48,Opaque,matte/ neutral
-DB2285,221,152,51,Opaque,matte/ neutral
-DB2286,144,89,33,Opaque,matte/ neutral
-DB2287,159,90,31,Opaque,matte/ neutral
-DB2288,146,59,39,Opaque,matte/ neutral
-DB2290,164,154,83,Opaque,matte/ neutral
-DB2291,72,85,59,Opaque,matte/ neutral
-DB2292,99,95,118,Opaque,matte/ neutral
-DB2293,93,82,114,Opaque,matte/ neutral
-DB2294,145,101,114,Opaque,matte/ neutral
-DB2295,116,79,97,Opaque,matte/ neutral
-DB2301,176,153,119,Opaque,bit multi
-DB2302,200,153,71,Opaque,bit multi
-DB2303,167,126,74,Opaque,multi
-DB2305,152,123,119,Opaque,bit multi
-DB2306,158,79,82,Opaque,multi
-DB2308,113,69,82,Opaque,multi
-DB2309,130,139,76,Opaque,multi
-DB2310,117,130,104,Opaque,multi
-DB2311,85,112,97,Opaque,multi
-DB2312,83,106,88,Opaque,bit multi
-DB2313,117,142,136,Opaque,bit multi
-DB2315,85,124,141,Opaque,multi
-DB2316,82,103,120,Opaque,multi
-DB2317,82,96,133,Opaque,multi
-DB2318,95,113,153,Opaque,bit multi
-DB2319,70,75,107,Opaque,bit multi
-DB2320,134,143,152,Opaque,bit multi
-DB2321,126,105,110,Opaque,multi
-DB2322,111,96,115,Opaque,multi
-DB2351,240,188,86,"Duracoat,Opaque",matte
-DB2352,148,94,60,"Duracoat,Opaque",matte
-DB2353,185,95,147,"Duracoat,Opaque",matte
-DB2354,177,62,55,"Duracoat,Opaque",matte
-DB2355,81,51,63,"Duracoat,Opaque",matte
-DB2356,103,161,136,"Duracoat,Opaque",matte
-DB2357,71,72,37,"Duracoat,Opaque",matte
-DB2358,65,81,78,"Duracoat,Opaque",matte
-DB2359,90,73,149,"Duracoat,Opaque",matte
-DB2360,81,52,83,"Duracoat,Opaque",matte
-DB2361,232,209,215,"Duracoat,Opaque",matte
-DB2362,191,181,161,"Duracoat,Opaque",matte
-DB2363,162,148,134,"Duracoat,Opaque",matte
-DB2364,180,158,127,"Duracoat,Opaque",matte
-DB2365,121,102,88,"Duracoat,Opaque",matte
-DB2366,183,177,177,"Duracoat,Opaque",matte
-DB2367,149,137,142,"Duracoat,Opaque",matte
-DB2368,57,51,47,"Duracoat,Opaque",matte
-DB2371,242,202,143,N/A,bit glossy
-DB2372,171,120,39,N/A,glossy/ bit transparent
-DB2373,155,117,94,N/A,glossy/ bit transparent
-DB2374,162,31,39,N/A,glossy/ bit transparent
-DB2375,90,46,59,N/A,glossy/ bit transparent
-DB2376,105,148,66,N/A,glossy/ bit transparent
-DB2377,104,98,50,N/A,glossy/ bit transparent
-DB2378,117,120,99,N/A,glossy/ bit transparent
-DB2379,91,102,96,N/A,glossy/ silver lined?
-DB2380,22,102,111,N/A,glossy/ bit transparent
-DB2381,46,91,84,N/A,lined
-DB2382,34,126,151,N/A,glossy/ bit transparent
-DB2383,74,112,135,N/A,glossy/ bit transparent
-DB2384,42,83,103,N/A,lined
-DB2385,19,78,108,N/A,glossy/ bit transparent
-DB2386,48,56,95,N/A,lined/ glossy
-DB2387,67,73,99,N/A,lined/ glossy
-DB2388,86,102,187,N/A,lined
-DB2389,112,39,92,N/A,glossy/ bit transparent
-DB2390,86,54,77,N/A,lined/ glossy
-DB2391,171,165,165,N/A,lined
-DB2392,132,136,148,N/A,lined
-DB2393,124,124,124,N/A,glossy/ bit transparent
-DB2394,56,57,59,N/A,glossy
-DB2395,121,102,98,N/A,glossy/ bit transparent
-DB2396,119,99,75,N/A,glossy/ bit transparent
-DB2401,223,220,205,"Crystal Glazed Luster,Luster,Matte",matte
-DB2402,217,219,208,"Crystal Glazed Luster,Luster,Matte",matte
-DB2403,104,54,43,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy
-DB2404,150,164,75,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy
-DB2405,109,90,84,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy
-DB2406,104,99,95,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy
-DB2407,55,94,89,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy
-DB2408,113,134,187,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy
-DB2409,121,113,105,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy
-DB2501,212,180,97,"Duracoat,Galvanised",glossy/ metallic
-DB2502,216,201,100,"Duracoat,Galvanised",glossy/ metallic
-DB2503,217,131,108,"Duracoat,Galvanised",glossy/ metallic
-DB2504,162,107,76,"Duracoat,Galvanised",glossy/ metallic
-DB2505,55,194,135,"Duracoat,Galvanised",glossy/ metallic
-DB2506,41,154,126,"Duracoat,Galvanised",glossy/ metallic
-DB2507,45,55,46,"Duracoat,Galvanised",glossy/ metallic
-DB2508,106,62,141,"Duracoat,Galvanised",glossy/ metallic
-DB2509,87,68,134,"Duracoat,Galvanised",glossy/ metallic
-DB2510,66,49,127,"Duracoat,Galvanised",glossy/ metallic
-DB2511,37,62,144,"Duracoat,Galvanised",glossy/ metallic
-DB2512,90,98,74,"Duracoat,Galvanised",glossy/ metallic
-DB2513,47,134,162,"Duracoat,Galvanised",glossy/ metallic
-DB2514,24,101,157,"Duracoat,Galvanised",glossy/ metallic
-DB2515,45,116,138,"Duracoat,Galvanised",glossy/ metallic
-DB2516,39,114,172,"Duracoat,Galvanised",glossy/ metallic
-DB2517,65,90,154,"Duracoat,Galvanised",glossy/ metallic
+Number,R,G,B,Type,Comments,Name
+DB0001,51,51,59,,multi,Gunmetal 
+DB0002,30,37,47,,multi,Metallic Dark Blue AB 
+DB0003,41,43,40,,multi,Metallic Forest Green AB 
+DB0004,37,37,39,,multi,Metallic Dark Plum AB 
+DB0005,44,53,62,,multi,Metallic Variegated Blue AB 
+DB0006,55,62,68,,multi,Gunmetal AB 
+DB0007,51,40,34,,multi,Metallic Brown AB 
+DB0010,23,23,23,,,Black 
+DB0011,60,57,38,,,Metallic Olive 
+DB0012,67,38,40,,,Metallic Dark Raspberry 
+DB0021,100,92,89,,,Nickel Plated 
+DB0022,75,57,47,,,Metallic Dark Bronze 
+DB0023,74,61,55,,multi,Metallic Gold AB 
+DB0024,80,82,61,,multi,Metallic Olive Green AB 
+DB0025,41,55,66,,multi,Metallic Blue AB 
+DB0026,67,66,64,,multi,Metallic Steel AB 
+DB0027,57,68,62,,multi,Metallic Dark Green AB 
+DB0029,97,84,68,,multi,Metallic Golden Olive AB 
+DB0031,181,135,75,,,24d Gold Plated 
+DB0033,169,120,64,,,24kt Gold Lined Crystal 
+DB0034,149,119,83,,,24kt Gold Light Plated 
+DB0035,161,152,135,,,Galvanized Silver 
+DB0037,131,97,87,,,Copper Lined Crystal 
+DB0038,122,116,116,,,Palladium Plated 
+DB0040,133,89,76,,,Copper Plated 
+DB0041,147,141,141,,,Silver Lined Crystal 
+DB0042,178,128,69,,,Silver Lined Gold 
+DB0043,172,46,24,,,Silver Lined Flame Red 
+DB0044,88,136,158,,,Silver Lined Aqua 
+DB0045,194,96,21,,,Silver Lined Orange 
+DB0046,50,99,52,,,Silver Lined Green 
+DB0047,47,45,118,,,Silver Lined Cobalt 
+DB0048,87,86,84,,,Silver Lined Light Grey 
+DB0050,153,153,165,,,Crystal Luster 
+DB0051,225,226,231,,,Crystal AB 
+DB0052,237,218,203,,,Pale Peach Lined Crystal AB 
+DB0053,242,212,126,,,Light Yellow Lined Crystal AB 
+DB0054,191,126,106,,,Dark Peach Lined Crystal AB 
+DB0055,235,212,228,,,Pink Lined Crystal AB 
+DB0056,108,73,105,,glossy/ multi,Raspberry Lined Crystal AB 
+DB0057,73,161,197,,,Aqua Lined Crystal AB 
+DB0058,66,108,132,,glossy/ multi,Marine Blue Lined Crystal AB 
+DB0059,80,78,99,,glossy/ multi,Amethyst Lined Crystal AB 
+DB0060,72,115,106,,glossy/ multi,Lime Lined Crystal AB 
+DB0061,74,52,54,,glossy/ multi,Purple Lined Light Topaz Luster 
+DB0062,146,44,57,,glossy/ multi,Light Cranberry Lined Topaz Luster 
+DB0063,57,66,157,,glossy/ multi,Cobalt Lined Sapphire AB 
+DB0064,102,91,85,,glossy/ multi,Taupe Lined Crystal AB 
+DB0065,134,84,33,,,Lined Topaz AB 
+DB0066,222,221,216,,,White Lined Crystal AB 
+DB0067,215,146,117,,,Light Peach Lined Crystal Luster 
+DB0068,216,129,109,,,Peach Lined Crystal Luster 
+DB0069,160,121,104,,,Blush Lined Crystal AB 
+DB0070,214,109,116,,,Coral Lined Crystal Luster 
+DB0071,227,211,224,,,Transparent Pink AB 
+DB0072,179,109,146,,,Orchid Lined Crystal Luster 
+DB0073,128,60,133,,,Magenta Lined Crystal AB 
+DB0074,151,55,116,,,Fuchsia Lined Crystal AB 
+DB0075,203,69,93,,,Dark Coral Lined Crystal AB 
+DB0076,54,142,206,,,Light Blue Lined Crystal AB 
+DB0077,49,102,170,,,Blue Lined Crystal AB 
+DB0078,150,200,211,,,Aqua Mist Lined Crystal Luster 
+DB0079,62,147,152,,,Turquoise Green Lined Crystal AB 
+DB0080,157,152,174,,,Pale Violet Lined Crystal Luster 
+DB0081,93,98,102,,,Grey Lined Crystal AB 
+DB0082,228,222,226,,,Transparent Pale Pink AB 
+DB0083,179,216,225,,,Transparent Pale Aqua AB 
+DB0084,100,124,128,,glossy/ multi,Sea Foam Lined Crystal AB 
+DB0085,59,78,93,,glossy/ multi,Blue Lined Aqua AB 
+DB0086,66,73,91,,glossy/ multi,Noir Lined Crystal AB 
+DB0087,81,68,62,,glossy/ multi,Root Beer Lined Light Topaz AB 
+DB0088,121,76,70,,glossy/ multi,Berry Lined Light Topaz AB 
+DB0089,82,82,74,,glossy/ multi,Blue Lined Light Topaz AB 
+DB0098,193,53,62,,,Transparent Light Siam Luster 
+DB0099,199,139,87,,,Transparent Light Topaz Luster 
+DB0100,195,135,83,,,Transparent Light Topaz AB 
+DB0101,179,125,89,,,Light Smoky Topaz Gold Luster 
+DB0102,122,84,61,,,Peach Topaz Gold Luster 
+DB0103,106,64,65,,glossy/ multi,Dark Topaz Rainbow Gold Luster 
+DB0104,76,53,59,,glossy/ multi,Claret Rainbow Gold Luster 
+DB0105,75,36,39,,glossy/ multi,Garnet Gold Luster 
+DB0106,212,133,128,,,Shell Pink Luster 
+DB0107,117,115,116,,glossy/ multi,Transparent Grey Rainbow Gold Luster 
+DB0108,98,64,65,,,Cinnamon Gold Luster 
+DB0109,225,210,179,,,Crystal Ivory Gold Luster 
+DB0110,136,150,161,,,Transparent Light Marine Blue Gold Luster 
+DB0111,84,93,102,,glossy/ multi,Transparent Blue Grey Rainbow Gold Luster 
+DB0112,70,111,113,,,Transparent Sea Foam Luster 
+DB0113,38,102,148,,,Transparent Blue Luster 
+DB0114,128,127,125,,,Transparent Silver Grey Gold Luster 
+DB0115,108,74,49,,,Dark Topaz Gold Luster 
+DB0116,96,40,39,,,Wine Gold Luster 
+DB0117,82,59,69,,,Violet Gold Luster 
+DB0118,131,82,41,,,Transparent Saffron Luster 
+DB0119,138,79,35,,,Transparent Honey Luster 
+DB0120,89,42,48,,,Dark Topaz Claret Luster 
+DB0121,112,73,44,,,Apricot Topaz Gold Luster 
+DB0122,81,70,64,,glossy/ multi,Root Beer Gold Luster 
+DB0123,78,64,53,,,Transparent Smoky Olive Luster 
+DB0124,132,121,67,,,Transparent Golden Olive Luster 
+DB0125,62,74,62,,glossy/ multi,Emerald Gold Luster 
+DB0126,101,78,70,,glossy/ multi,Cinnamon Rainbow Gold Luster 
+DB0127,90,79,75,,glossy/ multi,Forest Green Rainbow Gold Luster 
+DB0128,84,70,87,,glossy/ multi,Plum Gold Luster 
+DB0129,93,68,74,,multi,Mulberry Rainbow Gold Luster 
+DB0131,68,61,53,,multi,Opaque Dark Olive Luster 
+DB0132,73,79,93,,multi,Opaque Blue Grey Luster 
+DB0133,110,96,57,,multi,Opaque Golden Olive Luster 
+DB0134,82,81,95,,multi,Opaque Purple Grey Rainbow Luster 
+DB0135,60,56,91,,multi,Opaque Eggplant Luster 
+DB0141,151,150,158,,,Crystal 
+DB0144,103,58,29,,,Silver Lined Dark Topaz 
+DB0145,190,166,40,,,Silver Lined Yellow 
+DB0146,116,87,89,,,Silver Lined Smoky Amethyst 
+DB0147,146,148,51,,,Silver Lined Chartreuse 
+DB0148,33,65,44,,,Silver Lined Emerald 
+DB0149,42,87,118,,,Silver Lined Capri Blue 
+DB0150,70,52,38,,,Silver Lined Root Beer 
+DB0151,231,100,46,,,Transparent Orange AB 
+DB0152,43,106,75,,,Transparent Green AB 
+DB0157,233,197,149,,,Opaque Cream AB 
+DB0158,148,122,133,,,Opaque Mauve AB 
+DB0159,214,47,57,,,Opaque Vermillion Red AB 
+DB0160,238,221,43,,,Opaque Yellow AB 
+DB0161,226,85,57,,,Opaque Orange AB 
+DB0162,162,43,62,,,Opaque Red AB 
+DB0163,77,127,78,,,Opaque Green AB 
+DB0164,65,161,209,,,Opaque Turquoise Blue AB 
+DB0165,51,52,132,,,Opaque Cobalt AB 
+DB0166,56,145,149,,,Opaque Turquoise Green AB 
+DB0167,96,112,197,,,Opaque Medium Blue AB 
+DB0168,105,106,108,,,Opaque Grey AB 
+DB0169,157,173,85,,,Opaque Chartreuse AB 
+DB0170,104,67,58,,,Transparent Topaz AB 
+DB0171,222,183,62,,,Transparent Yellow AB 
+DB0172,177,44,61,,,Transparent Red AB 
+DB0173,118,95,115,,,Transparent Smoky Amethyst AB 
+DB0174,160,179,74,,,Transparent Chartreuse AB 
+DB0175,44,77,68,,,Transparent Emerald AB 
+DB0176,75,153,215,,,Transparent Aqua AB 
+DB0177,38,99,146,,,Transparent Capri Blue AB 
+DB0178,55,56,146,,,Transparent Cobalt AB 
+DB0179,89,97,108,,,Transparent Grey AB 
+DB0180,74,65,68,,,Transparent Root Beer AB 
+DB0181,127,80,50,,,Silver Lined Copper 
+DB0182,50,64,39,,,Silver Lined Jade Green 
+DB0183,45,41,76,,,Silver Lined Royal Blue 
+DB0184,74,63,57,,,Silver Lined Dark Taupe 
+DB0191,147,114,109,,,Copper Lined Opal 
+DB0200,239,239,241,,,White 
+DB0201,237,235,236,,,White Pearl Ceylon 
+DB0202,237,235,236,,,White Pearl AB 
+DB0203,231,214,188,,,Cream Ceylon 
+DB0204,218,177,145,,,Antique Beige Ceylon 
+DB0205,210,164,130,,,Light Caramel Ceylon 
+DB0206,237,154,136,,,Opaque Salmon 
+DB0207,232,144,130,,,Opaque Tea Rose Luster 
+DB0208,202,148,120,,,Opaque Tan Luster 
+DB0209,172,175,190,,,Opaque Light Grey Luster 
+DB0210,182,129,149,,,Opaque Antique Rose Luster 
+DB0211,206,197,180,,,Opaque Limestone Luster 
+DB0214,169,34,48,,,Opaque Red Luster 
+DB0215,67,159,200,,,Opaque Turquoise Blue Luster 
+DB0216,41,41,127,,,Opaque Cobalt Luster 
+DB0217,75,146,166,,,Opaque Turquoise Green Luster 
+DB0218,69,135,169,,,Opaque Medium Turquoise Blue Luster 
+DB0220,232,230,233,,,White Opal 
+DB0221,199,188,182,,,Gilt Lined White Opal 
+DB0222,229,227,228,,,White Opal AB 
+DB0223,184,173,169,,,Silver Lined Opal AB 
+DB0230,187,139,91,,,24kt Gold Lined Opal 
+DB0231,199,198,206,,,Crystal Ceylon 
+DB0232,238,222,137,,,Light Lemon Ice Ceylon 
+DB0233,241,189,87,,,Light Daffodil Ceylon 
+DB0234,238,192,194,,,Baby Pink Ceylon 
+DB0235,234,119,100,,,Salmon Ceylon 
+DB0236,219,112,132,,,Carnation Pink Ceylon 
+DB0237,129,199,162,,,Mint Green Ceylon 
+DB0238,51,142,135,,,Aqua Green Ceylon 
+DB0239,108,202,228,,,Light Aqua Ceylon 
+DB0240,79,118,213,,,Dark Sky Blue Ceylon 
+DB0241,169,156,184,,,Pale Violet Ceylon 
+DB0242,120,125,145,,,Silver Grey Ceylon 
+DB0243,86,101,160,,,Blue Ceylon 
+DB0244,246,186,214,,,Pink Ceylon 
+DB0245,246,168,208,,,Cotton Candy Pink Ceylon 
+DB0246,245,147,194,,,Dark Cotton Candy Pink Ceylon 
+DB0247,211,97,185,,,Hot Pink Ceylon 
+DB0248,221,154,221,,,Light Orchid Ceylon 
+DB0249,134,110,184,,,Purple Ceylon 
+DB0250,103,95,136,,,Amethyst Ceylon 
+DB0251,129,128,126,,,Opaque Smoke Grey Luster 
+DB0252,150,151,153,,,Opaque Grey Luster 
+DB0253,147,98,127,,,Opaque Dark Orchid Luster 
+DB0254,87,76,70,,,Bronze Luster 
+DB0256,157,127,127,,,Light Cinnamon Ceylon 
+DB0257,153,167,204,,,Sky Blue Ceylon 
+DB0261,187,170,152,,,Opaque Linen Luster 
+DB0262,156,159,72,,,Opaque Chartreuse Luster 
+DB0263,107,112,82,,,Opaque Cactus Luster 
+DB0264,70,99,103,,,Opaque Mallard Luster 
+DB0265,118,91,108,,,Opaque Mauve Luster 
+DB0266,95,109,146,,,Opaque Denim Blue Luster 
+DB0267,82,93,123,,,Opaque Blueberry Luster 
+DB0268,88,88,90,,,Opaque Smoke Luster 
+DB0271,184,188,200,,,Sparkling Silver Grey Lined Crystal 
+DB0272,153,102,45,,,Goldenrod Lined Topaz AB 
+DB0273,66,68,54,,,Forest Green Lined Topaz AB 
+DB0274,59,110,51,,,Lined Pea Green Luster 
+DB0275,37,61,65,,,Lined Emerald Luster 
+DB0276,50,72,85,,,Lined Emerald AB 
+DB0277,52,45,89,,,Transparent Cobalt Luster 
+DB0278,66,63,84,,,Lined Cobalt Luster 
+DB0279,63,62,68,,,Cranberry Lined Emerald Luster 
+DB0280,103,56,62,,,Cranberry Lined Crystal Luster 
+DB0281,108,54,103,,,Fuchsia Lined Crystal Luster 
+DB0282,110,54,57,,,Cranberry Lined Light Topaz Luster 
+DB0283,128,71,80,,,Cranberry Lined Peridot Luster 
+DB0284,72,73,129,,,Sparkling Purple Lined Aqua Luster 
+DB0285,52,67,126,,,Blue Lined Aqua 
+DB0286,50,64,75,,,Midnight Blue Lined Aqua AB 
+DB0287,93,71,57,,,Cinnamon Lined Topaz Luster 
+DB0288,127,101,74,,,White Lined Saffron AB 
+DB0295,130,40,40,,,Lined Red AB 
+DB0296,65,40,46,,,Lined Ruby AB 
+DB0297,63,47,50,,,Gamet Lined Ruby AB 
+DB0301,73,77,89,,,Matte Gunmetal 
+DB0306,71,71,73,,,Matte Metallic State 
+DB0307,85,84,82,,,Matte Metallic Silver Grey 
+DB0310,34,34,32,,,Matte Black 
+DB0311,57,50,44,,,Matte Metallic Dark Olive 
+DB0312,69,56,63,,,Matte Metallic Dark Raspberry AB 
+DB0321,116,105,103,,,Matte Nickel Plated 
+DB0322,89,70,55,,,Matte Metallic Dark Bronze 
+DB0323,62,58,72,,,Matte Metallic Copper Rainbow AB 
+DB0324,91,92,84,,,Matte Metallic Patina AB 
+DB0325,57,65,76,,,Matte Metallic Blue AB 
+DB0327,32,36,30,,??,Matte Metallic Dark Green Al 
+DB0331,198,147,95,,??,Malte 24kt Gold Plated 
+DB0334,192,162,133,,??,Matte 24kt Gold Light Plated 
+DB0335,222,211,199,,??,Matte Galvanized Silver 
+DB0340,125,85,75,,,Matte Copper Plated 
+DB0351,235,233,236,,,Matte White 
+DB0352,233,217,191,,,Matte Opaque Cream 
+DB0353,219,178,148,,,Malte Opaque Antique Beige 
+DB0354,209,166,149,,,Matte Opaque Blush 
+DB0355,170,126,143,,,Matte Opaque Dusty Orchid 
+DB0356,159,144,165,,,Matte Opaque Light Mauve 
+DB0357,185,185,197,,,Matte Opaque Pale Blue Grey 
+DB0361,66,69,136,,,Opaque Cobalt Satin 
+DB0362,183,48,78,,,Opaque Red Satin 
+DB0371,124,106,68,,,Opaque Golden Olive Satin 
+DB0372,115,108,79,,,Opaque Light Olive Satin 
+DB0373,82,97,90,,,Metallic Sage Green Satin 
+DB0374,107,132,126,,,Opaque Sea Foam Satin 
+DB0375,89,138,145,,,Opaque Turquoise Blue Satin 
+DB0376,88,105,123,,,Metallic Steel Blue Satin 
+DB0377,62,66,103,,,Matte Metallic Royal Blue 
+DB0378,128,42,41,,,Matte Metallic Brick Red 
+DB0379,142,111,119,,,Opaque Dusty Mauve Satin 
+DB0380,92,73,69,,,Matte Metallic Khaki AB 
+DB0381,110,123,142,,,Transparent Shadow Grey Satin 
+DB0382,192,156,104,,,Transparent Pale Topaz Satin 
+DB0383,138,132,120,,,Transparent Oyster Satin 
+DB0384,77,65,49,,,Transparent Smoky Quartz Satin 
+DB0385,96,128,123,,,Sea Green Satin 
+DB0386,75,67,82,,,Transparent Dried Lavender Sat?n 
+DB0387,66,75,84,,,Transparent Montana Satin 
+DB0388,181,165,139,,,Opaque Bone Satin 
+DB0389,188,138,105,,,Opaque Light Terracotta Satin 
+DB0390,121,104,74,,,Opaque Green Tea Satin 
+DB0391,94,97,68,,,Opaque Olive Satin 
+DB0410,169,126,81,Galvanised,,Galvanized Yellow Gold 
+DB0411,170,129,101,"Dyed Colour,Galvanised",,Galvanized Apricot Gold 
+DB0412,165,150,95,"Dyed Colour,Galvanised",,Galvanized Yellow 
+DB0413,124,139,110,,,Galvanized Moss Green 
+DB0414,106,136,134,,,Galvanized Dark Sea Foam 
+DB0415,106,138,133,,,Galvanized Turquoise Green 
+DB0416,100,131,134,,,Galvanized Sea Foam 
+DB0417,158,135,129,,,Galvanized Dusty Mauve 
+DB0418,176,140,142,,,Galvanized Blush 
+DB0419,147,126,135,,,Galvanized Dusty Orchid 
+DB0420,171,97,112,,,Galvanized Dark Coral 
+DB0421,147,83,39,,,Galvanized Burnt Orange 
+DB0422,146,47,127,,,Galvanized Fuschia 
+DB0423,140,84,83,,,Galvanized Berry 
+DB0424,175,149,56,,,Galvanized Zest 
+DB0425,152,60,133,,,Galvanized Hot Pink 
+DB0426,76,144,123,,,Galvanized Dark Mint Green 
+DB0427,49,111,124,,,Galvanized Dark Aqua 
+DB0428,143,70,81,,,Galvanized Light Cranberry 
+DB0429,145,128,136,,,Galvanized Light Smoky Amethyst 
+DB0430,94,71,117,,,Galvanized Dark Lilac 
+DB0431,117,49,122,,,Galvanized Magenta 
+DB0432,79,107,110,,,Galvanized Peacock Blue 
+DB0433,168,138,112,,,Galvanized Champagne 
+DB0434,165,113,89,,,Galvanized Muscat 
+DB0435,170,118,122,,,Galvanized Pink Blush 
+DB0436,126,114,98,,,Galvanized Pewter 
+DB0451,45,63,73,,,Galvanized Dark Steel Blue 
+DB0452,80,75,71,,,Galvanized Dark Grey 
+DB0453,61,61,73,,,Galvanized Gunmetal 
+DB0454,94,71,77,,,Galvanized Smoky Amethyst 
+DB0455,77,63,76,,,Galvanized Dark Plum 
+DB0456,86,76,49,,,Galvanized Olive 
+DB0457,76,76,74,,,Galvanized Dark Steel Green 
+DB0458,52,75,69,,,Galvanized Dark Teal Green 
+DB0459,36,62,77,,,Galvanized MidnightAqua 
+DB0460,83,61,48,,,Galvanized Cinnamon Brown 
+DB0461,83,50,33,,,Galvanized Tarnished Copper 
+DB0462,108,84,82,,,Galvanized Dark Mauve 
+DB0463,80,35,74,,,Galvanized Dark Magenta 
+DB0464,69,54,75,,,Galvanized Eggplant 
+DB0465,51,60,69,,,Galvanized Midnight Blue 
+DB0501,143,106,54,,multi,24id Gold AB 
+DB0505,118,78,42,,multi,24kt Dark Yellow Gold 
+DB0506,106,73,56,,multi,24x1 Red Gold AR 
+DB0507,127,98,66,,multi,24kt Pink Gold AB 
+DB0508,117,105,79,,multi,24kt Green Gold AB 
+DB0514,59,76,94,,multi,Nickel AB 
+DB0541,104,89,92,,multi,Spectrum Gold Palladium Plated AB 
+DB0542,86,73,80,,multi,Amethyst Gold AB Palladium Plated AB 
+DB0543,77,79,100,,multi,Violet Gold AB Palladium Plated AB 
+DB0544,99,107,118,,multi,Blue Gold AB Palladium Plated AB 
+DB0545,97,106,105,,multi,Silver Blue Gold AB Palladium Plated AB 
+DB0546,124,115,98,,multi,Silver Gold AB Palladium Plated AB 
+DB0551,186,182,173,,,Bright Sterling Silver Plated
+DB0601,112,35,25,silver lined,,Silver Lined Dark Burnt Orange 
+DB0602,138,28,27,silver lined,,Silver Lined Red 
+DB0603,109,32,26,silver lined,,Silver Lined Brick Red 
+DB0604,83,65,29,silver lined,,Silver Lined Golden Olive 
+DB0605,26,75,53,silver lined,,Silver Lined Emerald 
+DB0606,51,53,50,silver lined,,Silver Lined Dark Olive 
+DB0607,41,77,77,silver lined,,Silver Lined Teal 
+DB0608,36,64,88,silver lined,,Silver Lined Blue Zircon 
+DB0609,50,34,60,silver lined,,Silver Lined Dark Purple 
+DB0610,59,34,102,silver lined,,Silver Lined Dark Violet 
+DB0611,53,36,44,silver lined,,Silver Lined Wine 
+DB0612,69,41,27,silver lined,,Silver Lined Dark Topaz 
+DB0613,52,52,44,silver lined,,Silver Lined Dark Grey 
+DB0621,207,164,111,"dyed color, silver lined",,Light Apricot Silver Lined Alabaster 
+DB0622,169,98,80,"dyed color, silver lined",,Peach Silver Lined Alabaster 
+DB0623,205,181,95,"dyed color, silver lined",,Jonquil Silver Lined Alabaster 
+DB0624,203,154,147,"dyed color, silver lined",,Light Rose Silver Lined Alabaster 
+DB0625,190,107,127,"dyed color, silver lined",,Rose Silver Lined Alabaster 
+DB0626,104,174,163,"dyed color, silver lined",,Light Aqua Green Silver Lined Alabaster 
+DB0627,42,153,136,"dyed color, silver lined",,Aqua Green Silver Lined Alabaster 
+DB0628,103,150,168,"dyed color, silver lined",,Aqua Silver Lined Nabaster 
+DB0629,158,131,164,"dyed color, silver lined",,Lilac Silver Lined Alabaster 
+DB0630,125,118,112,"dyed color, silver lined",,Light Smoke Grey Silver Lined Alabaster 
+DB0631,95,90,84,"dyed color, silver lined",,Rustic Grey Silver Lined Alabaster 
+DB0651,230,135,27,opaque,,Opaque Squash 
+DB0652,101,101,101,"dyed color, opaque",,Opaque Grey 
+DB0653,146,89,20,opaque,,Opaque Pumpkin 
+DB0654,116,29,37,opaque,,Opaque Maroon 
+DB0655,24,115,56,"dyed color, opaque",,Opaque Kelly Green 
+DB0656,15,87,65,opaque,,Opaque Green 
+DB0657,77,68,50,"dyed color, opaque",,Opaque Olive Drab 
+DB0658,19,162,178,"dyed color, opaque",,Opaque Turquoise Green 
+DB0659,18,125,193,dyed color,,Opaque Dark Turquoise Blue 
+DB0660,107,84,126,"dyed color, opaque",,Opaque Dark Orchid 
+DB0661,77,83,171,"dyed color, opaque",,Opaque Bright Purple 
+DB0662,91,76,95,dyed color,,Opaque Mulberry 
+DB0663,46,60,35,dyed color,,Opaque Olive 
+DB0670,203,204,209,"ab, silk",,Crystal AB Satin 
+DB0671,129,110,78,silver lined,,Variegated Taupe Satin 
+DB0672,226,218,182,silk,,Cream Satin 
+DB0673,207,181,154,silk,,Antique Ivory Satin 
+DB0674,217,167,130,silk,,Light Topaz Satin 
+DB0675,223,185,206,silk,,Pale Pink Satin 
+DB0676,200,200,212,silk,,Pale Grey Satin 
+DB0677,174,180,202,silk,,Light Grey Satin 
+DB0678,168,124,137,silk,,Antique Rose Satin 
+DB0679,150,144,144,silk,,Light Taupe Satin 
+DB0680,148,127,110,"dyed colour, silk",,Smokey Quartz Satin 
+DB0681,184,103,22,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Orange 
+DB0682,186,82,27,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Dark Orange 
+DB0683,157,42,35,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Red Orange 
+DB0684,195,103,80,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Watermelon 
+DB0685,155,92,75,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Light Cranberry 
+DB0686,151,124,79,"Dyed Colour,Matte,Silver Lined",,rosted Silver Lined Saffron 
+DB0687,160,127,73,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Yellow Green 
+DB0688,41,99,59,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Green 
+DB0689,87,93,93,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Moss Green 
+DB0690,52,75,57,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Leaf Green 
+DB0691,77,140,155,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Mint Green 
+DB0692,68,131,166,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Aqua 
+DB0693,42,54,106,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Dusk Blue 
+DB0694,95,101,159,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Purple 
+DB0695,88,71,89,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Mulberry 
+DB0696,55,44,122,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Dark Blue Violet 
+DB0697,90,92,91,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Gray 
+DB0702,199,123,37,transparent,,Transparent Light Topaz 
+DB0703,237,95,13,transparent,,Transparent Orange 
+DB0704,191,17,18,transparent,,Transparent Red Orange 
+DB0705,18,75,32,transparent,,Transparent Green 
+DB0706,28,128,206,transparent,,Transparent Aqua 
+DB0707,33,19,117,transparent,,Transparent Cobalt 
+DB0708,63,69,69,transparent,,Transparent Grey 
+DB0709,76,32,23,transparent,,Transparent Dark Topaz 
+DB0710,226,188,27,transparent,,Transparent Yellow 
+DB0711,96,60,72,transparent,,Transparent Smoky Amethyst 
+DB0712,144,165,24,transparent,,Transparent Chartreuse 
+DB0713,24,51,34,transparent,,Transparent Dark Emerald 
+DB0714,22,72,123,transparent,,Transparent Capri Blue 
+DB0715,54,39,34,transparent,,Transparent Root Beer 
+DB0721,237,221,12,opaque,,Opaque Yellow 
+DB0722,239,74,18,opaque,,Opaque Orange 
+DB0723,189,22,32,opaque,,Opaque Red 
+DB0724,69,121,59,opaque,,Opaque Green 
+DB0725,69,161,198,opaque,,Opaque Turquoise Blue 
+DB0726,34,24,123,opaque,,Opaque Cobalt 
+DB0727,223,37,25,opaque,,Opaque Vermillion Red 
+DB0728,149,119,131,opaque,,Opaque Mauve 
+DB0729,49,147,148,opaque,,Opaque Turquoise Green 
+DB0730,87,103,201,opaque,,Opaque Periwinkle 
+DB0731,104,103,101,opaque,,Opaque Grey 
+DB0732,232,203,163,opaque,,Opaque Dark Cream 
+DB0733,157,175,73,opaque,,Opaque Chartreuse 
+DB0734,53,29,27,opaque,,Opaque Chocolate 
+DB0741,211,210,218,"Matte,Transparent",,Matte Crystal 
+DB0742,206,128,53,"Matte,Transparent",,Matte Transparent Light Topaz 
+DB0743,228,200,31,"Matte,Transparent",,Matte Transparent Yellow 
+DB0744,247,108,13,"Matte,Transparent",,Matte Transparent Orange 
+DB0745,190,24,28,"Matte,Transparent",,Matte Transparent Red Orange 
+DB0746,19,90,46,"Matte,Transparent",,Matte Transparent Green 
+DB0747,54,144,222,"Matte,Transparent",,Matte Transparent Aqua 
+DB0748,39,21,131,"Matte,Transparent",,Matte Transparent Coball 
+DB0749,80,86,86,"Matte,Transparent",,Matte Transparent Gray 
+DB0751,240,219,4,"Matte,Opaque",,Matte Opaque Yellow 
+DB0752,238,68,17,"Matte,Opaque",,Malte Opaque Orange 
+DB0753,194,18,31,"Matte,Opaque",,Matte Opaque Red 
+DB0754,64,120,55,"Matte,Opaque",,Matte Opaque Green 
+DB0755,53,163,216,"Matte,Opaque",,Matte Opaque Turquoise Blue 
+DB0756,35,27,138,"Matte,Opaque",,Matte Opaque Cobalt 
+DB0757,216,20,21,"Matte,Opaque",,Matte Opaque Vermillion Red 
+DB0758,141,110,126,"Matte,Opaque",,Matte Opaque Mauve 
+DB0759,55,148,155,"Matte,Opaque",,Matte Opaque Turquoise Green 
+DB0760,98,112,209,"Matte,Opaque",,Matte Opaque Periwinkle 
+DB0761,107,106,104,"Matte,Opaque",,Matte Opaque Grey 
+DB0762,234,210,174,"Matte,Opaque",,Matle Opaque Dark Cream 
+DB0763,163,181,79,"Matte,Opaque",,Matte Opaque Chartreuse 
+DB0764,93,50,33,"Matte,Transparent",,Matte Transparent Dark Topaz 
+DB0765,115,79,91,"Matte,Transparent",,Matte Transparent Smoky Amethyst 
+DB0766,165,179,40,"Matte,Transparent",,Matte Transparent Chartreuse 
+DB0767,25,58,39,"Matte,Transparent",,Matte Transparent Dark Emerald 
+DB0768,18,77,135,"Matte,Transparent",,Matte Transparent Capri Blue 
+DB0769,57,42,37,"Matte,Transparent",,Matte Transparent Root Beer 
+DB0771,136,120,84,"Dyed Colour,Matte,Transparent",,Frosted Transparent Baffron 
+DB0772,96,76,69,"Dyed Colour,Matte,Transparent",,Frosted Transparent Cinnamon 
+DB0773,110,55,52,"Dyed Colour,Matte,Transparent",,Frosted Transparent Berry 
+DB0774,147,24,27,"Dyed Colour,Matte,Transparent",,Frosted Transparent Red 
+DB0775,149,20,50,"Dyed Colour,Matte,Transparent",,Frosted Transparent Scarlet 
+DB0776,20,67,49,"Dyed Colour,Matte,Transparent",,Frosted Transparent Emerald 
+DB0777,167,84,40,"Dyed Colour,Matte,Transparent",,Frosted Transparent Topaz 
+DB0778,156,78,74,"Dyed Colour,Matte,Transparent",,Frosted Transparent Dark Rose 
+DB0779,169,44,40,"Dyed Colour,Matte,Transparent",,Frosted Transparent Watermelon 
+DB0780,211,53,86,"Dyed Colour,Matte,Transparent",,Frosted Transparent Bubble Gum Pink 
+DB0781,181,88,45,"Dyed Colour,Matte,Transparent",,Frosted Transparent Amber 
+DB0782,62,44,58,"Dyed Colour,Matte,Transparent",,Frosted Transparent Plum 
+DB0783,102,68,188,"Dyed Colour,Matte,Transparent",,Frosted Transparent Purple 
+DB0784,58,41,49,"Dyed Colour,Matte,Transparent",,Frosted Transparent Dark Smoky Amethyst 
+DB0785,48,37,93,"Dyed Colour,Matte,Transparent",,Frosted Transparent Cobalt 
+DB0786,8,111,118,"Dyed Colour,Matte,Transparent",,Frosted Transparent Teal 
+DB0787,12,86,161,"Dyed Colour,Matte,Transparent",,Frosted Transparent Capri Blue 
+DB0788,27,67,77,"Dyed Colour,Matte,Transparent",,Frosted Transparent Dark Teal 
+DB0791,156,20,34,Opaque,,Frosted Opaque Bright Red 
+DB0792,79,109,120,"Dyed Colour,Matte",,Frosted Opaque Shale 
+DB0793,9,150,159,"Dyed Colour,Matte,Opaque",,Frosted Opaque Turquoise Green 
+DB0794,123,64,32,"Matte,Opaque",,Frosted Opaque Sienna 
+DB0795,175,53,29,"Dyed Colour,Matte,Opaque",,Frosted Opaque Cinnabar 
+DB0796,151,40,46,"Dyed Colour,Matte,Opaque",,Frosted Opaque Red 
+DB0797,61,79,53,"Dyed Colour,Matte,Opaque",,Frosted Opaque Jade Green 
+DB0798,55,119,144,"Dyed Colour,Matte,Opaque",,Frosted Opaque Capri Blue 
+DB0799,92,92,126,"Dyed Colour,Matte,Opaque",,Frosted Opaque Lavender 
+DB0800,153,103,128,"Matte,Opaque",,Frosted Opaque Antique Rose 
+DB0820,213,175,196,Silk,,Pale Rose Salin 
+DB0821,242,190,153,Silk,,Pale Apricot Satin 
+DB0822,164,152,154,Silk,,Light Tan Satin 
+DB0823,245,225,138,Silk,,Lemon Ice Satin 
+DB0824,238,170,147,Silk,,Light Peach Satin 
+DB0825,238,152,139,Silk,,Salmon Satin 
+DB0826,167,133,124,Silk,,Blush Satin 
+DB0827,138,124,123,Silk,,Tan Satin 
+DB0828,149,185,157,Silk,,Mint Green Satin 
+DB0829,146,158,146,Silk,,Pale Moss Green Satin 
+DB0830,181,208,235,Silk,,Pale Aqua Satin 
+DB0831,154,171,217,Silk,,Light Periwinkle Satin 
+DB0832,183,186,221,Silk,,Pale Violet Satin 
+DB0833,200,162,183,Silk,,Pale Orchid Satin 
+DB0852,216,152,106,"AB,Matte",multi,Matte Transparent Light Topaz ABB 
+DB0853,121,85,87,"AB,Matte",multi,Matte Transparent Dark Topaz AB 
+DB0854,225,200,97,"AB,Matte",multi,Matte Transparent Yellow AB 
+DB0855,245,119,68,"AB,Matte",multi,Matte Transparent Orange AB 
+DB0856,212,65,83,"AB,Matte",multi,Matte Transparent Red Orange AB 
+DB0857,133,109,125,"AB,Matte",multi,Matte Transparent Smoky Amethyst AB 
+DB0858,63,121,96,"AB,Matte",multi,Matte Transparent Green AB 
+DB0859,60,92,89,"AB,Matte",multi,Matte Transparent Dark Emerald AB 
+DB0860,172,189,95,"AB,Matte",multi,Matte Transparent Chartreuse AB 
+DB0861,95,166,230,"AB,Matte",multi,Matte Transparent Aqua AB 
+DB0862,49,109,163,"AB,Matte",multi,Matte Transparent Capri Blue AB 
+DB0863,104,112,125,"AB,Matte",multi,Malte Transparent Grey AB 
+DB0864,75,71,158,"AB,Matte",multi,Matte Transparent Cobalt AB 
+DB0865,87,80,88,"AB,Matte",multi,Matte Brown AB 
+DB0867,143,66,84,"AB,Matte,Transparent",multi,Matte Transparent Dark Cranberry AB 
+DB0868,236,200,202,"AB,Matte,Transparent",multi,Matte Transparent Pink Mist AB 
+DB0869,103,86,104,"AB,Matte,Transparent",multi,Matte Transparent Mauve AB 
+DB0870,110,105,128,"Matte,Transparent",multi,Matte Transparent Light Amethyst AB 
+DB0871,67,74,92,"AB,Matte,Opaque",multi,Matte Black AB 
+DB0872,240,95,76,"AB,Matte",multi,Matte Opaque Orange AB 
+DB0873,214,65,84,"AB,Matte,Opaque",multi,Matte Opaque Vermillion Red AB 
+DB0874,188,60,83,"AB,Matte,Opaque",multi,Matte Opaque Red AB 
+DB0875,150,127,147,"AB,Matte,Opaque",,Matte Opaque Mauve AB 
+DB0876,165,184,102,"AB,Matte,Opaque",,Matte Opaque Chartreuse AB 
+DB0877,85,132,96,"AB,Matte,Opaque",multi,Matte Opaque Green AB 
+DB0878,79,153,162,"AB,Matte,Opaque",,Matte Opaque Turquoise Green AB 
+DB0879,85,168,212,"AB,Matte,Opaque",,Matte Opaque Turquoise Blue AB 
+DB0880,76,75,143,"AB,Matte,Opaque",multi,Matte Opaque Cobalt AB 
+DB0881,110,127,209,"AB,Matte,Opaque",,Matte Opaque Periwinkle AB 
+DB0882,119,119,121,"AB,Matte,Opaque",,Matte Opaque Grey AB 
+DB0883,233,210,176,"AB,Matte,Opaque",,Matte Opaque Dark Cream AB 
+DB0884,95,74,83,"AB,Matte,Opaque",multi,Matte Opaque Dark Grey AB 
+DB0901,154,113,85,N/A,,Sparkling Honey Beige Lined Crystal 
+DB0902,171,98,128,N/A,,Sparkling Peony Pink Lined Crystal 
+DB0903,167,163,115,N/A,,Sparkling Celery Lined Crystal 
+DB0904,41,130,124,N/A,,Sparkling Aqua Green Lined Crystal 
+DB0905,50,117,162,N/A,,Sparkling Blue Lined Crystal 
+DB0906,95,75,128,N/A,,Sparkling Purple Lined Crystal 
+DB0907,140,119,102,N/A,,Sparkling Beige Lined Crystal 
+DB0908,128,119,76,N/A,,Sparkling Beige Lined Chartreuse 
+DB0909,128,102,53,N/A,,Sparkling Honey Beige Lined Chartreuse 
+DB0910,158,154,91,N/A,,Sparkling Yellow Green Lined Crystal 
+DB0911,155,120,64,N/A,,Sparkling Light Peridot Lined Topaz 
+DB0912,108,85,91,N/A,,Sparkling Cinnamon Lined Topaz 
+DB0913,148,85,78,N/A,,Sparkling Salmon Lined Topaz 
+DB0914,174,79,109,N/A,,Sparkling Rose Lined Crystal 
+DB0915,131,87,78,N/A,,Sparkling Ginger Lined Crystal 
+DB0916,61,117,78,N/A,,Sparkling Green Lined Chartreuse 
+DB0917,79,103,79,N/A,,Sparkling Turquoise Green Lined Topaz 
+DB0918,38,114,112,N/A,,Sparkling Dark Aqua Green Lined Crystal 
+DB0919,40,86,84,N/A,,Sparkling Dark Teal Lined Chartreuse 
+DB0920,43,99,148,N/A,,Sparkling Cerulean Blue Lined Crystal 
+DB0921,58,78,87,N/A,,Sparkling Blue Lined Topaz 
+DB0922,104,83,124,N/A,,Spariding Orchid Lined Aqua 
+DB0923,85,73,113,N/A,,Sparding Amethyst Lined Crystal 
+DB0924,125,68,77,N/A,,Sparkling Cranberry Lined Crystal 
+DB0925,75,75,87,N/A,,Sparkling Charcoal Lined Crystal 
+DB0981,123,97,70,Metallic,multi,Sparkling Lined Metallic Sand Dune
+DB0982,136,96,104,N/A,multi,Sparkling Lined Purple/Salmon/Gold Tutti Frutti
+DB0983,146,146,74,N/A,multi,Sparkling Lined Lemon/Lime
+DB0984,59,116,99,N/A,multi,Sparkling Lined Aqua/Teal Fresco
+DB0985,55,99,108,N/A,multi,Sparkling Lined Green/Blue Caribbean
+DB0986,104,100,114,N/A,multi,Sparkling Lined Purple/Gold Majestic
+DB1001,61,61,69,Metallic,,Metallic Plum Emerald Gold AB 
+DB1002,59,38,35,Metallic,,Metallic Dark Copper Gold AB 
+DB1003,41,48,54,Metallic,,Metallic Midnight Blue Gold AB 
+DB1004,66,54,58,Metallic,,Metallic: Dark Plum Gold AB 
+DB1005,44,60,83,Metallic,,Metallic Royal Purple GoldAB 
+DB1006,50,70,71,Metallic,,Metallic Blue Green Gold AB 
+DB1010,109,83,70,"Luster,Metallic",,Metallic Earth Batik Gold AB 
+DB1011,96,85,83,Luster,,Metallic Dusty Mauve Gold AB 
+DB1012,90,64,75,Luster,,Metallic Medium Raspberry Gold AB 
+DB1013,107,73,71,Luster,,Metallic Tea Berry Gold AB 
+DB1014,95,74,83,"Luster,Metallic",,Metallic Thistle Gold AB 
+DB1015,121,77,94,Luster,,Metallic Raspberry Gold AB 
+DB1016,119,69,72,"Luster,Metallic",,Metallic Rhubarb Gold AB 
+DB1051,73,41,28,"Matte,Metallic",,Matte Metallic Bronze Gold AB 
+DB1052,56,67,85,"Matte,Metallic",,Matte Metallic Blueberry Gold AB 
+DB1053,64,61,68,"Matte,Metallic",,Matte Metallic Plum Emerald Gold AB 
+DB1054,65,70,92,"Matte,Metallic",,Matte Metallic Plum Gold ABB 
+DB1055,89,75,72,"Matte,Metallic",,Matte Metallic Grey Dusk Gold AB 
+DB1056,95,83,87,"Matte,Metallic",,Matte Metallic Taupe Gold AB 
+DB1061,123,99,97,"AB,Matte,Metallic",,Matte Metallic Dusky Clay AB 
+DB1062,104,91,101,"AB,Matte,Metallic",,Matte Metallic Purple Sage Gold AB 
+DB1063,108,112,123,"AB,Matte,Metallic",,Matte Metallic Blue Slate Gold AB 
+DB1064,115,94,103,"AB,Matte,Metallic",,Matte Metallic Orchid Gold AB 
+DB1065,122,108,125,"AB,Matte,Metallic",,Matte Metallic Wisteria Gold AB 
+DB1066,135,99,113,"Luster,Matte,Metallic",,Matte Metallic Heather Gold AB 
+DB1067,117,100,106,"AB,Matte,Metallic",,Matte Metallic Thistle Gold AB 
+DB1101,137,65,25,Transparent,,Transparent Mangold 
+DB1102,118,21,30,Transparent,,Transparent Dark Cranberry 
+DB1103,226,172,160,Transparent,,Transparent Pink Mist 
+DB1104,67,44,52,Transparent,,Transparent Mauve 
+DB1105,74,58,84,Transparent,,Transparent Light Amethyst 
+DB1106,71,132,39,Transparent,,Transparent Lime 
+DB1107,55,71,35,Transparent,,Transparent Olive 
+DB1108,19,86,94,Transparent,,Transparent Canbbean Teal 
+DB1109,14,125,204,Transparent,,Transparent Ocean Blue 
+DB1110,41,77,187,Transparent,,Transparent Are 
+DB1111,142,135,127,Transparent,,Transparent Grey Mist 
+DB1112,209,162,90,Transparent,,Transparent Light Straw 
+DB1131,212,169,118,Opaque,,Opaque Pear 
+DB1132,247,191,10,Opaque,,Opaque Canary 
+DB1133,245,135,12,Opaque,,Opaque Mandarin 
+DB1134,99,30,33,Opaque,,Opaque Currant 
+DB1135,77,88,56,Opaque,,Opaque Avocado 
+DB1136,69,156,147,Opaque,,Opaque Sea Opal 
+DB1137,137,155,227,Opaque,,Opaque Agate Blue 
+DB1138,62,66,166,Opaque,,Opaque Cyan Blue 
+DB1139,133,131,144,Opaque,,Opaque Ghost Grey 
+DB1151,168,154,117,"Frosted,Galvanised",,Galvanized Frosted Silver 
+DB1152,180,146,121,"Frosted,Galvanised",,Galvanized Frosted Champagne 
+DB1153,182,144,105,"Frosted,Galvanised",,Galvanized Frosted Mead 
+DB1154,185,155,83,"Frosted,Galvanised",,Galvanized Frosted Zest 
+DB1155,174,132,110,"Frosted,Galvanised",,Galvanized Frosted Muscat 
+DB1156,165,119,119,"Frosted,Galvanised",,Galvanized Frosted Pink Blush 
+DB1157,138,102,104,"Frosted,Galvanised",,Galvanized Frosted Berry 
+DB1158,160,142,132,"Frosted,Galvanised",,Galvanized Frosted Light Smoky Amethyst 
+DB1159,136,124,108,Galvanised,,Galvanized Frosted Pewter 
+DB1162,146,115,97,"Galvanised,Matte",,Galvanized Matte Champagne 
+DB1163,152,116,82,"Galvanised,Matte",,Calvanized Matte Mead 
+DB1164,172,147,91,"Galvanised,Matte",,Galvanized Matte Zest 
+DB1165,151,112,97,"Galvanised,Matte",,Galvanized Matte Muscat 
+DB1166,156,115,113,"Galvanised,Matte",,Galvanized Matte Pink Blush 
+DB1167,121,84,91,"Galvanised,Matte",,Galvanized Matte Berry 
+DB1168,132,121,117,"Galvanised,Matte",,Galvanized Matte Light Smoky Amethyst 
+DB1169,119,109,99,"Galvanised,Matte",,Galvanized Matte Pewter 
+DB1170,123,118,99,"Galvanised,Matte",,Galvanized Matte Aloe 
+DB1171,83,127,110,"Galvanised,Matte",,Galvanized Matte Dark Mint 
+DB1172,78,106,109,"Galvanised,Matte",,Galvanized Matte Dark Aqua 
+DB1173,130,92,117,"Galvanised,Matte",,Galvanized Matte Magenta 
+DB1174,94,77,96,"Galvanised,Matte",,Galvanized Matle Eggplant 
+DB1175,88,87,82,"Galvanised,Matte",,Galvanized Matte Graphite 
+DB1181,150,143,117,"Frosted,Galvanised",,Galvanized Frosted Alce 
+DB1182,72,140,119,"Frosted,Galvanised",,Galvanized Frosted Dark Mint 
+DB1183,77,126,131,"Frosted,Galvanised",,Galvanized Frosted Dark Aqua 
+DB1184,147,84,127,"Frosted,Galvanised",,Galvanized Frosted Magenta 
+DB1185,108,88,115,"Frosted,Galvanised",,Galvanized Frosted Eggplant 
+DB1186,92,87,83,"Frosted,Galvanised",,Calvanized Frosted Graphite 
+DB1201,143,87,38,Silver Lined,,Sever Lined Marigold 
+DB1202,79,42,33,Silver Lined,,Silver Lined Dark Cranberry 
+DB1203,181,149,136,Silver Lined,,Silver Lined Pink Mist 
+DB1204,88,63,66,Silver Lined,,Silver Lined Mauve 
+DB1205,99,86,93,Silver Lined,,Silver Lined Light Amethyst 
+DB1206,98,132,56,Silver Lined,,Silver Lined Lime 
+DB1207,77,91,55,Silver Lined,,Silver Lined Olive 
+DB1208,41,99,100,Silver Lined,,Silver Lined Caribbean Teal 
+DB1209,61,125,153,Silver Lined,,Silver Lined Ocean Blue 
+DB1210,65,99,144,Silver Lined,,Silver Lined Azure 
+DB1211,144,133,127,Silver Lined,,Silver Lined Grey Mist 
+DB1212,180,150,96,Silver Lined,,Silver Lined Light Straw 
+DB1221,147,93,69,"Luster,Transparent",,Transparent Marigold Luster 
+DB1222,120,62,74,"Luster,Transparent",,Transparent Dark Cranberry Luster 
+DB1223,220,179,173,"Luster,Transparent",,Transparent Pink Mist Luster 
+DB1224,94,80,97,"Luster,Transparent",,Transparent Mauve Luster 
+DB1225,104,100,125,"Luster,Transparent",,Transparent Light Amethyst Luster 
+DB1226,100,151,92,"Luster,Transparent",,Transparent Lime Luster 
+DB1227,86,103,87,"Luster,Transparent",,Transparent Olive Luster 
+DB1228,42,106,118,"Luster,Transparent",,Transparent Caribbean Teal Luster 
+DB1229,51,146,204,"Luster,Transparent",,Transparent Ocean Blue Luster 
+DB1230,67,103,187,"Luster,Transparent",,Transparent Azure Luster 
+DB1231,149,149,149,"Luster,Transparent",,Transparent Grey Mist Luster 
+DB1241,154,100,72,"AB,Transparent",,Transparent Marigold AB 
+DB1242,104,53,62,AB,,Transparent Dark Cranberry AB 
+DB1243,221,180,174,"AB,Transparent",,Transparent Pink Mist AB 
+DB1244,90,76,89,"AB,Transparent",,Transparent Mauve AB 
+DB1245,97,92,114,"AB,Transparent",,Transparent Light Amethyst AB 
+DB1246,95,150,85,"AB,Transparent",,Transparent Lime AB 
+DB1247,77,101,77,"AB,Transparent",,Transparent Olive AB 
+DB1249,45,144,201,"AB,Transparent",,Transparent Ocean Blue AB 
+DB1250,67,106,183,"AB,Transparent",,Transparent Azure AB 
+DB1251,152,150,151,"AB,Transparent",,Transparent Grey Mist AB 
+DB1252,211,174,119,"Luster,Transparent",,Transparent Light Straw Luster 
+DB1261,149,77,27,"Matte,Transparent",,Matte Transparent Marigold 
+DB1262,127,25,36,"Matte,Transparent",,Matte Transparent Dark Cranberry 
+DB1263,231,182,175,"Matte,Transparent",,Matte Transparent Pink Mist 
+DB1264,71,48,56,"Matte,Transparent",,Matte Transparent Mauve 
+DB1265,89,73,100,"Matte,Transparent",,Matte Transparent Light Amethyst 
+DB1266,74,135,42,"Matte,Transparent",,Matte Transparent Lime 
+DB1267,65,81,44,"Matte,Transparent",,Matte Transparent Olive 
+DB1268,13,88,91,"Matte,Transparent",,Matte Transparent Caribbean Teal 
+DB1269,12,134,211,"Matte,Transparent",,Matte Transparent Ocean Blue 
+DB1270,53,90,196,"Matte,Transparent",,Matte Transparent Azure 
+DB1271,147,142,138,"Matte,Transparent",,Matte Transparent Grey Mist 
+DB1272,223,179,106,"Matte,Transparent",,Transparent Matte Light Straw 
+DB1281,107,159,95,"AB,Matte,Transparent",multi,Matle Transparent Lime AB 
+DB1282,96,115,95,"AB,Matte,Transparent",multi,Matte Transparent Olive AB 
+DB1283,40,118,130,"AB,Matte,Transparent",multi,Matte Transparent Caribbean Teal AB 
+DB1284,52,153,221,"AB,Matte,Transparent",multi,Matle Transparent Ocean Blue AB 
+DB1285,82,119,200,"AB,Matte,Transparent",multi,Matte Transparent Azure AB 
+DB1286,162,160,161,"AB,Matte,Transparent",multi,Matte Transparent Gray MistAB 
+DB1287,227,191,139,"Luster,Matte,Transparent",,Transparent Light Straw Salin 
+DB1301,246,190,9,"Dyed Colour,Transparent",,Transparent Yellow 
+DB1302,180,74,52,"Dyed Colour,Transparent",,Transparent Peach 
+DB1304,7,143,131,"Dyed Colour,Transparent",,Transparent Dark Mint Green 
+DB1308,205,45,79,"Dyed Colour,Transparent",,Transparent Bubble Gum Pink 
+DB1310,177,17,117,"Dyed Colour,Transparent",,Transparent Fuchsia 
+DB1312,71,33,46,"Dyed Colour,Transparent",,Transparent Wine 
+DB1315,87,31,122,"Dyed Colour,Transparent",,Transparent Red Violet 
+DB1318,11,91,150,"Dyed Colour,Transparent",,Transparent Capni Blue 
+DB1319,47,46,44,"Dyed Colour,Transparent",,Transparent Charcoal 
+DB1333,145,72,31,"Dyed Colour,Silver Lined",,Silver Lined Burnt Orange 
+DB1335,190,165,171,"Dyed Colour,Silver Lined",,Silver Lined Pink 
+DB1338,183,67,86,"Dyed Colour,Silver Lined",,Silver Lined Rose 
+DB1340,152,39,119,"Dyed Colour,Silver Lined",,Silver Lined Fuchsia 
+DB1341,133,50,68,"Dyed Colour,Silver Lined",,Silver Lined Antique Dark Rose 
+DB1342,92,45,63,"Dyed Colour,Silver Lined",,Silver Lined Raspberry 
+DB1343,121,83,142,"Dyed Colour,Silver Lined",,Silver Lined Lilac 
+DB1345,113,55,131,Silver Lined,,Silver Lined Magenta 
+DB1347,104,79,137,"Dyed Colour,Silver Lined",,Silver Lined Purple 
+DB1363,208,122,105,"Dyed Colour,Opaque",,Opaque Salman 
+DB1371,230,105,145,Opaque,,Opaque Carnation Pink 
+DB1376,147,74,101,"Dyed Colour,Opaque",,Opaque Antique Rose 
+DB1379,120,81,172,"Dyed Colour,Opaque",,Opaque Red Violet 
+DB1401,239,215,89,Transparent,,Transparent Pale Yellow 
+DB1402,174,126,150,Transparent,,Transparent Pale Rose 
+DB1403,165,106,128,Transparent,,Transparent Pale Orchid 
+DB1404,190,205,172,Transparent,,Transparent Pale Green Mist 
+DB1405,93,122,198,Transparent,,Transparent Pale Sky Blue 
+DB1406,110,109,123,Transparent,,Transparent Pale Grey 
+DB1407,142,144,195,Transparent,,Transparent Pale Amethyst 
+DB1408,132,130,131,Transparent,,Transparent Pale Taupe 
+DB1409,232,195,153,Transparent,,Transparent Pale Beige 
+DB1410,228,159,130,Transparent,,Transparent Pale Peach 
+DB1411,222,104,76,Transparent,,Transparent Peach 
+DB1412,212,85,68,Transparent,,Transparent Salmon 
+DB1413,137,81,108,Transparent,,Transparent Light Rose 
+DB1414,87,132,93,Transparent,,Transparent Mint 
+DB1415,83,106,90,Transparent,,Transparent Light Moss Green 
+DB1416,110,95,92,Transparent,,Transparent Light Taupe 
+DB1417,85,70,65,Transparent,,Transparent Taupe 
+DB1431,164,166,145,Silver Lined,,Silver Lined Pale Moss Green 
+DB1432,168,153,122,Silver Lined,,Silver Lined Pale Yellow 
+DB1433,163,133,141,Silver Lined,,Silver Lined Pale Blush 
+DB1434,151,115,125,Silver Lined,,Silver Lined Pale Rose 
+DB1435,145,145,157,Silver Lined,,Silver Lined Pale Amethyst 
+DB1451,201,181,156,Silver Lined,,Silver Lined Pale Cream Opal 
+DB1452,202,169,150,Silver Lined,,Silver Lined Pale Peach Opal 
+DB1453,175,171,144,Silver Lined,,Silver Lined Pale Lime Opal 
+DB1454,161,173,153,Silver Lined,,Silver Lined Light Moss Opal 
+DB1455,144,142,143,Silver Lined,,Silver Lined Light Smoke Opal 
+DB1456,137,126,122,Silver Lined,,Silver Lined Light Taupe Opal 
+DB1457,190,154,164,Silver Lined,,Silver Lined Pale Rose Opal 
+DB1458,183,153,117,Silver Lined,,Silver Lined Light Honey Opal 
+DB1459,156,119,110,Silver Lined,,Silver Lined Shell Opal 
+DB1460,132,112,105,Silver Lined,,Silver Lined Cinnamon Opal 
+DB1471,237,216,127,"Luster,Transparent",,Transparent Pale Yellow Luster 
+DB1472,188,149,168,"Luster,Transparent",,Transparent Pale Rose Luster 
+DB1473,169,129,155,"Luster,Transparent",,Transparent Pale Orchid Luster 
+DB1474,194,208,182,"Luster,Transparent",,Transparent Pale Green Mist Luster 
+DB1475,122,144,202,"Luster,Transparent",,Transparent Pale Sky Blue Luster 
+DB1476,151,153,191,"Luster,Transparent",,Transparent Pale Amethyst Luster 
+DB1477,157,155,158,"Luster,Transparent",,Transparent Pale Taupe Luster 
+DB1478,235,186,127,"Luster,Transparent",,Transparent Pale Apricot Luster 
+DB1479,225,169,146,"Luster,Transparent",,Transparent Pale Peach Luster 
+DB1480,222,131,112,"Luster,Transparent",,Transparent Peach Luster 
+DB1481,201,111,110,"Luster,Transparent",,Transparent Salmon Luster 
+DB1482,159,119,145,"Luster,Transparent",,Transparent Light Rose Luster 
+DB1483,114,150,124,"Luster,Transparent",,Transparent Mint Luster 
+DB1484,111,128,122,"Luster,Transparent",,Transparent Light Moss Green Luster 
+DB1485,130,121,126,"Luster,Transparent",,Transparent Light Taupe Luster 
+DB1486,110,104,106,"Luster,Transparent",,Transparent Taupe Luster 
+DB1490,236,214,201,Opaque,,Opaque Bisque White 
+DB1491,246,233,163,Opaque,,Opaque Pale Yellow 
+DB1492,245,194,167,Opaque,,Opaque Light Peach 
+DB1493,227,169,165,Opaque,,Opaque Light Salmon 
+DB1494,208,180,202,Opaque,,Opaque Pale Rose 
+DB1495,201,167,158,Opaque,,Opaque Pink Champagne 
+DB1496,171,199,176,Opaque,,Opaque Light Mint 
+DB1497,179,197,235,Opaque,,Opaque Light Sky Blue 
+DB1498,152,150,151,Opaque,,Opaque Light Smoke 
+DB1500,238,216,203,"AB,Opaque",,Opaque Bisque White AB 
+DB1501,243,231,159,"AB,Opaque",,Opaque Pale Yellow AB 
+DB1502,240,189,160,"AB,Opaque",,Opaque Light Peach AB 
+DB1503,223,160,153,"AB,Opaque",,Opaque Light Salmon AB 
+DB1504,207,175,198,"AB,Opaque",,Opaque Pale Rose AB 
+DB1505,193,159,157,"AB,Opaque",,Opaque Pink Champagne AB 
+DB1506,163,196,175,"AB,Opaque",,Opaque Light Mint AB 
+DB1507,177,193,226,"AB,Opaque",,Opaque Light Sky Blue AB 
+DB1508,154,152,155,"AB,Opaque",,Opaque Light Smoke AB 
+DB1510,245,222,214,"Matte,Opaque",,Matte Opaque Bisque White 
+DB1511,247,231,156,"Matte,Opaque",,Matte Opaque Pale Yellow 
+DB1512,244,185,155,"Matte,Opaque",,Matte Opaque Light Peach 
+DB1513,231,163,162,"Matte,Opaque",,Matte Opaque Light Salmon 
+DB1514,209,181,203,"Matte,Opaque",,Matte Opaque Pale Rose 
+DB1515,199,164,162,"Matte,Opaque",,Matte Opaque Pink Champagne 
+DB1516,175,208,187,"Matte,Opaque",,Matte Opaque Light Mint 
+DB1517,176,197,240,"Matte,Opaque",,Matte Opaque Light Sky Blue 
+DB1518,152,150,153,"Matte,Opaque",,Matte Opaque Light Smoke 
+DB1520,238,215,207,"AB,Matte,Opaque",,Matte Opaque Bisque White AB 
+DB1521,244,231,163,"AB,Matte,Opaque",,Matte Opaque Pale Yellow AB 
+DB1522,240,186,158,"AB,Matte,Opaque",,Matte Opaque Light Peach AB 
+DB1523,226,162,160,"AB,Matte,Opaque",,Matte Opaque Light Salmon AB 
+DB1524,211,183,205,"AB,Matte,Opaque",,Malte Opaque Pale Rose AB 
+DB1525,200,166,167,"AB,Matte,Opaque",,Malle Opaque Pink Champagne AB 
+DB1526,167,202,182,"AB,Matte,Opaque",,Matte Opaque Light Mint AB 
+DB1527,170,194,232,"AB,Matte,Opaque",,Malte Opaque Light Sky Blue AB 
+DB1528,152,150,153,"AB,Matte,Opaque",,Malle Opaque Light Smoke AB 
+DB1530,236,215,198,"Ceylon,Opaque",,Opaque Bisque White Ceylon 
+DB1531,243,230,162,"Ceylon,Opaque",,Opaque Pale Yellow Ceylon 
+DB1532,240,189,160,"Ceylon,Opaque",,Opaque Light Peach Ceylon 
+DB1533,232,169,160,"Ceylon,Opaque",,Opaque Light Salmon Ceylon 
+DB1534,204,172,195,"Ceylon,Opaque",,Opaque Pale Rose Ceylon 
+DB1535,187,158,154,"Ceylon,Opaque",,Opaque Pink Champagne Ceylon 
+DB1536,166,193,174,"Ceylon,Opaque",,Opaque Light Mint Ceylon 
+DB1537,178,194,227,"Ceylon,Opaque",,Opaque Light Sky Blue Ceylon 
+DB1538,150,148,151,"Ceylon,Opaque",,Opaque Light Smoke Ceylon 
+DB1561,206,167,126,"Luster,Opaque",,Opaque Pear Luster 
+DB1562,243,191,56,"Luster,Opaque",,Opaque Canary Luster 
+DB1563,230,134,58,"Luster,Opaque",,Opaque Mandarin Luster 
+DB1564,155,62,83,"Luster,Opaque",,Opaque Cadillac Red Luster 
+DB1565,106,68,79,"Luster,Opaque",,Opaque Currant Luster 
+DB1566,95,103,90,"Luster,Opaque",,Opaque Avocado Luster 
+DB1567,91,166,169,"Luster,Opaque",,Opaque Sea Opal Luster 
+DB1568,144,159,218,"Luster,Opaque",,Opaque Agate Blue Luster 
+DB1569,85,87,172,"Luster,Opaque",,Opaque Cyan Blue Luster 
+DB1570,136,136,144,"Luster,Opaque",,Opaque Ghost Grey Luster 
+DB1571,211,169,119,"AB,Opaque",,Opaque Pear AB 
+DB1572,245,190,38,"AB,Opaque",,Opaque Canary AB 
+DB1573,242,141,51,"AB,Opaque",,Opaque Mandarin AB 
+DB1574,105,62,71,"AB,Opaque",multi shine,Opaque Currant AB 
+DB1575,82,98,87,"AB,Opaque",multi shine,Opaque Avocado AB 
+DB1576,81,166,171,"AB,Opaque",,Opaque Sea Opal AB 
+DB1577,144,159,218,"AB,Opaque",,Opaque Agate Blue AB 
+DB1578,77,83,171,"AB,Opaque",multi shine,Opaque Cyan Blue AB 
+DB1579,135,135,147,"AB,Opaque",,Opaque Ghost Grey AB 
+DB1581,218,171,119,"Matte,Opaque",,Matte Opaque Pear 
+DB1582,247,186,7,"Matte,Opaque",,Matte Opaque Canary 
+DB1583,249,138,7,"Matte,Opaque",,Matte Opaque Mandarin 
+DB1584,103,37,39,"Matte,Opaque",,Matte Opaque Currant 
+DB1585,80,90,63,"Matte,Opaque",,Matte Opaque Avocado 
+DB1586,73,166,171,"Matte,Opaque",,Matte Opaque Sea Opal 
+DB1587,140,159,227,"Matte,Opaque",,Malte Opaque Agate Blue 
+DB1588,67,65,174,"Matte,Opaque",,Matte Opaque Cyan Blue 
+DB1589,133,133,145,"Matte,Opaque",,Malte Opaque Ghost Grey 
+DB1591,212,174,135,"AB,Matte,Opaque",,Matte Opaque Pear AB 
+DB1592,243,191,53,"AB,Matte,Opaque",,Matte Opaque Canary AB 
+DB1593,243,139,66,"AB,Matte,Opaque",,Matte Opaque Mandarin AB 
+DB1594,95,107,95,"AB,Matte,Opaque",,Matte Opaque Avocado AB 
+DB1595,90,170,179,"AB,Matte,Opaque",,Matte Opaque Sea Opal AB 
+DB1596,144,163,222,"AB,Matte,Opaque",,Matte Opaque Agate Blue AB 
+DB1597,92,94,181,"AB,Matte,Opaque",,Matte Opaque Cyan Blue AB 
+DB1598,145,145,157,"AB,Matte,Opaque",,Matte Opaque Ghost Grey AB 
+DB1671,209,208,206,"AB,Transparent",,Pearl Lined Crystal AB 
+DB1672,130,193,208,"AB,Transparent",,Pearl Lined Glacier Blue AB 
+DB1673,203,144,164,"AB,Transparent",,Pearl Lined Pink AB 
+DB1674,194,171,163,"AB,Transparent",,Peart Lined Light Pink AB 
+DB1675,157,201,188,"AB,Transparent",,Pearl Lined Pale Green Mist AB 
+DB1676,215,202,157,"AB,Transparent",,Pearl Lined Pale Yellow AB 
+DB1677,153,165,181,"AB,Transparent",,Peart Lined Pale Grey AB 
+DB1681,113,81,40,Silver Lined,,Silver Lined Glazed Dark Saffron 
+DB1682,110,75,35,Silver Lined,,Silver Lined Glazed Dark Honey 
+DB1683,96,53,36,Silver Lined,,Silver Lined Glazed Dark Topaz 
+DB1684,69,50,36,Silver Lined,,Silver Lined Glazed Dark Roofbeer 
+DB1685,72,43,37,Silver Lined,,Silver Lined Glazed Dark Cranberry 
+DB1691,117,85,64,"AB,Silver Lined",multi,Silver Lined Glazed Dark Saffron AB 
+DB1692,107,79,68,"AB,Silver Lined",multi,Silver Lined Glazed Dark Honey AB 
+DB1694,83,57,68,"AB,Silver Lined",multi,Silver Lined Glazed Dark Cranberry AB 
+DB1701,232,222,212,"AB,Transparent",,Pearl Lined Pale Beige AB 
+DB1702,173,107,57,N/A,glossy,Copper Pearl Lined Marigold 
+DB1703,124,90,63,N/A,glossy,Copper Pearl Lined Chartruese 
+DB1704,136,87,80,N/A,glossy,Copper Pearl Lined Pink Mist 
+DB1705,100,58,62,Transparent,glossy,Copper Pearl Lined Dark Cranberry 
+DB1706,97,82,87,N/A,glossy,Copper Pearl Lined Aqua 
+DB1707,112,196,183,N/A,glossy,Mint Pearl Lined Glacier Blue 
+DB1708,58,153,173,N/A,glossy,Mint Pearl Lined Ocean Blue 
+DB1709,51,115,159,N/A,glossy,Mint Pearl Lined Azure 
+DB1710,75,64,58,N/A,glossy,Copper Pearl Lined Olive 
+DB1711,162,162,152,N/A,glossy,Pearl Lined Grey Mist AB 
+DB1712,108,109,111,N/A,glossy,Mint Pearl Lined Pink Mist 
+DB1731,149,128,111,N/A,glossy,Beige Lined Opal AB 
+DB1732,118,92,79,AB,multi a bit,Cocoa Lined Crystal AB 
+DB1733,154,98,85,AB,multi a bit,Dark Peach Lined Opal AB 
+DB1734,148,90,44,AB,multi a bit,Beige Lined Topaz AB 
+DB1735,122,83,50,AB,multi a bit,Sparkling Dark Topaz Lined Chartreuse AB 
+DB1736,118,71,55,AB,multi a bit,Sparkling Beige Lined Dark Topaz AB 
+DB1737,127,86,80,AB,multi a bit,Rose Lined Amethyst AB 
+DB1738,119,95,61,AB,multi a bit,Cocoa Lined Chartreuse AB 
+DB1739,87,76,56,AB,multi a bit,Sparkling Mint Lined Topaz AB 
+DB1740,78,74,65,AB,multi,Dark Amethyst Lined Chartreuse AB 
+DB1741,74,65,47,AB,multi,Olive Lined Orange AB 
+DB1742,175,91,117,AB,,Rose Lined Opal AB 
+DB1743,163,43,105,AB,,Hot Pink Lined Crystal AB 
+DB1744,154,76,136,AB,multi a bit,Fuchsia Lined Opal AB 
+DB1745,133,95,108,AB,,Sparkling Antique Rose Lined Crystal AB 
+DB1746,142,82,92,AB,,Claret Lined Opal AB 
+DB1747,92,45,77,AB,multi,Fuchsia Lined Amethyst AB 
+DB1748,79,58,55,AB,multi,Cranberry Lined Chartreuse AB 
+DB1749,123,102,99,AB,multi a bit,Cocoa Lined Opal AB 
+DB1750,91,57,48,AB,multi,Sparkling Beige Lined Root Beer AB 
+DB1751,66,43,53,AB,multi,Red Lined Topaz AR 
+DB1752,153,120,139,AB,,Sparkling Orchid Lined Opal AB 
+DB1753,115,97,155,AB,,Sparkling Purple Lined Opal AB 
+DB1754,99,81,121,AB,multi a bit,Sparkling Purple Lined Crystal AB 
+DB1755,66,51,108,AB,multi,Fuchsia Lined Aqua AB 
+DB1756,67,60,93,AB,multi,Sparkling Purple Lined Amethyst AB 
+DB1757,107,74,91,AB,multi a bit,Sparkling Orchid Lined Amethyst AB 
+DB1758,86,70,99,AB,multi,Hot Pink Lined Aqua AB 
+DB1759,103,80,72,AB,,Sparkling Beige Lined Amethyst AB 
+DB1760,91,78,85,AB,,Sparkling Lined Smoky Amethyst AB 
+DB1761,64,126,163,AB,,Sparkling Sky Blue Lined Opal AB 
+DB1762,72,109,135,AB,,Sparkling Sky Blue Lined Crystal AB 
+DB1763,36,55,87,AB,multi,Emerald Lined Cobalt AB 
+DB1764,27,84,95,AB,multi a bit,Emerald Lined Aqua AB 
+DB1765,162,165,136,AB,,Sparkling Celery Lined Opal AB 
+DB1766,147,137,112,AB,,Sparkling Celery Lined Light Tea Rose AB 
+DB1767,85,131,129,AB,,Sparkling Aqua Green Lined Crystal AB 
+DB1768,71,103,100,AB,,Forest Green Lined Opal AB 
+DB1769,39,84,90,AB,multi a bit,Sparkling Aqua Green Lined Teal AB 
+DB1770,128,129,131,AB,,Sparkling Pewter Lined Opal AB 
+DB1771,146,134,138,AB,,Sparkling Powter Lined Light Tea Rose AB 
+DB1772,126,115,113,AB,multi a bit,Sparkling Pewter Lined Crystal AB 
+DB1773,87,80,72,AB,multi a bit,Sparkling Beige Lined Grey AB 
+DB1774,88,88,96,AB,multi,Grey Lined Opal AB 
+DB1775,74,73,71,AB,multi a bit,Topaz Lined Aqua AB 
+DB1776,222,200,78,AB,,White Lined Yellow AB 
+DB1777,235,125,36,AB,,White Lined Orange AB 
+DB1778,169,114,58,AB,,White Lined Topaz AB 
+DB1779,128,81,51,AB,,White Lined Dark Topaz AB 
+DB1780,184,65,41,AB,,White Lined Flame Red AB 
+DB1781,116,52,52,AB,,White Lined Root Beer AB 
+DB1782,32,129,138,AB,,White Lined Teal AB 
+DB1783,53,114,158,AB,,White Lined Capri Blue AB 
+DB1784,83,126,194,AB,,White Lined Sapphire AB 
+DB1785,60,65,157,AB,,White Lined Cobalt AB 
+DB1786,96,117,78,AB,,White Lined Light Green AB 
+DB1787,54,130,83,AB,,White Lined Green AB 
+DB1788,32,94,71,AB,,White Lined Emerald AB 
+DB1789,119,103,129,AB,,White Lined Amethyst AB 
+DB1790,99,79,70,AB,,White Lined Sable Brown AB 
+DB1791,146,116,128,AB,,White Lined Smoky Amethyst AE 
+DB1792,111,88,98,AB,,White Lined Dark Smoky Amethyst AB 
+DB1793,115,120,124,AB,,White Lined Grey AB 
+DB1801,215,171,96,"Dyed Colour,Silk",,Light Apricot Satin 
+DB1802,151,121,95,"Dyed Colour,Silk",,Shell Satin 
+DB1803,177,129,107,"Dyed Colour,Silk",,Cinnamon Satin 
+DB1804,164,98,66,"Dyed Colour,Silk",,Topaz Satin 
+DB1805,149,69,72,"Dyed Colour,Silk",,Dark Berry Satin 
+DB1806,153,103,128,"Dyed Colour,Silk",,Orchid Satin 
+DB1807,177,72,105,"Dyed Colour,Silk",,Rose Satin 
+DB1808,158,62,125,"Dyed Colour,Silk",,Fuschia Satin 
+DB1809,102,82,133,"Dyed Colour,Silk",,Lilac Satin 
+DB1810,86,63,117,"Dyed Colour,Silk",,Purple Satin 
+DB1811,59,84,125,"Dyed Colour,Silk",,Dusk Blue Satin 
+DB1812,79,151,148,"Dyed Colour,Silk",,Light Aqua Green Satin 
+DB1813,23,129,117,"Dyed Colour,Silk",,Aqua Green Satin 
+DB1814,50,94,79,"Dyed Colour,Silk",,Emerald Satin 
+DB1815,160,159,128,"Dyed Colour,Silk",,Pale Lime Satin 
+DB1816,161,160,166,"Dyed Colour,Silk",,Shadow Grey Salin 
+DB1817,123,121,122,"Dyed Colour,Silk",,Smoke Grey Satin 
+DB1818,69,69,71,"Dyed Colour,Silk",,Rustic Grey Sat?n 
+DB1831,177,166,138,"Duracoat,Galvanised",,Galvanized Silver Duracoat 
+DB1832,168,128,67,"Duracoat,Galvanised",,Galvanized Gold Duracoat 
+DB1833,155,105,54,"Duracoat,Galvanised",,Galvanized Yellow Gold Duracoat 
+DB1834,146,109,80,"Duracoat,Galvanised",,Galvanized Champagne Duraceat 
+DB1835,168,147,68,"Duracoat,Galvanised",,Galvanized Zest Duracoat 
+DB1836,153,97,70,"Duracoat,Galvanised",,Galvanized Muscat Duracoat 
+DB1837,142,73,58,"Duracoat,Galvanised",,Galvanized Pink Blush Duracoat 
+DB1838,138,58,49,"Duracoat,Galvanised",,Galvanized Berry Duracoat 
+DB1839,157,101,100,"Duracoat,Galvanised",,Galvanized Dark Coral Duracoat 
+DB1840,151,83,108,"Duracoat,Galvanised",,Galvanized Hot Pink Duracoal 
+DB1841,157,65,76,"Duracoat,Galvanised",,Galvanized Light Cranberry Duracoal 
+DB1842,112,63,56,"Duracoat,Galvanised",,Galvanized Dark Berry Duracoal 
+DB1843,102,73,67,"Duracoat,Galvanised",,Galvanized Dark Mauve Duracoat 
+DB1844,98,146,106,"Duracoat,Galvanised",,Galvanized Dark Mint Green Duracoat 
+DB1845,90,108,92,"Duracoat,Galvanised",,Galvanized Sea Green Duracoal 
+DB1846,98,119,114,"Duracoat,Galvanised",,Galvanized Sea Foam Duracoat 
+DB1847,59,104,109,"Duracoat,Galvanised",,Galvanized Dark Sea Foam Duracoat 
+DB1848,132,85,103,"Duracoat,Galvanised",,Galvanized Dusty Orchid Duracoat 
+DB1849,128,69,87,"Duracoat,Galvanised",,Galvanized Magenta Duracoal 
+DB1850,99,75,91,"Duracoat,Galvanised",,Galvanized Eggplant Duracoat 
+DB1851,134,126,107,"Duracoat,Galvanised",,Galvanized Light Pewter Duracoat 
+DB1852,99,86,70,"Duracoat,Galvanised",,Galvanized Pewter Duracoat 
+DB1855,252,217,73,"Dyed Colour,Silk",,Color Lined Sun Glow 
+DB1856,251,159,136,"Dyed Colour,Silk",,Color Lined Flamingo 
+DB1857,238,243,117,"Dyed Colour,Silk",,Color Lined Lime Aid 
+DB1858,194,238,163,"Dyed Colour,Silk",,Color Lined Mint Green 
+DB1859,153,221,240,"Dyed Colour,Silk",,Color Lined Frozen Blue 
+DB1860,21,101,160,"Dyed Colour,Silk",,Color Lined Delphinium 
+DB1861,246,194,74,"AB,Dyed Colour,Silk",,Color Lined Light Apricot AB 
+DB1862,133,112,95,"AB,Dyed Colour,Silk",,Color Lined Shell AB 
+DB1863,210,133,117,"AB,Dyed Colour,Silk",,Color Lined Cinnamon AB 
+DB1864,196,117,76,"AB,Dyed Colour,Silk",,Color Lined Topaz AB 
+DB1865,167,64,83,"AB,Dyed Colour,Silk",,Color Lined Berry AB 
+DB1866,185,116,173,"AB,Dyed Colour,Silk",,Color Lined Orchid AB 
+DB1867,215,95,143,"AB,Dyed Colour,Silk",,Color Lined Rose AB 
+DB1868,134,111,183,"AB,Dyed Colour,Silk",,Color Lined Lilac AB 
+DB1869,27,163,151,"AB,Dyed Colour,Silk",,Color Lined Aqua Green AB 
+DB1870,64,119,116,"AB,Dyed Colour,Silk",,Color Lined Emerald AB 
+DB1871,155,156,161,"AB,Dyed Colour,Silk",,Color Lined Smoke Grey AB 
+DB1872,91,91,91,"AB,Dyed Colour,Silk",,Color Lined Rustic Grey AB 
+DB1873,233,229,121,"AB,Dyed Colour,Silk",,Color Lined Citron AB 
+DB1874,212,186,163,"AB,Dyed Colour,Silk",,Color Lined Pale Apricot AB 
+DB1875,225,122,169,"AB,Dyed Colour,Silk",,Color Lined Light Carnation AB 
+DB1876,131,120,100,"AB,Dyed Colour,Silk",,Color Lined Cactus AB 
+DB1877,134,127,121,"AB,Dyed Colour,Pewter,Silk",,Color Lined Pewter AB 
+DB1878,118,78,86,"AB,Dyed Colour,Silk",,Color Lined Rose Topaz AB 
+DB1879,153,119,110,"AB,Dyed Colour,Silk",,Color Lined Beige AB 
+DB1880,137,89,111,"AB,Dyed Colour,Silk",,Color Lined Hydrangea AB 
+DB1881,80,68,108,"AB,Dyed Colour,Silk",,Color Lined Dark Orchid AB 
+DB1882,75,100,130,"AB,Dyed Colour,Silk",,Color Lined Bayberry AB 
+DB1886,218,195,79,"Luster,Transparent",,Transparent Yellow Luster 
+DB1887,229,115,44,"Luster,Transparent",,Transparent Orange Luster 
+DB1888,170,182,70,"Luster,Transparent",,Transparent Chartreuse Luster 
+DB1889,42,112,78,"Luster,Transparent",,Transparent Green Luster 
+DB1890,74,154,207,"Luster,Transparent",,Transparent Sky Blue Luster 
+DB1891,88,54,45,"Luster,Transparent",,Transparent Dark Topaz Luster 
+DB1892,64,52,54,"Luster,Transparent",,Transparent Sable Brown Luster 
+DB1893,122,91,109,"Luster,Transparent",,Transparent Smoky Amethyst Luster 
+DB1894,29,67,52,"Luster,Transparent",,Transparent Emerald Luster 
+DB1895,29,88,146,"Luster,Transparent",,Transparent Capri Luster 
+DB1896,51,36,141,"Luster,Transparent",,Transparent Beryl Luster 
+DB1897,77,86,95,"Luster,Transparent",,Transparent Grey Luster 
+DB1900,231,214,184,Opaque,"opaque, bit glossy",Ivory Ceylon 
+DB1906,217,148,166,Opaque,,Opaque Rosewater 
+DB1907,212,154,168,"Luster,Opaque",,Opaque Rosewater Luster 
+DB1910,74,44,44,"Matte,Opaque",,Matte Opaque Espresso 
+DB1991,54,41,48,Metallic,,Metallic French Plum 
+DB2031,216,238,33,Luminous,glossy,Neon Lime Aid 
+DB2032,251,203,41,Luminous,glossy,Neon Sun Glow 
+DB2033,251,153,66,Luminous,glossy,Neon Creamsicle 
+DB2034,250,122,113,Luminous,glossy,Neon Flamingo 
+DB2035,248,72,173,Luminous,glossy,Neon Wild Strawberry 
+DB2036,246,101,170,Luminous,glossy,Neon Cotton Candy 
+DB2037,234,80,176,Luminous,glossy,Neon Hot Magenta 
+DB2038,186,75,169,Luminous,glossy,Neon Plum Crazy 
+DB2039,78,173,227,Luminous,glossy,Neon Ocean Blue 
+DB2040,83,218,113,Luminous,glossy,Neon Mint Green 
+DB2041,199,162,71,N/A,multi a bit?,Neon Honeycomb 
+DB2042,191,121,113,N/A,multi a bit?,Neon Sea Coral 
+DB2043,171,124,72,N/A,multi a bit?,Neon Almond 
+DB2044,158,101,84,N/A,multi a bit?,Neon Guava 
+DB2045,232,137,53,N/A,multi a bit?,Neon Mango 
+DB2046,123,111,61,N/A,multi a bit?,Neon Mushroom 
+DB2047,247,101,42,Luminous,glossy,Neon Bittersweel 
+DB2048,181,83,130,N/A,multi a bit?,Neon Pink Taffy 
+DB2049,174,70,157,N/A,multi a bit?,Neon Hot Pink 
+DB2050,182,62,136,N/A,multi a bit?,Neon Jazzberry 
+DB2051,229,64,62,Luminous,glossy,Neon Poppy Red 
+DB2052,130,135,112,N/A,,Neon Asparagus Green 
+DB2053,53,155,133,N/A,multi a bit?,Neon Mermaid Green 
+DB2054,67,102,124,N/A,,Neon Dusk Blue 
+DB2061,212,150,37,N/A,multi,Luminous Mix 1
+DB2062,222,122,73,N/A,multi max,Luminous Mix 2
+DB2063,192,86,46,N/A,multi max,Luminous Mix 3
+DB2064,203,59,120,N/A,multi max,Luminous Mix 4
+DB2065,124,87,138,N/A,multi max,Luminous Mix 5
+DB2066,150,164,69,N/A,multi max,Luminous Mix 6
+DB2067,72,137,143,N/A,multi max,Luminous Mix 7
+DB2068,93,111,135,N/A,multi max,Luminous Mix 8
+DB2101,243,222,139,"Duracoat,Opaque",,Opaque Light Lemon Ice Duracoat 
+DB2102,221,166,66,"Duracoat,Opaque",,Opaque Banana Duracoat 
+DB2103,243,153,15,"Duracoat,Opaque",,Opaque Light Squash Duracoat 
+DB2104,226,124,24,"Duracoat,Opaque",,Opaque Kumquat Duracoat 
+DB2105,148,116,103,"Duracoat,Opaque",,Opaque Beige Duracoat 
+DB2106,164,109,26,"Duracoat,Opaque",,Opaque Hawthorne Duracoat 
+DB2107,160,100,66,"Duracoat,Opaque",,Opaque Cedar Duracoat 
+DB2108,156,88,25,"Duracoat,Opaque",,Opaque Persimmon Duracoat 
+DB2109,135,85,36,"Duracoat,Opaque",,Opaque Sienna Duracoat 
+DB2110,143,93,30,"Duracoat,Opaque",,Opaque Toast Duracoat 
+DB2111,223,146,118,"Duracoat,Opaque",,Opaque Tea Rose Duracoat 
+DB2112,234,128,114,"Duracoat,Opaque",,Opaque Dark Salmon Duracoat 
+DB2113,226,136,135,"Duracoat,Opaque",,Opaque Lychee Duracoat 
+DB2114,206,103,96,"Duracoat,Opaque",,Opaque Light Watermelon Duracoat 
+DB2115,219,109,122,"Duracoat,Opaque",,Opaque Guava Duracoat 
+DB2116,238,138,162,"Duracoat,Opaque",,Opaque Light Carnation Duracoat 
+DB2117,232,111,142,"Duracoat,Opaque",,Opaque Camation Duracoat 
+DB2118,146,74,96,"Duracoat,Opaque",,Opaque Pansy Duracoat 
+DB2119,126,41,38,"Duracoat,Opaque",,Opaque Jujube Duracoal 
+DB2120,110,43,34,"Duracoat,Opaque",,Opaque Maroon Duracoat 
+DB2121,106,186,25,"Duracoat,Opaque",,Opaque Kiwi Duracoat 
+DB2122,86,219,202,"Duracoat,Opaque",,Opaque Catalina Duracoat 
+DB2123,148,154,110,"Duracoat,Opaque",,Opaque Fennel Duracoat 
+DB2124,143,130,85,"Duracoat,Opaque",,Opaque Cactus Duracoat 
+DB2125,89,157,136,"Duracoat,Opaque",,Opaque Sea Opal Duracoat 
+DB2126,52,144,81,"Duracoat,Opaque",,Opaque Fiji Green Duracoat 
+DB2127,38,110,88,"Duracoat,Opaque",,Opaque Spruce Duracoat 
+DB2128,71,153,175,"Duracoat,Opaque",,Opaque Nile Blue Duracoat 
+DB2129,107,129,142,"Duracoat,Opaque",,Opaque Moody Blue Duracoat 
+DB2130,25,155,171,"Duracoat,Opaque",,Opaque Underwater Blue Duracoat 
+DB2131,65,109,108,"Duracoat,Opaque",,Opaque Eucalyptus Duracoat 
+DB2132,72,109,138,"Duracoat,Opaque",,Opaque Bayberry Duracoat 
+DB2133,18,122,151,"Duracoat,Opaque",,Opaque Azure Duracoat 
+DB2134,25,106,187,"Duracoat,Opaque",,Opaque Delphinium Duracoat 
+DB2135,36,94,134,"Duracoat,Opaque",,Opaque Juniper Berry Duracoal 
+DB2136,157,120,171,"Duracoat,Opaque",,Opaque Crocus Duracoat 
+DB2137,151,98,118,"Duracoat,Opaque",,Opaque Hydrangea Duracoat 
+DB2138,157,126,196,"Duracoat,Opaque",,Opaque Columbine Duracoat 
+DB2139,119,89,123,"Duracoat,Opaque",,Opaque Dark Orchid Duracoal 
+DB2140,104,73,117,"Duracoat,Opaque",,Opaque Anemone Duracoat 
+DB2141,122,98,24,"Duracoat,Opaque",,Opaque Spanish Olive Duracoat 
+DB2142,101,70,42,"Duracoat,Opaque",,Opaque Cognac Duracoat 
+DB2143,43,57,94,"Duracoat,Dyed Colour,Opaque",,Opaque Navy 
+DB2144,34,37,78,"Duracoat,Dyed Colour,Matte,Opaque",bit glossy,Opaque Cobalt 
+DB2151,164,100,75,"Duracoat,Silver Lined",glossy,Silver Lined Rose Copper Duracoat 
+DB2152,146,60,59,"Duracoat,Silver Lined",glossy,Silver Lined Light Watermelon Duracoat 
+DB2153,168,75,119,"Duracoat,Silver Lined",glossy,Silver Lined Pink Parfait Duracoat 
+DB2154,183,72,78,"Duracoat,Silver Lined",glossy,Silver Lined Hibiscus Duracoat 
+DB2155,153,112,94,"Duracoat,Silver Lined",glossy,Silver Lined Mica Duracoat 
+DB2156,144,79,109,"Duracoat,Silver Lined",glossy,Silver Lined Orchid Duracoat 
+DB2157,159,101,38,"Duracoat,Silver Lined",glossy,Silver Lined Yellow Gold Duracoat 
+DB2158,174,70,41,"Duracoat,Silver Lined",glossy,Silver Lined Clementine Duracoat 
+DB2159,169,71,58,"Duracoat,Silver Lined",glossy,Silver Lined Light Cranberry Duracoat 
+DB2160,111,55,54,"Duracoat,Silver Lined",glossy,Silver Lined Magenta Duracoat 
+DB2161,128,63,69,"Duracoat,Silver Lined",glossy,Silver Lined Petunia Duracoat 
+DB2162,121,68,88,"Duracoat,Silver Lined",glossy,Silver Lined Hydrangea Duracoat 
+DB2163,109,112,83,"Duracoat,Silver Lined",glossy,Silver Lined Willow Duracoat 
+DB2164,127,105,58,"Duracoat,Silver Lined",glossy,Silver Lined Zest Duracoat 
+DB2165,91,108,92,"Duracoat,Silver Lined",glossy,Silver Lined Dark Sea Foam Duracoat 
+DB2166,73,79,79,"Duracoat,Silver Lined",glossy,Silver Lined Light Blue Steel Duracoat 
+DB2167,77,77,89,"Duracoat,Silver Lined",glossy,Silver Lined Prussian Blue Duracoat 
+DB2168,106,79,122,"Duracoat,Silver Lined",glossy,Silver Lined Orchid Duracoat 
+DB2169,109,76,93,"Duracoat,Silver Lined",glossy,Silver Lined Lilac Duracoat 
+DB2170,90,66,66,"Duracoat,Silver Lined",glossy,Silver Lined Raisin Duracoat 
+DB2171,183,131,81,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Straw Duracoat 
+DB2172,172,108,83,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Rose Copper Duracoat 
+DB2173,150,60,59,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Light Watermelon Duracoat 
+DB2174,173,86,129,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Pink Parfait Duracoat 
+DB2175,188,77,94,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Hibiscus Duracoat 
+DB2176,83,115,140,"Duracoat,Frosted,Silver Lined",matte/ silk,Frested Silver Lined Light Bayberry Duracoat 
+DB2177,158,117,99,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Mica Duracoat 
+DB2178,163,84,69,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Papaya Duracoat 
+DB2179,121,72,68,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Magenta Duracoat 
+DB2180,150,89,122,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Orchid Duracoat 
+DB2181,136,83,103,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Hydrangea Duracoat 
+DB2182,117,85,108,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Lilac Duracoat 
+DB2183,107,77,77,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Raisin Duracoat 
+DB2184,109,96,90,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Bramble Duracoat 
+DB2185,98,93,89,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Acacia Duracoat 
+DB2186,192,157,101,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Vinho Verde Duracoat 
+DB2187,183,164,61,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Citron Duracoat 
+DB2188,83,157,122,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Spearmint Duracoal 
+DB2189,181,107,122,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Honeysuckle Duracoal 
+DB2190,99,111,101,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Laurel Duracoat 
+DB2191,38,43,65,"Duracoat,Dyed Colour,Silver Lined",glossy,Silver Lined Navy Duracoat 
+DB2192,40,40,52,"Duracoat,Dyed Colour,Silver Lined",glossy,Silver Lined Montana Duracoat 
+DB2201,91,80,74,N/A,glossy/ colorful sides,Transparent Crystal Marea
+DB2203,104,103,101,Matte,matte/ colorful sides,Transparent Vitrail Matte AB
+DB2204,137,136,142,Matte,,Opaque Labrador Matte
+DB2205,70,69,64,N/A,glossy/ colorful sides,Magic Orchid
+DB2206,67,68,73,N/A,glossy/ colorful sides,Magic Blue
+DB2207,78,63,60,N/A,glossy/ colorful sides,Magic Wine
+DB2261,43,42,40,"Matte,Picasso",multi,Black Picasso 
+DB2262,152,129,95,"Matte,Picasso",multi,Opaque Yellow Picasso 
+DB2263,71,43,42,"Matte,Opaque,Picasso",multi,Opaque Red Picasso 
+DB2264,90,112,99,"Matte,Picasso",multi,Opaque Turquoise Blue Picasso 
+DB2265,124,122,63,"Matte,Picasso",multi,Opaque Chartreuse Picasso 
+DB2267,97,80,62,"Matte,Picasso",multi,Opaque Brown Picasso 
+DB2271,146,112,103,Opaque,glossy/ bit multi,Opaque Glazed Beige 
+DB2272,146,118,53,Opaque,glossy/ bit multi,Opaque Glazed Hawthome 
+DB2273,154,104,53,Opaque,glossy/ bit multi,Opaque Glazed Toast 
+DB2274,178,97,52,Opaque,glossy/ bit multi,Opaque Glazed Persimmon 
+DB2275,139,60,63,Opaque,glossy/ bit multi,Opaque Glazed Jujube 
+DB2281,139,149,151,Opaque,matte/ neutral,Matte Opaque Glazed Shark Fin 
+DB2282,139,133,119,Opaque,matte/ neutral,Matte Opaque Glazed Cactus 
+DB2283,198,182,45,Opaque,matte/ neutral,Matte Opaque Glazed Citron 
+DB2284,212,167,48,Opaque,matte/ neutral,Matte Opaque Glazed Pineapple 
+DB2285,221,152,51,Opaque,matte/ neutral,Matte Opaque Glazed Banana 
+DB2286,144,89,33,Opaque,matte/ neutral,Matte Opaque Glazed Toast 
+DB2287,159,90,31,Opaque,matte/ neutral,Matte Opaque Glazed Persimmon 
+DB2288,146,59,39,Opaque,matte/ neutral,Matte Opaque Glazed Sienna 
+DB2290,164,154,83,Opaque,matte/ neutral,Matte Opaque Glazed Spring Green 
+DB2291,72,85,59,Opaque,matte/ neutral,Matte Opaque Glazed Avocado 
+DB2292,99,95,118,Opaque,matte/ neutral,Matte Opaque Glazed Thistle 
+DB2293,93,82,114,Opaque,matte/ neutral,Matte Opaque Glazed Lupine 
+DB2294,145,101,114,Opaque,matte/ neutral,Matte Opaque Glazed Hydrangea 
+DB2295,116,79,97,Opaque,matte/ neutral,Matte Opaque Glazed Twilight Lavender 
+DB2301,176,153,119,Opaque,bit multi,Matte Opaque Glazed Moth Wing AB 
+DB2302,200,153,71,Opaque,bit multi,Matte Opaque Glazed Citron AB 
+DB2303,167,126,74,Opaque,multi,Matte Opaque Glazed Honey Bee AB 
+DB2305,152,123,119,Opaque,bit multi,Matte Opaque Glazed Beige AB 
+DB2306,158,79,82,Opaque,multi,Matte Opaque Glazed Camelian AB 
+DB2308,113,69,82,Opaque,multi,Matte Opaque Glazed Trillium Red AB 
+DB2309,130,139,76,Opaque,multi,Matte Opaque Glazed Seaweed AB 
+DB2310,117,130,104,Opaque,multi,Matte Opaque Glazed Pistachio AB 
+DB2311,85,112,97,Opaque,multi,Matte Opaque Glazed Turtle Green AB 
+DB2312,83,106,88,Opaque,bit multi,Matte Opaque Glazed Basil Green AB 
+DB2313,117,142,136,Opaque,bit multi,Matte Opaque Glazed Sea Opal AB 
+DB2315,85,124,141,Opaque,multi,Matte Opaque Glazed Nile Blue AB 
+DB2316,82,103,120,Opaque,multi,Matte Opaque Glazed Moody Blue AB 
+DB2317,82,96,133,Opaque,multi,Matte Opaque Glazed Bayberry AB 
+DB2318,95,113,153,Opaque,bit multi,Matte Opaque Glazed Mermaid Blue ABI 
+DB2319,70,75,107,Opaque,bit multi,Matte Opaque Glazed Navy AB 
+DB2320,134,143,152,Opaque,bit multi,Matte Opaque Glazed Shark Fin AB 
+DB2321,126,105,110,Opaque,multi,Matte Opaque Glazed Dark Beige AB 
+DB2322,111,96,115,Opaque,multi,Matte Opaque Glazed Sea Lavender AB 
+DB2351,240,188,86,"Duracoat,Opaque",matte,Opaque Pale Peach Duracoat 
+DB2352,148,94,60,"Duracoat,Opaque",matte,Opaque Terracotta Duracoat 
+DB2353,185,95,147,"Duracoat,Opaque",matte,Opaque Cherry Blossom Duracoat 
+DB2354,177,62,55,"Duracoat,Opaque",matte,Opaque Shanghai Red Duracoat 
+DB2355,81,51,63,"Duracoat,Opaque",matte,Opaque Plum Berry Duracoat 
+DB2356,103,161,136,"Duracoat,Opaque",matte,Opaque Pale Turquoise Duracoat 
+DB2357,71,72,37,"Duracoat,Opaque",matte,Opaque Olive Duracoal 
+DB2358,65,81,78,"Duracoat,Opaque",matte,Opaque Evergreen Duracoat 
+DB2359,90,73,149,"Duracoat,Opaque",matte,Opaque Violet Duracoat 
+DB2360,81,52,83,"Duracoat,Opaque",matte,Opaque Grape Duracoat 
+DB2361,232,209,215,"Duracoat,Opaque",matte,Opaque Pale Wisteria Duracoat 
+DB2362,191,181,161,"Duracoat,Opaque",matte,Opaque Flax Duracoat 
+DB2363,162,148,134,"Duracoat,Opaque",matte,Opaque Oyster Duracoat 
+DB2364,180,158,127,"Duracoat,Opaque",matte,Opaque Moth Wing Duracoal 
+DB2365,121,102,88,"Duracoat,Opaque",matte,Opaque Taupe Duracoat 
+DB2366,183,177,177,"Duracoat,Opaque",matte,Opaque Mist Grey Duracoat 
+DB2367,149,137,142,"Duracoat,Opaque",matte,Opaque Seal Grey Duracoat 
+DB2368,57,51,47,"Duracoat,Opaque",matte,Opaque Charcoal Duracoat 
+DB2371,242,202,143,N/A,bit glossy,Color Lined Ivory 
+DB2372,171,120,39,N/A,glossy/ bit transparent,Color Lined Marigold 
+DB2373,155,117,94,N/A,glossy/ bit transparent,Color Lined Blush 
+DB2374,162,31,39,N/A,glossy/ bit transparent,Color Lined Scarlet 
+DB2375,90,46,59,N/A,glossy/ bit transparent,Color Lined Red 
+DB2376,105,148,66,N/A,glossy/ bit transparent,Color Lined Chartreuse 
+DB2377,104,98,50,N/A,glossy/ bit transparent,Color Lined Lime 
+DB2378,117,120,99,N/A,glossy/ bit transparent,Color Lined Willow 
+DB2379,91,102,96,N/A,glossy/ silver lined?,Color Lined Eucalyptus 
+DB2380,22,102,111,N/A,glossy/ bit transparent,Color Lined Teal 
+DB2381,46,91,84,N/A,lined,Color Lined Spruce 
+DB2382,34,126,151,N/A,glossy/ bit transparent,Color Lined Aqua 
+DB2383,74,112,135,N/A,glossy/ bit transparent,Color Lined Dusk 
+DB2384,42,83,103,N/A,lined,Color Lined Stormy 
+DB2385,19,78,108,N/A,glossy/ bit transparent,Color Lined Pacific 
+DB2386,48,56,95,N/A,lined/ glossy,Color Lined Night Sky 
+DB2387,67,73,99,N/A,lined/ glossy,Color Lined Tidal 
+DB2388,86,102,187,N/A,lined,Color Lined Lavender 
+DB2389,112,39,92,N/A,glossy/ bit transparent,Color Lined Magenta 
+DB2390,86,54,77,N/A,lined/ glossy,Color Lined Brandy 
+DB2391,171,165,165,N/A,lined,Color Lined Moonstone 
+DB2392,132,136,148,N/A,lined,Color Lined Pewter 
+DB2393,124,124,124,N/A,glossy/ bit transparent,Color Lined Silver 
+DB2394,56,57,59,N/A,glossy,Color Lined Steel 
+DB2395,121,102,98,N/A,glossy/ bit transparent,Color Lined Sand 
+DB2396,119,99,75,N/A,glossy/ bit transparent,Color Lined Moth 
+DB2401,223,220,205,"Crystal Glazed Luster,Luster,Matte",matte,Matte Opaque Light Buttercream
+DB2402,217,219,208,"Crystal Glazed Luster,Luster,Matte",matte,Light Buttercream Ceylon
+DB2403,104,54,43,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy,Matte Transparent Rootbeer
+DB2404,150,164,75,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy,Matte Transparent Dark Olive
+DB2405,109,90,84,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy,Matte Transparent Dark Smoky Amethyst
+DB2406,104,99,95,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy,Matte Transparent Charcoal
+DB2407,55,94,89,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy,Matte Opaque Eucalyptus
+DB2408,113,134,187,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy,Matte Opaque Steel Blue
+DB2409,121,113,105,"Crystal Glazed Luster,Matte",matte/ lined?/ cloudy,Matte Opaque Charcoal
+DB2501,212,180,97,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Pale Gold
+DB2502,216,201,100,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Soft Yellow Gold
+DB2503,217,131,108,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Rose Gold
+DB2504,162,107,76,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Champagne Copper
+DB2505,55,194,135,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Green
+DB2506,41,154,126,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Aqua Green
+DB2507,45,55,46,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Black Moss
+DB2508,106,62,141,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Purple Orchid
+DB2509,87,68,134,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Dark Lilac
+DB2510,66,49,127,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Purple Night
+DB2511,37,62,144,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Navy Blue
+DB2512,90,98,74,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Steel Green
+DB2513,47,134,162,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Turquoise Blue
+DB2514,24,101,157,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Capri Blue
+DB2515,45,116,138,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Poseidon Blue
+DB2516,39,114,172,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Aqua Blue
+DB2517,65,90,154,"Duracoat,Galvanised",glossy/ metallic,Duracoat Galvanized Mermaid Blue

@@ -12,12 +12,12 @@ import java.io.*;
 public class PdfPrinter {
 
     static {
-        ZipSecureFile.setMinInflateRatio(0.005); // Ustawienie niższego limitu
+        ZipSecureFile.setMinInflateRatio(0.003); // Ustawienie niższego limitu
     }
     private static final String COPYWRITE_NOTE = "©2025 Beadventure. This pattern is for personal use only.\n" +
             "You may not copy, share, modify, or resell this file in any form without written permission.";
 
-    private final static String IMAGE_PATTERN_FILE_NAME = "ms3_M_Pattern";
+    private final static String IMAGE_PATTERN_FILE_NAME = "bird_M_Pattern";
     private final static String EXCEL_FILE = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + IMAGE_PATTERN_FILE_NAME + ".xlsx";
     private final static String OUTPUT_PDF = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\";
 
@@ -36,7 +36,7 @@ public class PdfPrinter {
         try (FileInputStream fis = new FileInputStream(new File(excelFilePath));
              XSSFWorkbook workbook = new XSSFWorkbook(fis)) {
 
-            //Setup for 'Pattern' sheet
+        //Setup for 'Pattern' sheet ######################################################################
             XSSFSheet patternSheet = workbook.getSheet("Pattern");
             if (patternSheet != null) {
                 XSSFPrintSetup patternPS = patternSheet.getPrintSetup();
@@ -68,7 +68,7 @@ public class PdfPrinter {
                 patternSheet.setHorizontallyCenter(true);
             }
 
-            //Setup for 'Legend' sheet
+        //Setup for 'Legend' sheet ######################################################################
             XSSFSheet legendSheet = workbook.getSheet("Legend");
             if (legendSheet != null) {
                 XSSFPrintSetup legendPS = legendSheet.getPrintSetup();
@@ -99,7 +99,45 @@ public class PdfPrinter {
             }
 
 
-            //Setup for 'Word_Chart' sheet
+        //Setup for 'PageMap' sheet ######################################################################
+            XSSFSheet pmapSheet = workbook.getSheet("PageMap");
+            if (pmapSheet != null) {
+                XSSFPrintSetup pmapPS = pmapSheet.getPrintSetup();
+                // margins
+                pmapSheet.setMargin(PageMargin.BOTTOM, bottomMarginDefault);
+                pmapSheet.setMargin(PageMargin.TOP, topMarginDefault);
+                pmapSheet.setMargin(PageMargin.LEFT, leftMarginDefault);
+                pmapSheet.setMargin(PageMargin.RIGHT, rightMarginDefault);
+
+                // Header
+                Header header = pmapSheet.getHeader();
+                header.setLeft("");
+                header.setCenter("PAGE MAP - PAGE &P");
+                header.setRight("");
+
+                // Footer
+                Footer footer = pmapSheet.getFooter();
+                footer.setLeft("");
+                footer.setCenter(COPYWRITE_NOTE);
+                footer.setRight("");
+
+                // Orientacja pozioma
+                pmapPS.setLandscape(false);
+                // Format papieru
+                pmapPS.setPaperSize(PaperSize.A4_PAPER);
+                // Centrowanie wydruku
+                pmapSheet.setHorizontallyCenter(true);
+
+                // Dopasowanie do strony
+                pmapSheet.setFitToPage(true);
+
+                // Skalowanie do jednej strony
+                pmapPS.setFitWidth((short) 1);
+                pmapPS.setFitHeight((short) 1);
+
+            }
+
+        //Setup for 'Word_Chart' sheet  ######################################################################
             XSSFSheet wchartSheet = workbook.getSheet("Word_Chart");
             if (wchartSheet != null) {
                 XSSFPrintSetup wchartPS = wchartSheet.getPrintSetup();
@@ -124,14 +162,26 @@ public class PdfPrinter {
                 // Orientacja pozioma
                 wchartPS.setLandscape(false);
                 // Format papieru
-                wchartPS.setPaperSize(PaperSize.A4_PAPER);
+                wchartPS.setPaperSize(PaperSize.A3_PAPER);
                 // Centrowanie wydruku
                 wchartSheet.setHorizontallyCenter(true);
             }
 
-            // Skalowanie do jednej strony
-//            patternPS.setFitWidth((short) 1);
-//            patternPS.setFitHeight((short) 1);
+
+
+            // Wykluczenie arkuszy roboczych - Size
+            workbook.setSheetHidden(workbook.getSheetIndex("Size"),true);
+
+
+            //Ustawienie kolejności arkuszy - jesli wszystkie istnieja
+            if(workbook.getSheetIndex("PageMap") != -1 && workbook.getSheetIndex("Pattern") != -1 &&
+                    workbook.getSheetIndex("Legend") != -1 && workbook.getSheetIndex("Word_Chart") != -1)
+            {
+                workbook.setSheetOrder("PageMap", 0);     // pierwszy do druku
+                workbook.setSheetOrder("Pattern", 1);     // drugi
+                workbook.setSheetOrder("Legend", 2);      // trzeci
+                workbook.setSheetOrder("Word_Chart", 3);  // czwarty
+            }
 
 
             // Zapisanie pliku XLSX
