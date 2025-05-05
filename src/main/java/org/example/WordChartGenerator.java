@@ -6,7 +6,6 @@ import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -19,8 +18,7 @@ public class WordChartGenerator {
 
     public static void main(String[] args) {
         // Podaj ścieżkę do pliku Excela
-        String imageName = "bird";
-        String filePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_M_Pattern.xlsx";
+        String filePath = Config.getXlsxPatternFilePath();
 
         // Generuj diagram słowny na podstawie pliku Excela
         generateWordChartFromFile(filePath);
@@ -102,6 +100,7 @@ public class WordChartGenerator {
             XSSFCellStyle wchartCellStyle = workbook.createCellStyle();
             setBorderedAndLeftStyle(wchartCellStyle);
             wchartCellStyle.setFont(mainFont); // przypisujemy czcionkę do stylu
+            wchartCellStyle.setWrapText(true);
 
             // Iteracja po wierszach w wchartSheet
             for (int i = 1; i < wordChartSheet.getPhysicalNumberOfRows(); i++) {
@@ -115,7 +114,7 @@ public class WordChartGenerator {
 
             // Dopasowanie szerokości kolumn do zawartości
             wordChartSheet.autoSizeColumn(0);
-            wordChartSheet.autoSizeColumn(1);
+            wordChartSheet.setColumnWidth(1, 256*75);
 
             // Zapisz zmiany w pliku
             try (FileOutputStream fos = new FileOutputStream(filePath)) {

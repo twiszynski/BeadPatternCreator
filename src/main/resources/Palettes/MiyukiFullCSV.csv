@@ -283,7 +283,7 @@ DB0418,176,140,142,,,Galvanized Blush
 DB0419,147,126,135,,,Galvanized Dusty Orchid 
 DB0420,171,97,112,,,Galvanized Dark Coral 
 DB0421,147,83,39,,,Galvanized Burnt Orange 
-DB0422,146,47,127,,,Galvanized Fuschia 
+DB0422,146,47,127,,,Galvanized Fuchsia
 DB0423,140,84,83,,,Galvanized Berry 
 DB0424,175,149,56,,,Galvanized Zest 
 DB0425,152,60,133,,,Galvanized Hot Pink 
@@ -346,7 +346,7 @@ DB0624,203,154,147,"dyed color, silver lined",,Light Rose Silver Lined Alabaster
 DB0625,190,107,127,"dyed color, silver lined",,Rose Silver Lined Alabaster 
 DB0626,104,174,163,"dyed color, silver lined",,Light Aqua Green Silver Lined Alabaster 
 DB0627,42,153,136,"dyed color, silver lined",,Aqua Green Silver Lined Alabaster 
-DB0628,103,150,168,"dyed color, silver lined",,Aqua Silver Lined Nabaster 
+DB0628,103,150,168,"dyed color, silver lined",,Aqua Silver Lined Alabaster
 DB0629,158,131,164,"dyed color, silver lined",,Lilac Silver Lined Alabaster 
 DB0630,125,118,112,"dyed color, silver lined",,Light Smoke Grey Silver Lined Alabaster 
 DB0631,95,90,84,"dyed color, silver lined",,Rustic Grey Silver Lined Alabaster 
@@ -379,7 +379,7 @@ DB0682,186,82,27,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Dark Ora
 DB0683,157,42,35,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Red Orange 
 DB0684,195,103,80,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Watermelon 
 DB0685,155,92,75,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Light Cranberry 
-DB0686,151,124,79,"Dyed Colour,Matte,Silver Lined",,rosted Silver Lined Saffron 
+DB0686,151,124,79,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Saffron
 DB0687,160,127,73,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Yellow Green 
 DB0688,41,99,59,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Green 
 DB0689,87,93,93,"Dyed Colour,Matte,Silver Lined",,Frosted Silver Lined Moss Green 
@@ -426,7 +426,7 @@ DB0744,247,108,13,"Matte,Transparent",,Matte Transparent Orange
 DB0745,190,24,28,"Matte,Transparent",,Matte Transparent Red Orange 
 DB0746,19,90,46,"Matte,Transparent",,Matte Transparent Green 
 DB0747,54,144,222,"Matte,Transparent",,Matte Transparent Aqua 
-DB0748,39,21,131,"Matte,Transparent",,Matte Transparent Coball 
+DB0748,39,21,131,"Matte,Transparent",,Matte Transparent Cobalt
 DB0749,80,86,86,"Matte,Transparent",,Matte Transparent Gray 
 DB0751,240,219,4,"Matte,Opaque",,Matte Opaque Yellow 
 DB0752,238,68,17,"Matte,Opaque",,Malte Opaque Orange 
@@ -439,7 +439,7 @@ DB0758,141,110,126,"Matte,Opaque",,Matte Opaque Mauve
 DB0759,55,148,155,"Matte,Opaque",,Matte Opaque Turquoise Green 
 DB0760,98,112,209,"Matte,Opaque",,Matte Opaque Periwinkle 
 DB0761,107,106,104,"Matte,Opaque",,Matte Opaque Grey 
-DB0762,234,210,174,"Matte,Opaque",,Matle Opaque Dark Cream 
+DB0762,234,210,174,"Matte,Opaque",,Matte Opaque Dark Cream
 DB0763,163,181,79,"Matte,Opaque",,Matte Opaque Chartreuse 
 DB0764,93,50,33,"Matte,Transparent",,Matte Transparent Dark Topaz 
 DB0765,115,79,91,"Matte,Transparent",,Matte Transparent Smoky Amethyst 
@@ -475,7 +475,7 @@ DB0797,61,79,53,"Dyed Colour,Matte,Opaque",,Frosted Opaque Jade Green
 DB0798,55,119,144,"Dyed Colour,Matte,Opaque",,Frosted Opaque Capri Blue 
 DB0799,92,92,126,"Dyed Colour,Matte,Opaque",,Frosted Opaque Lavender 
 DB0800,153,103,128,"Matte,Opaque",,Frosted Opaque Antique Rose 
-DB0820,213,175,196,Silk,,Pale Rose Salin 
+DB0820,213,175,196,Silk,,Pale Rose Satin
 DB0821,242,190,153,Silk,,Pale Apricot Satin 
 DB0822,164,152,154,Silk,,Light Tan Satin 
 DB0823,245,225,138,Silk,,Lemon Ice Satin 
@@ -542,8 +542,8 @@ DB0918,38,114,112,N/A,,Sparkling Dark Aqua Green Lined Crystal
 DB0919,40,86,84,N/A,,Sparkling Dark Teal Lined Chartreuse 
 DB0920,43,99,148,N/A,,Sparkling Cerulean Blue Lined Crystal 
 DB0921,58,78,87,N/A,,Sparkling Blue Lined Topaz 
-DB0922,104,83,124,N/A,,Spariding Orchid Lined Aqua 
-DB0923,85,73,113,N/A,,Sparding Amethyst Lined Crystal 
+DB0922,104,83,124,N/A,,Sparkling Orchid Lined Aqua
+DB0923,85,73,113,N/A,,Sparkling Amethyst Lined Crystal
 DB0924,125,68,77,N/A,,Sparkling Cranberry Lined Crystal 
 DB0925,75,75,87,N/A,,Sparkling Charcoal Lined Crystal 
 DB0981,123,97,70,Metallic,multi,Sparkling Lined Metallic Sand Dune
@@ -578,14 +578,14 @@ DB1064,115,94,103,"AB,Matte,Metallic",,Matte Metallic Orchid Gold AB
 DB1065,122,108,125,"AB,Matte,Metallic",,Matte Metallic Wisteria Gold AB 
 DB1066,135,99,113,"Luster,Matte,Metallic",,Matte Metallic Heather Gold AB 
 DB1067,117,100,106,"AB,Matte,Metallic",,Matte Metallic Thistle Gold AB 
-DB1101,137,65,25,Transparent,,Transparent Mangold 
+DB1101,137,65,25,Transparent,,Transparent Marigold
 DB1102,118,21,30,Transparent,,Transparent Dark Cranberry 
 DB1103,226,172,160,Transparent,,Transparent Pink Mist 
 DB1104,67,44,52,Transparent,,Transparent Mauve 
 DB1105,74,58,84,Transparent,,Transparent Light Amethyst 
 DB1106,71,132,39,Transparent,,Transparent Lime 
 DB1107,55,71,35,Transparent,,Transparent Olive 
-DB1108,19,86,94,Transparent,,Transparent Canbbean Teal 
+DB1108,19,86,94,Transparent,,Transparent Caribbean Teal
 DB1109,14,125,204,Transparent,,Transparent Ocean Blue 
 DB1110,41,77,187,Transparent,,Transparent Are 
 DB1111,142,135,127,Transparent,,Transparent Grey Mist 
@@ -609,7 +609,7 @@ DB1157,138,102,104,"Frosted,Galvanised",,Galvanized Frosted Berry
 DB1158,160,142,132,"Frosted,Galvanised",,Galvanized Frosted Light Smoky Amethyst 
 DB1159,136,124,108,Galvanised,,Galvanized Frosted Pewter 
 DB1162,146,115,97,"Galvanised,Matte",,Galvanized Matte Champagne 
-DB1163,152,116,82,"Galvanised,Matte",,Calvanized Matte Mead 
+DB1163,152,116,82,"Galvanised,Matte",,Galvanized Matte Mead
 DB1164,172,147,91,"Galvanised,Matte",,Galvanized Matte Zest 
 DB1165,151,112,97,"Galvanised,Matte",,Galvanized Matte Muscat 
 DB1166,156,115,113,"Galvanised,Matte",,Galvanized Matte Pink Blush 
@@ -620,14 +620,14 @@ DB1170,123,118,99,"Galvanised,Matte",,Galvanized Matte Aloe
 DB1171,83,127,110,"Galvanised,Matte",,Galvanized Matte Dark Mint 
 DB1172,78,106,109,"Galvanised,Matte",,Galvanized Matte Dark Aqua 
 DB1173,130,92,117,"Galvanised,Matte",,Galvanized Matte Magenta 
-DB1174,94,77,96,"Galvanised,Matte",,Galvanized Matle Eggplant 
+DB1174,94,77,96,"Galvanised,Matte",,Galvanized Matte Eggplant
 DB1175,88,87,82,"Galvanised,Matte",,Galvanized Matte Graphite 
 DB1181,150,143,117,"Frosted,Galvanised",,Galvanized Frosted Alce 
 DB1182,72,140,119,"Frosted,Galvanised",,Galvanized Frosted Dark Mint 
 DB1183,77,126,131,"Frosted,Galvanised",,Galvanized Frosted Dark Aqua 
 DB1184,147,84,127,"Frosted,Galvanised",,Galvanized Frosted Magenta 
 DB1185,108,88,115,"Frosted,Galvanised",,Galvanized Frosted Eggplant 
-DB1186,92,87,83,"Frosted,Galvanised",,Calvanized Frosted Graphite 
+DB1186,92,87,83,"Frosted,Galvanised",,Galvanized Frosted Graphite
 DB1201,143,87,38,Silver Lined,,Sever Lined Marigold 
 DB1202,79,42,33,Silver Lined,,Silver Lined Dark Cranberry 
 DB1203,181,149,136,Silver Lined,,Silver Lined Pink Mist 
@@ -674,13 +674,13 @@ DB1269,12,134,211,"Matte,Transparent",,Matte Transparent Ocean Blue
 DB1270,53,90,196,"Matte,Transparent",,Matte Transparent Azure 
 DB1271,147,142,138,"Matte,Transparent",,Matte Transparent Grey Mist 
 DB1272,223,179,106,"Matte,Transparent",,Transparent Matte Light Straw 
-DB1281,107,159,95,"AB,Matte,Transparent",multi,Matle Transparent Lime AB 
+DB1281,107,159,95,"AB,Matte,Transparent",multi,Matte Transparent Lime AB
 DB1282,96,115,95,"AB,Matte,Transparent",multi,Matte Transparent Olive AB 
 DB1283,40,118,130,"AB,Matte,Transparent",multi,Matte Transparent Caribbean Teal AB 
-DB1284,52,153,221,"AB,Matte,Transparent",multi,Matle Transparent Ocean Blue AB 
+DB1284,52,153,221,"AB,Matte,Transparent",multi,Matte Transparent Ocean Blue AB
 DB1285,82,119,200,"AB,Matte,Transparent",multi,Matte Transparent Azure AB 
 DB1286,162,160,161,"AB,Matte,Transparent",multi,Matte Transparent Gray MistAB 
-DB1287,227,191,139,"Luster,Matte,Transparent",,Transparent Light Straw Salin 
+DB1287,227,191,139,"Luster,Matte,Transparent",,Transparent Light Straw Satin
 DB1301,246,190,9,"Dyed Colour,Transparent",,Transparent Yellow 
 DB1302,180,74,52,"Dyed Colour,Transparent",,Transparent Peach 
 DB1304,7,143,131,"Dyed Colour,Transparent",,Transparent Dark Mint Green 
@@ -688,7 +688,7 @@ DB1308,205,45,79,"Dyed Colour,Transparent",,Transparent Bubble Gum Pink
 DB1310,177,17,117,"Dyed Colour,Transparent",,Transparent Fuchsia 
 DB1312,71,33,46,"Dyed Colour,Transparent",,Transparent Wine 
 DB1315,87,31,122,"Dyed Colour,Transparent",,Transparent Red Violet 
-DB1318,11,91,150,"Dyed Colour,Transparent",,Transparent Capni Blue 
+DB1318,11,91,150,"Dyed Colour,Transparent",,Transparent Capri Blue
 DB1319,47,46,44,"Dyed Colour,Transparent",,Transparent Charcoal 
 DB1333,145,72,31,"Dyed Colour,Silver Lined",,Silver Lined Burnt Orange 
 DB1335,190,165,171,"Dyed Colour,Silver Lined",,Silver Lined Pink 
@@ -835,14 +835,14 @@ DB1598,145,145,157,"AB,Matte,Opaque",,Matte Opaque Ghost Grey AB
 DB1671,209,208,206,"AB,Transparent",,Pearl Lined Crystal AB 
 DB1672,130,193,208,"AB,Transparent",,Pearl Lined Glacier Blue AB 
 DB1673,203,144,164,"AB,Transparent",,Pearl Lined Pink AB 
-DB1674,194,171,163,"AB,Transparent",,Peart Lined Light Pink AB 
+DB1674,194,171,163,"AB,Transparent",,Pearl Lined Light Pink AB
 DB1675,157,201,188,"AB,Transparent",,Pearl Lined Pale Green Mist AB 
 DB1676,215,202,157,"AB,Transparent",,Pearl Lined Pale Yellow AB 
-DB1677,153,165,181,"AB,Transparent",,Peart Lined Pale Grey AB 
+DB1677,153,165,181,"AB,Transparent",,Pearl Lined Pale Grey AB
 DB1681,113,81,40,Silver Lined,,Silver Lined Glazed Dark Saffron 
 DB1682,110,75,35,Silver Lined,,Silver Lined Glazed Dark Honey 
 DB1683,96,53,36,Silver Lined,,Silver Lined Glazed Dark Topaz 
-DB1684,69,50,36,Silver Lined,,Silver Lined Glazed Dark Roofbeer 
+DB1684,69,50,36,Silver Lined,,Silver Lined Glazed Dark Roofbeer
 DB1685,72,43,37,Silver Lined,,Silver Lined Glazed Dark Cranberry 
 DB1691,117,85,64,"AB,Silver Lined",multi,Silver Lined Glazed Dark Saffron AB 
 DB1692,107,79,68,"AB,Silver Lined",multi,Silver Lined Glazed Dark Honey AB 
@@ -899,7 +899,7 @@ DB1767,85,131,129,AB,,Sparkling Aqua Green Lined Crystal AB
 DB1768,71,103,100,AB,,Forest Green Lined Opal AB 
 DB1769,39,84,90,AB,multi a bit,Sparkling Aqua Green Lined Teal AB 
 DB1770,128,129,131,AB,,Sparkling Pewter Lined Opal AB 
-DB1771,146,134,138,AB,,Sparkling Powter Lined Light Tea Rose AB 
+DB1771,146,134,138,AB,,Sparkling Pewter Lined Light Tea Rose AB
 DB1772,126,115,113,AB,multi a bit,Sparkling Pewter Lined Crystal AB 
 DB1773,87,80,72,AB,multi a bit,Sparkling Beige Lined Grey AB 
 DB1774,88,88,96,AB,multi,Grey Lined Opal AB 
@@ -929,7 +929,7 @@ DB1804,164,98,66,"Dyed Colour,Silk",,Topaz Satin
 DB1805,149,69,72,"Dyed Colour,Silk",,Dark Berry Satin 
 DB1806,153,103,128,"Dyed Colour,Silk",,Orchid Satin 
 DB1807,177,72,105,"Dyed Colour,Silk",,Rose Satin 
-DB1808,158,62,125,"Dyed Colour,Silk",,Fuschia Satin 
+DB1808,158,62,125,"Dyed Colour,Silk",,Fuchsia Satin
 DB1809,102,82,133,"Dyed Colour,Silk",,Lilac Satin 
 DB1810,86,63,117,"Dyed Colour,Silk",,Purple Satin 
 DB1811,59,84,125,"Dyed Colour,Silk",,Dusk Blue Satin 
@@ -1009,7 +1009,7 @@ DB1910,74,44,44,"Matte,Opaque",,Matte Opaque Espresso
 DB1991,54,41,48,Metallic,,Metallic French Plum 
 DB2031,216,238,33,Luminous,glossy,Neon Lime Aid 
 DB2032,251,203,41,Luminous,glossy,Neon Sun Glow 
-DB2033,251,153,66,Luminous,glossy,Neon Creamsicle 
+DB2033,251,153,66,Luminous,glossy,Neon Creamsicle
 DB2034,250,122,113,Luminous,glossy,Neon Flamingo 
 DB2035,248,72,173,Luminous,glossy,Neon Wild Strawberry 
 DB2036,246,101,170,Luminous,glossy,Neon Cotton Candy 
@@ -1023,7 +1023,7 @@ DB2043,171,124,72,N/A,multi a bit?,Neon Almond
 DB2044,158,101,84,N/A,multi a bit?,Neon Guava 
 DB2045,232,137,53,N/A,multi a bit?,Neon Mango 
 DB2046,123,111,61,N/A,multi a bit?,Neon Mushroom 
-DB2047,247,101,42,Luminous,glossy,Neon Bittersweel 
+DB2047,247,101,42,Luminous,glossy,Neon Bittersweet
 DB2048,181,83,130,N/A,multi a bit?,Neon Pink Taffy 
 DB2049,174,70,157,N/A,multi a bit?,Neon Hot Pink 
 DB2050,182,62,136,N/A,multi a bit?,Neon Jazzberry 
@@ -1108,7 +1108,7 @@ DB2172,172,108,83,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lin
 DB2173,150,60,59,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Light Watermelon Duracoat 
 DB2174,173,86,129,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Pink Parfait Duracoat 
 DB2175,188,77,94,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Hibiscus Duracoat 
-DB2176,83,115,140,"Duracoat,Frosted,Silver Lined",matte/ silk,Frested Silver Lined Light Bayberry Duracoat 
+DB2176,83,115,140,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Light Bayberry Duracoat
 DB2177,158,117,99,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Mica Duracoat 
 DB2178,163,84,69,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Papaya Duracoat 
 DB2179,121,72,68,"Duracoat,Frosted,Silver Lined",matte/ silk,Frosted Silver Lined Magenta Duracoat 
@@ -1138,7 +1138,7 @@ DB2264,90,112,99,"Matte,Picasso",multi,Opaque Turquoise Blue Picasso
 DB2265,124,122,63,"Matte,Picasso",multi,Opaque Chartreuse Picasso 
 DB2267,97,80,62,"Matte,Picasso",multi,Opaque Brown Picasso 
 DB2271,146,112,103,Opaque,glossy/ bit multi,Opaque Glazed Beige 
-DB2272,146,118,53,Opaque,glossy/ bit multi,Opaque Glazed Hawthome 
+DB2272,146,118,53,Opaque,glossy/ bit multi,Opaque Glazed Hawthorn
 DB2273,154,104,53,Opaque,glossy/ bit multi,Opaque Glazed Toast 
 DB2274,178,97,52,Opaque,glossy/ bit multi,Opaque Glazed Persimmon 
 DB2275,139,60,63,Opaque,glossy/ bit multi,Opaque Glazed Jujube 

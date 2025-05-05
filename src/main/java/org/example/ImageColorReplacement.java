@@ -15,18 +15,17 @@ import java.util.List;
 public class ImageColorReplacement {
 
     public static void main(String[] args) {
-        String csvFilePath = "C:\\Users\\Admin\\Desktop\\Palety\\CSV\\MiyukiFullCSV.csv";
-        String imageName = "skull";
-        String imageFormat = ".png";
-        String imagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + imageFormat;
-        String outputImagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_M" + imageFormat;
+
+        String csvFilePath = Config.getAbsoluteCsvPalettePath();
+        String inputImagePath = Config.getBaseColorsImgPath();
+        String outputImagePath = Config.getMiyukiColorsImgPath();
 
         try {
             // 1. Wczytaj paletę z pliku CSV
             List<PaletteColor> palette = loadPaletteFromCsv(csvFilePath);
 
             // 2. Wczytaj obraz wejściowy
-            BufferedImage image = ImageIO.read(new File(imagePath));
+            BufferedImage image = ImageIO.read(new File(inputImagePath));
 
             // 3. Podmień kolory obrazu na najbliższe z palety
             BufferedImage processedImage = replaceColors(image, palette);

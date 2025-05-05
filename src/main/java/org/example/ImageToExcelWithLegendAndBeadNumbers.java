@@ -14,11 +14,10 @@ import org.apache.commons.csv.*;
 public class ImageToExcelWithLegendAndBeadNumbers {
 
     public static void main(String[] args) {
-        String imageName = "bird";
-        String inputFormat = "_M.png";
-        String imagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + inputFormat;
-        String excelPath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_M_Pattern.xlsx";
-        String paletteCsvPath = new File("src/main/resources/Palettes/MiyukiFullCSV.csv").getAbsolutePath(); // Ścieżka do pliku CSV z paletą kolorów
+
+        String imagePath = Config.getMiyukiColorsImgPath();
+        String excelPath = Config.getXlsxPatternFilePath();
+        String paletteCsvPath = Config.getAbsoluteCsvPalettePath(); // Ścieżka do pliku CSV z paletą kolorów
 
         try {
             BufferedImage image = ImageIO.read(new File(imagePath));

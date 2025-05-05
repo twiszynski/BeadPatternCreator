@@ -17,9 +17,9 @@ public class ExcelPatternToImage {
 
     public static void main(String[] args) {
 
-        String imageFileName = "lady2_M";
-        String excelFilePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageFileName + "_Pattern.xlsx";
-        String outputImagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageFileName + "_adj.png";
+        String excelFilePath = Config.getXlsxPatternFilePath();
+        String outputImagePath = Config.getAdjustedImgPath();
+
         convertExcelToImage(excelFilePath, outputImagePath);
     }
 
@@ -107,9 +107,9 @@ public class ExcelPatternToImage {
             // Symbol w pierwszej kolumnie
             Cell symbolCell = row.getCell(0);
             // Wartości RGB w kolumnach 4, 5, 6
-            Cell redCell = row.getCell(4);
-            Cell greenCell = row.getCell(5);
-            Cell blueCell = row.getCell(6);
+            Cell redCell = row.getCell(6);
+            Cell greenCell = row.getCell(7);
+            Cell blueCell = row.getCell(8);
 
             if (symbolCell != null && redCell != null && greenCell != null && blueCell != null) {
                 String symbol = symbolCell.getStringCellValue();
