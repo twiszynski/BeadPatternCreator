@@ -32,6 +32,17 @@ public class Config {
     private static final String SIZE_SHEET_NAME = "Size";
     private static final String PAGE_MAP_SHEET_NAME = "PageMap";
 
+    // Print properties
+    private static final String COPYWRITE_NOTE = "©2025 Beadventure. This pattern is for personal use only.\n" +
+            "You may not copy, share, modify, or resell this file in any form without written permission.";
+
+    //Fonts properties
+    private static final String HEADER_FONT = "Montserrat SemiBold";
+    private static final int HEADER_FONT_SIZE = 10;
+    private static final String BASE_FONT = "Montserrat";
+    private static final int BASE_FONT_SIZE = 10;
+    private static final String COLS_ROWS_NUMBERING_FONT = "Montserrat";
+    private static final int COLS_ROWS_NUMBERING_FONT_SIZE = 9;
 
 
     public static String getImgName() {
@@ -40,6 +51,10 @@ public class Config {
 
     public static String getImgFormatSuffix() {
         return IMG_FORMAT_SUFFIX;
+    }
+
+    public static String getLibraryBaseDirectoryPath() {
+        return LIB_DIR_PATH;
     }
 
     public static String getXlsxPatternFileName() {
@@ -124,5 +139,32 @@ public class Config {
 
     public static String getSizeSheetName() {
         return SIZE_SHEET_NAME;
+    }
+
+    public static String getCopywriteNote() {
+        return COPYWRITE_NOTE;
+    }
+
+    public static String getHeaderFont() {
+        return HEADER_FONT;
+    }
+    public static int getHeaderFontSize() {
+        return HEADER_FONT_SIZE;
+    }
+
+    public static String getBaseFont() {
+        return BASE_FONT;
+    }
+
+    public static int getBaseFontSize() {
+        return BASE_FONT_SIZE;
+    }
+
+    public static String getColsRowsNumberingFont() {
+        return COLS_ROWS_NUMBERING_FONT;
+    }
+
+    public static int getColsRowsNumberingFontSize() {
+        return COLS_ROWS_NUMBERING_FONT_SIZE;
     }
 }

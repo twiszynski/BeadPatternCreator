@@ -14,17 +14,10 @@ public class PdfPrinter {
     static {
         ZipSecureFile.setMinInflateRatio(0.003); // Ustawienie niższego limitu
     }
-    private static final String COPYWRITE_NOTE = "©2025 Beadventure. This pattern is for personal use only.\n" +
-            "You may not copy, share, modify, or resell this file in any form without written permission.";
-
-    private final static String IMAGE_PATTERN_FILE_NAME = "bird_M_Pattern";
-    private final static String EXCEL_FILE = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + IMAGE_PATTERN_FILE_NAME + ".xlsx";
-    private final static String OUTPUT_PDF = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\";
-
 
     public static void main(String[] args) {
-        printSetup(EXCEL_FILE);
-        printToPdf(EXCEL_FILE, OUTPUT_PDF);
+        printSetup(Config.getXlsxPatternFilePath());
+        printToPdf(Config.getXlsxPatternFilePath(), Config.getLibraryBaseDirectoryPath());
     }
 
     public static void printSetup(String excelFilePath) {
@@ -37,7 +30,7 @@ public class PdfPrinter {
              XSSFWorkbook workbook = new XSSFWorkbook(fis)) {
 
         //Setup for 'Pattern' sheet ######################################################################
-            XSSFSheet patternSheet = workbook.getSheet("Pattern");
+            XSSFSheet patternSheet = workbook.getSheet(Config.getPatternSheetName());
             if (patternSheet != null) {
                 XSSFPrintSetup patternPS = patternSheet.getPrintSetup();
                 // margins
@@ -57,7 +50,7 @@ public class PdfPrinter {
                 // Footer
                 Footer footer = patternSheet.getFooter();
                 footer.setLeft("");
-                footer.setCenter(COPYWRITE_NOTE);
+                footer.setCenter(Config.getCopywriteNote());
                 footer.setRight("");
 
                 // Orientacja pozioma
@@ -69,7 +62,7 @@ public class PdfPrinter {
             }
 
         //Setup for 'Legend' sheet ######################################################################
-            XSSFSheet legendSheet = workbook.getSheet("Legend");
+            XSSFSheet legendSheet = workbook.getSheet(Config.getLegendSheetName());
             if (legendSheet != null) {
                 XSSFPrintSetup legendPS = legendSheet.getPrintSetup();
                 // margins
@@ -87,7 +80,7 @@ public class PdfPrinter {
                 // Footer
                 Footer footer = legendSheet.getFooter();
                 footer.setLeft("");
-                footer.setCenter(COPYWRITE_NOTE);
+                footer.setCenter(Config.getCopywriteNote());
                 footer.setRight("");
 
                 // Orientacja pozioma
@@ -100,7 +93,7 @@ public class PdfPrinter {
 
 
         //Setup for 'PageMap' sheet ######################################################################
-            XSSFSheet pmapSheet = workbook.getSheet("PageMap");
+            XSSFSheet pmapSheet = workbook.getSheet(Config.getPageMapSheetName());
             if (pmapSheet != null) {
                 XSSFPrintSetup pmapPS = pmapSheet.getPrintSetup();
                 // margins
@@ -118,7 +111,7 @@ public class PdfPrinter {
                 // Footer
                 Footer footer = pmapSheet.getFooter();
                 footer.setLeft("");
-                footer.setCenter(COPYWRITE_NOTE);
+                footer.setCenter(Config.getCopywriteNote());
                 footer.setRight("");
 
                 // Orientacja pozioma
@@ -138,7 +131,7 @@ public class PdfPrinter {
             }
 
         //Setup for 'Word_Chart' sheet  ######################################################################
-            XSSFSheet wchartSheet = workbook.getSheet("Word_Chart");
+            XSSFSheet wchartSheet = workbook.getSheet(Config.getWordChartSheetName());
             if (wchartSheet != null) {
                 XSSFPrintSetup wchartPS = wchartSheet.getPrintSetup();
                 // margins
@@ -156,7 +149,7 @@ public class PdfPrinter {
                 // Footer
                 Footer footer = wchartSheet.getFooter();
                 footer.setLeft("");
-                footer.setCenter(COPYWRITE_NOTE);
+                footer.setCenter(Config.getCopywriteNote());
                 footer.setRight("");
 
                 // Orientacja pozioma
@@ -165,22 +158,25 @@ public class PdfPrinter {
                 wchartPS.setPaperSize(PaperSize.A3_PAPER);
                 // Centrowanie wydruku
                 wchartSheet.setHorizontallyCenter(true);
+
+//                wchartSheet.setFitToPage(true);
+                wchartPS.setFitWidth((short) 1);
             }
 
 
 
             // Wykluczenie arkuszy roboczych - Size
-            workbook.setSheetHidden(workbook.getSheetIndex("Size"),true);
+            workbook.setSheetHidden(workbook.getSheetIndex(Config.getSizeSheetName()),true);
 
 
             //Ustawienie kolejności arkuszy - jesli wszystkie istnieja
-            if(workbook.getSheetIndex("PageMap") != -1 && workbook.getSheetIndex("Pattern") != -1 &&
-                    workbook.getSheetIndex("Legend") != -1 && workbook.getSheetIndex("Word_Chart") != -1)
+            if(workbook.getSheetIndex(Config.getPageMapSheetName()) != -1 && workbook.getSheetIndex(Config.getPatternSheetName()) != -1 &&
+                    workbook.getSheetIndex(Config.getLegendSheetName()) != -1 && workbook.getSheetIndex(Config.getWordChartSheetName()) != -1)
             {
-                workbook.setSheetOrder("PageMap", 0);     // pierwszy do druku
-                workbook.setSheetOrder("Pattern", 1);     // drugi
-                workbook.setSheetOrder("Legend", 2);      // trzeci
-                workbook.setSheetOrder("Word_Chart", 3);  // czwarty
+                workbook.setSheetOrder(Config.getPageMapSheetName(), 0);     // pierwszy do druku
+                workbook.setSheetOrder(Config.getLegendSheetName(), 1);      // trzeci
+                workbook.setSheetOrder(Config.getPatternSheetName(), 2);     // drugi
+                workbook.setSheetOrder(Config.getWordChartSheetName(), 3);  // czwarty
             }
 
 
@@ -202,7 +198,7 @@ public class PdfPrinter {
             String command = "soffice --headless --convert-to pdf " + excelFilePath + " --outdir " + pdfOutputPath;
             Process process = Runtime.getRuntime().exec(command);
             process.waitFor();
-            System.out.println("Wydruk zakończony! " + "Plik: " + IMAGE_PATTERN_FILE_NAME + ".pdf");
+            System.out.println("Wydruk zakończony! " + "Plik: " + Config.getXlsxPatternFileName() + ".pdf");
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }

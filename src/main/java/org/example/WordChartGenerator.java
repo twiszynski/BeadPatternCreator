@@ -32,7 +32,7 @@ public class WordChartGenerator {
             int patternHeight = 0;
 
             //odczytaj wymiary schematu
-            Sheet sizeSheet = workbook.getSheet("Size");
+            Sheet sizeSheet = workbook.getSheet(Config.getSizeSheetName());
             if (sizeSheet != null) {
                 Row row = sizeSheet.getRow(1); // Dane są w drugim wierszu (indeks 1)
                 if (row != null) {
@@ -47,7 +47,7 @@ public class WordChartGenerator {
             }
 
             // Znajdź arkusz o nazwie "Pattern"
-            XSSFSheet patternSheet = workbook.getSheet("Pattern");
+            XSSFSheet patternSheet = workbook.getSheet(Config.getPatternSheetName());
             if (patternSheet == null) {
                 throw new IllegalArgumentException("Nie znaleziono arkusza o nazwie: Pattern");
             }
@@ -56,13 +56,13 @@ public class WordChartGenerator {
             String[][] schema = readSchemaFromSheet(patternSheet, patternWidth, patternHeight);
 
             // Usunięcie istniejącego arkusza "Word_Chart" (jeśli istnieje)
-            int wchartSheetIndex = workbook.getSheetIndex("Word_Chart");
+            int wchartSheetIndex = workbook.getSheetIndex(Config.getWordChartSheetName());
             if (wchartSheetIndex != -1) {
                 workbook.removeSheetAt(wchartSheetIndex);
             }
 
             // Utwórz nowy arkusz na diagram słowny
-            XSSFSheet wordChartSheet = workbook.createSheet("Word_Chart");
+            XSSFSheet wordChartSheet = workbook.createSheet(Config.getWordChartSheetName());
 
             // Nagłówki
             Row headerRow = wordChartSheet.createRow(0);
