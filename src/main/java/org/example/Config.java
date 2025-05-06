@@ -3,10 +3,10 @@ package org.example;
 import java.io.File;
 
 public class Config {
-
+    //General Image and paths properties
     private static final String IMG_NAME = "bird";
 
-    private static final String IMG_INPUT_FORMAT = ".png";
+    private static final String IMG_FORMAT_SUFFIX = ".png";
     private static final String MAPPED_COLORS_IMG_SUFFIX = "_M";
     private static final String ADJUSTED_IMG_SUFFIX = "_adj";
     private static final String LIB_DIR_PATH = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\";
@@ -14,10 +14,32 @@ public class Config {
     private static final String PATTERN_FILE_FORMAT = ".xlsx";
     private static final String PALETTE_PATH = "src/main/resources/Palettes/MiyukiFullCSV.csv";
 
+    //Visualizer properties
+    private static final String TEMPLATE_FOLDER_PATH = "src\\main\\resources\\MiyukiPNG";
+    private static final String DEFAULT_IMAGE_NAME = "NoMatch.png";
+    private static final String VISUAL_IMG_SUFFIX = "_visual";
+    private static final int BEAD_IMG_PX_WIDTH = 53;
+    private static final int BEAD_IMG_PX_HEIGHT = 66;
+    private static final int HORIZONTAL_PX_SPACING = 2;
+    private static final int VERTICAL_PX_SPACING = 1;
+    private static final int CORNER_ARC_PX_WIDTH = 20;
+    private static final int CORNER_ARC_PX_HEIGHT = 20;
+
+    //XLSX Pattern file properties
+    private static final String PATTERN_SHEET_NAME = "Pattern";
+    private static final String LEGEND_SHEET_NAME = "Legend";
+    private static final String WORD_CHART_SHEET_NAME = "Word_Chart";
+    private static final String SIZE_SHEET_NAME = "Size";
+    private static final String PAGE_MAP_SHEET_NAME = "PageMap";
+
 
 
     public static String getImgName() {
         return IMG_NAME;
+    }
+
+    public static String getImgFormatSuffix() {
+        return IMG_FORMAT_SUFFIX;
     }
 
     public static String getXlsxPatternFileName() {
@@ -25,15 +47,15 @@ public class Config {
     }
 
     public static String getBaseColorsImgPath() {
-        return LIB_DIR_PATH + IMG_NAME + IMG_INPUT_FORMAT;
+        return LIB_DIR_PATH + IMG_NAME + IMG_FORMAT_SUFFIX;
     }
 
     public static String getMiyukiColorsImgPath() {
-        return LIB_DIR_PATH + IMG_NAME + MAPPED_COLORS_IMG_SUFFIX + IMG_INPUT_FORMAT;
+        return LIB_DIR_PATH + IMG_NAME + MAPPED_COLORS_IMG_SUFFIX + IMG_FORMAT_SUFFIX;
     }
 
     public static String getAdjustedImgPath() {
-        return LIB_DIR_PATH + IMG_NAME + MAPPED_COLORS_IMG_SUFFIX + ADJUSTED_IMG_SUFFIX + IMG_INPUT_FORMAT;
+        return LIB_DIR_PATH + IMG_NAME + MAPPED_COLORS_IMG_SUFFIX + ADJUSTED_IMG_SUFFIX + IMG_FORMAT_SUFFIX;
     }
 
     public static String getAbsoluteCsvPalettePath() {
@@ -44,5 +66,63 @@ public class Config {
         return LIB_DIR_PATH + IMG_NAME + MAPPED_COLORS_IMG_SUFFIX + PATTERN_FILE_SUFFIX + PATTERN_FILE_FORMAT;
     }
 
+    public static String getBeadTemplateDirPathWithSeparator() {
+        return new File(TEMPLATE_FOLDER_PATH).getAbsolutePath() + File.separator;
+    }
 
+    public static String getDefaultTemplateImgName() {
+        return DEFAULT_IMAGE_NAME;
+    }
+
+    public static String getDefaultTemplateImgNameAndFormat() {
+        return DEFAULT_IMAGE_NAME + IMG_FORMAT_SUFFIX;
+    }
+
+    public static String getVisualisationImgOutputPath() {
+        return LIB_DIR_PATH + IMG_NAME + MAPPED_COLORS_IMG_SUFFIX + VISUAL_IMG_SUFFIX + IMG_FORMAT_SUFFIX;
+    }
+
+    public static int getBeadImgPxWidth() {
+        return BEAD_IMG_PX_WIDTH;
+    }
+
+    public static int getBeadImgPxHeight() {
+        return BEAD_IMG_PX_HEIGHT;
+    }
+
+    public static int getHorizontalPxSpacing() {
+        return HORIZONTAL_PX_SPACING;
+    }
+
+    public static int getVerticalPxSpacing() {
+        return VERTICAL_PX_SPACING;
+    }
+
+    public static int getCornerArcPxWidth() {
+        return CORNER_ARC_PX_WIDTH;
+    }
+
+    public static int getCornerArcPxHeight() {
+        return CORNER_ARC_PX_HEIGHT;
+    }
+
+    public static String getPatternSheetName() {
+        return PATTERN_SHEET_NAME;
+    }
+
+    public static String getLegendSheetName() {
+        return LEGEND_SHEET_NAME;
+    }
+
+    public static String getWordChartSheetName() {
+        return WORD_CHART_SHEET_NAME;
+    }
+
+    public static String getPageMapSheetName() {
+        return PAGE_MAP_SHEET_NAME;
+    }
+
+    public static String getSizeSheetName() {
+        return SIZE_SHEET_NAME;
+    }
 }

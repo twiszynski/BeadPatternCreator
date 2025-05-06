@@ -30,7 +30,7 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             Map<String, String> beadNames = loadBeadNamesFromCsv(paletteCsvPath);
 
             // Tworzenie arkusza dla obrazu
-            XSSFSheet patternSheet = workbook.createSheet("Pattern");
+            XSSFSheet patternSheet = workbook.createSheet(Config.getPatternSheetName());
 
             // Font for default text
             Font mainFont = workbook.createFont();
@@ -114,7 +114,7 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             }
 
             // Tworzenie arkusza z legendą
-            XSSFSheet legendSheet = workbook.createSheet("Legend");
+            XSSFSheet legendSheet = workbook.createSheet(Config.getLegendSheetName());
 
             // Posortowanie legendy alfabetycznie
             List<Map.Entry<Color, String>> sortedLegend = new ArrayList<>(colorLegend.entrySet());
@@ -245,7 +245,7 @@ public class ImageToExcelWithLegendAndBeadNumbers {
 
 
             //Dodaj arkusz z wymiarami schematu
-            Sheet dimSheet = workbook.createSheet("Size");
+            Sheet dimSheet = workbook.createSheet(Config.getSizeSheetName());
 
             Row rowHeader = dimSheet.createRow(0);
             rowHeader.createCell(0).setCellValue("Width");

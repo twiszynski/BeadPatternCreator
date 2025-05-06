@@ -36,7 +36,7 @@ public class ExcelPatternToImage {
             int patternColumns = 0;
 
             //Pobranie liczby wierszy i kolumn
-            Sheet sizeSheet = workbook.getSheet("Size");
+            Sheet sizeSheet = workbook.getSheet(Config.getSizeSheetName());
             if (sizeSheet != null) {
                 Row row = sizeSheet.getRow(1); // Dane są w drugim wierszu (indeks 1)
                 if (row != null) {
@@ -51,7 +51,7 @@ public class ExcelPatternToImage {
             }
 
             // Pobranie arkusza "Pattern" (schemat)
-            Sheet patternSheet = workbook.getSheet("Pattern");
+            Sheet patternSheet = workbook.getSheet(Config.getPatternSheetName());
 
 
             // Tworzenie obrazu o wymiarach na podstawie schematu
@@ -92,7 +92,7 @@ public class ExcelPatternToImage {
      */
     private static Map<String, int[]> readLegendColors(Workbook workbook) {
         Map<String, int[]> colorMap = new HashMap<>();
-        Sheet legendSheet = workbook.getSheet("Legend");
+        Sheet legendSheet = workbook.getSheet(Config.getLegendSheetName());
 
 
         boolean isFirstRow = true;

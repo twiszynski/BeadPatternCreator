@@ -18,8 +18,7 @@ public class PatternToPageMap {
     }
 
     public static void main(String[] args) {
-        String fileName = "bird";
-        String excelFilePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + fileName + "_M_Pattern.xlsx";
+        String excelFilePath = Config.getXlsxPatternFilePath();
 
         // **Podaj liczbę wierszy i kolumn na pojedynczej stronie wydruku**
         int colsPerPage = 30;  // Liczba kolumn na stronę (sprawdzone po wydruku)
@@ -40,7 +39,7 @@ public class PatternToPageMap {
             int patternColumns = 0;
 
             // **Odczytanie liczby wierszy i kolumn z arkusza Size**
-            Sheet sizeSheet = workbook.getSheet("Size");
+            Sheet sizeSheet = workbook.getSheet(Config.getSizeSheetName());
             if (sizeSheet != null) {
                 Row row = sizeSheet.getRow(1);
                 if (row != null) {
@@ -58,14 +57,14 @@ public class PatternToPageMap {
 
 
             // **Usunięcie istniejącego arkusza "PageMap", jeśli istnieje**
-            int pageMapIndex = workbook.getSheetIndex("PageMap");
+            int pageMapIndex = workbook.getSheetIndex(Config.getPageMapSheetName());
             if (pageMapIndex != -1) {
                 workbook.removeSheetAt(pageMapIndex);
             }
 
             // **Tworzenie nowego arkusza "PageMap"**
-            Sheet pageMapSheet = workbook.createSheet("PageMap");
-            Sheet patternSheet = workbook.getSheet("Pattern");
+            Sheet pageMapSheet = workbook.createSheet(Config.getPageMapSheetName());
+            Sheet patternSheet = workbook.getSheet(Config.getPatternSheetName());
 
             // **Wypełnianie arkusza "PageMap" danymi kolorystycznymi**
             for (int r = 0; r < patternRows; r++) {
@@ -132,7 +131,7 @@ public class PatternToPageMap {
      */
     private static Map<String, int[]> readLegendColors(Workbook workbook) {
         Map<String, int[]> colorMap = new HashMap<>();
-        Sheet legendSheet = workbook.getSheet("Legend");
+        Sheet legendSheet = workbook.getSheet(Config.getLegendSheetName());
 
         boolean isFirstRow = true;
         for (Row row : legendSheet) {

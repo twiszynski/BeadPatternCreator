@@ -15,22 +15,13 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class BeadVisualizer {
-    private static final String TEMPLATE_FOLDER = new File("src\\main\\resources\\MiyukiPNG").getAbsolutePath() + File.separator;
-    private static final String DEFAULT_IMAGE = "NoMatch.png";
-    private static final int BEAD_IMG_PX_WIDTH = 53;
-    private static final int BEAD_IMG_PX_HEIGHT = 66;
-    private static final int HORIZONTAL_PX_SPACING = 2;
-    private static final int VERTICAL_PX_SPACING = 1;
-    private static final int CORNER_ARC_PX_WIDTH = 20;
-    private static final int CORNER_ARC_PX_HEIGHT = 20;
-
 
     public static void main(String[] args) {
-        String imageName = "ptaszek_M";
-        String excelFilePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_Pattern.xlsx";
-        String patternSheetName = "Pattern";
-        String legendSheetName = "Legend";
-        String outputImagePath = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\" + imageName + "_visual.png";
+
+        String excelFilePath = Config.getXlsxPatternFilePath();
+        String patternSheetName = Config.getPatternSheetName();
+        String legendSheetName = Config.getLegendSheetName();
+        String outputImagePath = Config.getVisualisationImgOutputPath();
 
         try {
             Map<String, String> colorSymbolToBeadMap = loadBeadNumbersFromLegendSheet(excelFilePath, legendSheetName);
@@ -113,8 +104,8 @@ public class BeadVisualizer {
      * Generuje obraz wizualizacji, łącząc odpowiednie obrazy koralików.
      */
     private static void generateVisualization(String[][] beadPattern, String outputImagePath) throws IOException {
-        int tileWidth = BEAD_IMG_PX_WIDTH + HORIZONTAL_PX_SPACING;
-        int tileHeight = BEAD_IMG_PX_HEIGHT + VERTICAL_PX_SPACING;
+        int tileWidth = Config.getBeadImgPxWidth() + Config.getHorizontalPxSpacing();
+        int tileHeight = Config.getBeadImgPxHeight() + Config.getVerticalPxSpacing();
 
         int rows = beadPattern.length;
         int cols = beadPattern[0].length;
@@ -126,7 +117,7 @@ public class BeadVisualizer {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 String beadNumber = beadPattern[i][j];
-                BufferedImage beadImage = roundCorners(loadBeadImage(beadNumber), CORNER_ARC_PX_WIDTH, CORNER_ARC_PX_HEIGHT);
+                BufferedImage beadImage = roundCorners(loadBeadImage(beadNumber), Config.getCornerArcPxWidth(), Config.getCornerArcPxHeight());
 
                 if (beadImage != null) {
                     // Tworzymy przezroczyste tło
@@ -152,11 +143,11 @@ public class BeadVisualizer {
      * Wczytuje obraz koralika na podstawie jego numeru lub używa domyślnego.
      */
     private static BufferedImage loadBeadImage(String beadNumber) {
-        String imagePath = TEMPLATE_FOLDER + beadNumber + ".png";
+        String imagePath = Config.getBeadTemplateDirPathWithSeparator() + beadNumber + Config.getImgFormatSuffix();
         File imageFile = new File(imagePath);
 
         if (!imageFile.exists()) {
-            imagePath = TEMPLATE_FOLDER + DEFAULT_IMAGE; // Użyj NoMatch.png, jeśli brak dopasowania
+            imagePath = Config.getBeadTemplateDirPathWithSeparator() + Config.getDefaultTemplateImgNameAndFormat(); // Użyj NoMatch.png, jeśli brak dopasowania
         }
 
         try {
