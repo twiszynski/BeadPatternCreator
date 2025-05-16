@@ -4,7 +4,7 @@ import java.io.File;
 
 public class Config {
     //General Image and paths properties
-    private static final String IMG_NAME = "bird";
+    private static final String IMG_NAME = "city";
 
     private static final String IMG_FORMAT_SUFFIX = ".png";
     private static final String MAPPED_COLORS_IMG_SUFFIX = "_M";

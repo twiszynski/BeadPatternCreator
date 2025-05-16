@@ -19,13 +19,11 @@ public class BeadVisualizer {
     public static void main(String[] args) {
 
         String excelFilePath = Config.getXlsxPatternFilePath();
-        String patternSheetName = Config.getPatternSheetName();
-        String legendSheetName = Config.getLegendSheetName();
         String outputImagePath = Config.getVisualisationImgOutputPath();
 
         try {
-            Map<String, String> colorSymbolToBeadMap = loadBeadNumbersFromLegendSheet(excelFilePath, legendSheetName);
-            String[][] beadNumbersPattern = loadPattern(excelFilePath, patternSheetName, colorSymbolToBeadMap);
+            Map<String, String> colorSymbolToBeadMap = loadBeadNumbersFromLegendSheet(excelFilePath);
+            String[][] beadNumbersPattern = loadPattern(excelFilePath, colorSymbolToBeadMap);
             generateVisualization(beadNumbersPattern, outputImagePath);
             System.out.println("Wizualizacja zapisana jako: " + outputImagePath);
         } catch (Exception e) {
@@ -36,13 +34,13 @@ public class BeadVisualizer {
     /**
      * Wczytuje mapowanie symbol koloru -> numer koralika z istniejacej legendy pliku xlsx - arkusz 'Legend'
      */
-    private static Map<String, String> loadBeadNumbersFromLegendSheet(String excelFilePath, String legendSheetName) throws IOException {
+    private static Map<String, String> loadBeadNumbersFromLegendSheet(String excelFilePath) throws IOException {
 
         Map<String, String> beadNumbersMap = new HashMap<>();
         try (InputStream excelFile = Files.newInputStream(Paths.get(excelFilePath));
              Workbook workbook = new XSSFWorkbook(excelFile)) {
 
-            Sheet sheet = workbook.getSheet(legendSheetName);
+            Sheet sheet = workbook.getSheet(Config.getLegendSheetName());
             Iterator<Row> rowIterator = sheet.iterator();
             boolean isFirstRow = true;
 
@@ -74,25 +72,41 @@ public class BeadVisualizer {
     /**
      * Wczytuje schemat z Excela i mapuje symbole na numery koralików.
      */
-    private static String[][] loadPattern(String excelFilePath, String sheetName, Map<String, String> symbolToBeadMap) throws IOException {
+    private static String[][] loadPattern(String excelFilePath, Map<String, String> symbolToBeadMap) throws IOException {
         try (InputStream excelFile = Files.newInputStream(Paths.get(excelFilePath));
              Workbook workbook = new XSSFWorkbook(excelFile)) {
 
-            Sheet sheet = workbook.getSheet(sheetName);
-            int rows = sheet.getPhysicalNumberOfRows();
-            int cols = sheet.getRow(0).getPhysicalNumberOfCells();
-            String[][] beadPattern = new String[rows][cols];
+            int patternWidth = 0;
+            int patternHeight = 0;
 
-            for (int i = 0; i < rows; i++) {
-                Row row = sheet.getRow(i);
+            //odczytaj wymiary schematu
+            Sheet sizeSheet = workbook.getSheet(Config.getSizeSheetName());
+            if (sizeSheet != null) {
+                Row row = sizeSheet.getRow(1); // Dane są w drugim wierszu (indeks 1)
+                if (row != null) {
+                    Cell widthCell = row.getCell(0);
+                    Cell heightCell = row.getCell(1);
+
+                    patternWidth = (int) widthCell.getNumericCellValue();
+                    patternHeight = (int) heightCell.getNumericCellValue();
+                }
+            } else {
+                System.out.println("Brak arkusza 'Size'");
+            }
+
+            Sheet patternSheet = workbook.getSheet(Config.getPatternSheetName());
+            String[][] beadPattern = new String[patternHeight][patternWidth];
+
+            for (int i = 1; i <= patternHeight; i++) {
+                Row row = patternSheet.getRow(i);
                 if (row == null || row.getCell(0) == null) break; // Jeśli pierwszy wiersz pusty -> koniec schematu
 
-                for (int j = 0; j < cols; j++) {
+                for (int j = 1; j <= patternWidth; j++) {
                     Cell cell = row.getCell(j);
                     if (cell == null) break; // Jeśli pusta komórka -> koniec całego wiersza
 
                     String cellValue = cell.getStringCellValue();
-                    beadPattern[i][j] = symbolToBeadMap.getOrDefault(cellValue, "NoMatch");
+                    beadPattern[i-1][j-1] = symbolToBeadMap.getOrDefault(cellValue, "NoMatch");
                 }
             }
             return beadPattern;
