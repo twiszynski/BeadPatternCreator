@@ -4,7 +4,7 @@ import java.io.File;
 
 public class Config {
     //General Image and paths properties
-    private static final String IMG_NAME = "city";
+    private static final String IMG_NAME = "astronauta";
 
     private static final String IMG_FORMAT_SUFFIX = ".png";
     private static final String MAPPED_COLORS_IMG_SUFFIX = "_M";
@@ -14,16 +14,17 @@ public class Config {
     private static final String PATTERN_FILE_FORMAT = ".xlsx";
     private static final String PALETTE_PATH = "src/main/resources/Palettes/MiyukiFullCSV.csv";
 
-    //Visualizer properties
+    //BeadVisualizer properties
     private static final String TEMPLATE_FOLDER_PATH = "src\\main\\resources\\MiyukiPNG";
+    private static final String FINISH_TYPES_DIR_PATH = "src\\main\\resources\\FinishTypesPNG";
     private static final String DEFAULT_IMAGE_NAME = "NoMatch.png";
     private static final String VISUAL_IMG_SUFFIX = "_visual";
     private static final int BEAD_IMG_PX_WIDTH = 53;
     private static final int BEAD_IMG_PX_HEIGHT = 66;
     private static final int HORIZONTAL_PX_SPACING = 2;
     private static final int VERTICAL_PX_SPACING = 1;
-    private static final int CORNER_ARC_PX_WIDTH = 20;
-    private static final int CORNER_ARC_PX_HEIGHT = 20;
+    private static final int CORNER_ARC_PX_WIDTH = 25;
+    private static final int CORNER_ARC_PX_HEIGHT = 25;
 
     //XLSX Pattern file properties
     private static final String PATTERN_SHEET_NAME = "Pattern";
@@ -83,6 +84,10 @@ public class Config {
 
     public static String getBeadTemplateDirPathWithSeparator() {
         return new File(TEMPLATE_FOLDER_PATH).getAbsolutePath() + File.separator;
+    }
+
+    public static String getFinishTypesDirPathWithSeparator() {
+        return new File(FINISH_TYPES_DIR_PATH).getAbsolutePath() + File.separator;
     }
 
     public static String getDefaultTemplateImgName() {
@@ -148,6 +153,7 @@ public class Config {
     public static String getHeaderFont() {
         return HEADER_FONT;
     }
+
     public static int getHeaderFontSize() {
         return HEADER_FONT_SIZE;
     }

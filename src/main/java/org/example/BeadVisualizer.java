@@ -1,5 +1,6 @@
 package org.example;
 
+import org.apache.poi.openxml4j.util.ZipSecureFile;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -15,6 +16,10 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class BeadVisualizer {
+
+    static {
+        ZipSecureFile.setMinInflateRatio(0.003); // Ustawienie niższego limitu
+    }
 
     public static void main(String[] args) {
 
