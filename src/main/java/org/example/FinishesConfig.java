@@ -14,8 +14,7 @@ public class FinishesConfig {
         // Basic - when particular effect not present in this config map
         Map<String, Integer> basic = new LinkedHashMap<>();
         basic.put("BaseColor", 100);          // pełna widoczność koloru bazowego
-        basic.put("AB.png", 80);
-        basic.put("Metallic.png", 60); // nakładka metaliczna z przezroczystością 60%
+        basic.put("Transparent_strong.png", 70); // nakładka metaliczna z przezroczystością 60%
         EFFECT_CONFIGS.put("Basic", basic);
 
 
