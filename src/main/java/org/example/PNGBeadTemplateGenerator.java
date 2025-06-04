@@ -59,7 +59,7 @@ public class PNGBeadTemplateGenerator {
                     String layerName = layer.getKey();
                     int opacity = layer.getValue();
 
-                    if ("BaseColor".equals(layerName)) {
+                    if (layerName.startsWith("BaseColor")) {
                         Color baseColor = new Color(r, g, b, (int) (255 * opacity / 100.0));
                         g2d.setColor(baseColor);
                         g2d.fillRect(0, 0, WIDTH, HEIGHT);
