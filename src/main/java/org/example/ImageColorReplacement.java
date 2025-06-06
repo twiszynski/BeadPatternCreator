@@ -57,10 +57,17 @@ public class ImageColorReplacement {
         }
 
         // Obliczanie odległości między kolorami w przestrzeni RGB
-        public double distanceTo(Color color) {
-            return Math.sqrt(Math.pow(r - color.getRed(), 2) +
-                    Math.pow(g - color.getGreen(), 2) +
-                    Math.pow(b - color.getBlue(), 2));
+        public double compareByRGB(Color color) {
+            return Math.sqrt(Math.pow(this.r - color.getRed(), 2) +
+                    Math.pow(this.g - color.getGreen(), 2) +
+                    Math.pow(this.b - color.getBlue(), 2));
+        }
+
+        // Obliczanie delty między kolorami na podstawie CIEDE2000 i LAB
+        public double compareByLAB(Color color) {
+            double[] lab1 = ColorUtils.rgbToLab(this.r, this.g, this.b);
+            double[] lab2 = ColorUtils.rgbToLab(color.getRed(), color.getGreen(), color.getBlue());
+            return ColorUtils.calculateCIEDE2000(lab1, lab2);
         }
 
         public Color toColor() {
@@ -114,7 +121,8 @@ public class ImageColorReplacement {
         double minDistance = Double.MAX_VALUE;
 
         for (PaletteColor paletteColor : palette) {
-            double distance = paletteColor.distanceTo(color);
+            double distance = Config.getColorMappingMode() == ColorMappingMode.LAB ?
+                    paletteColor.compareByLAB(color) : paletteColor.compareByRGB(color);
             if (distance < minDistance) {
                 minDistance = distance;
                 closest = paletteColor;

@@ -4,7 +4,9 @@ import java.io.File;
 
 public class Config {
     //General Image and paths properties
-    private static final String IMG_NAME = "astronauta";
+    private static final String IMG_NAME = "ms3";
+
+    private static final ColorMappingMode COLOR_MAPPING_MODE = ColorMappingMode.LAB;
 
     private static final String IMG_FORMAT_SUFFIX = ".png";
     private static final String MAPPED_COLORS_IMG_SUFFIX = "_M";
@@ -48,6 +50,10 @@ public class Config {
 
     public static String getImgName() {
         return IMG_NAME;
+    }
+
+    public static ColorMappingMode getColorMappingMode() {
+        return COLOR_MAPPING_MODE;
     }
 
     public static String getImgFormatSuffix() {
