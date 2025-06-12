@@ -1,5 +1,5 @@
 Number,R,G,B,Type,Comments,Name,EffectType
-DB0001,51,51,59,,multi,Gunmetal ,
+DB0001,51,51,59,,multi,Gunmetal ,Metallic
 DB0002,30,37,47,,multi,Metallic Dark Blue AB ,MetallicAB
 DB0003,41,43,40,,multi,Metallic Forest Green AB ,MetallicAB
 DB0004,37,37,39,,multi,Metallic Dark Plum AB ,MetallicAB
@@ -9,7 +9,7 @@ DB0007,51,40,34,,multi,Metallic Brown AB ,MetallicAB
 DB0010,23,23,23,,,Black ,
 DB0011,60,57,38,,,Metallic Olive ,Metallic
 DB0012,67,38,40,,,Metallic Dark Raspberry ,Metallic
-DB0021,100,92,89,,,Nickel Plated ,
+DB0021,100,92,89,,,Nickel Plated ,Galvanized
 DB0022,75,57,47,,,Metallic Dark Bronze ,Metallic
 DB0023,74,61,55,,multi,Metallic Gold AB ,MetallicAB
 DB0024,80,82,61,,multi,Metallic Olive Green AB ,MetallicAB
@@ -17,13 +17,13 @@ DB0025,41,55,66,,multi,Metallic Blue AB ,MetallicAB
 DB0026,67,66,64,,multi,Metallic Steel AB ,MetallicAB
 DB0027,57,68,62,,multi,Metallic Dark Green AB ,MetallicAB
 DB0029,97,84,68,,multi,Metallic Golden Olive AB ,MetallicAB
-DB0031,181,135,75,,,24d Gold Plated ,
+DB0031,181,135,75,,,24d Gold Plated ,Galvanized
 DB0033,169,120,64,,,24kt Gold Lined Crystal ,LinedCrystal
 DB0034,149,119,83,,,24kt Gold Light Plated ,
 DB0035,161,152,135,,,Galvanized Silver ,Galvanized
 DB0037,131,97,87,,,Copper Lined Crystal ,LinedCrystal
-DB0038,122,116,116,,,Palladium Plated ,
-DB0040,133,89,76,,,Copper Plated ,
+DB0038,122,116,116,,,Palladium Plated ,Galvanized
+DB0040,133,89,76,,,Copper Plated ,Galvanized
 DB0041,147,141,141,,,Silver Lined Crystal ,SilverLinedCrystal
 DB0042,178,128,69,,,Silver Lined Gold ,SilverLined
 DB0043,172,46,24,,,Silver Lined Flame Red ,SilverLined
@@ -237,7 +237,7 @@ DB0323,62,58,72,,,Matte Metallic Copper Rainbow AB ,MetallicABMatte
 DB0324,91,92,84,,,Matte Metallic Patina AB ,MetallicABMatte
 DB0325,57,65,76,,,Matte Metallic Blue AB ,MetallicABMatte
 DB0327,32,36,30,,??,Matte Metallic Dark Green Al ,MetallicMatte
-DB0331,198,147,95,,??,Malte 24kt Gold Plated ,
+DB0331,198,147,95,,??,Malte 24kt Gold Plated ,Galvanized
 DB0334,192,162,133,,??,Matte 24kt Gold Light Plated ,Matte
 DB0335,222,211,199,,??,Matte Galvanized Silver ,GalvanizedMatte
 DB0340,125,85,75,,,Matte Copper Plated ,Matte
@@ -314,8 +314,8 @@ DB0463,80,35,74,,,Galvanized Dark Magenta ,Galvanized
 DB0464,69,54,75,,,Galvanized Eggplant ,Galvanized
 DB0465,51,60,69,,,Galvanized Midnight Blue ,Galvanized
 DB0501,143,106,54,,multi,24id Gold AB ,AB
-DB0505,118,78,42,,multi,24kt Dark Yellow Gold ,
-DB0506,106,73,56,,multi,24x1 Red Gold AR ,
+DB0505,118,78,42,,multi,24kt Dark Yellow Gold ,Metallic
+DB0506,106,73,56,,multi,24x1 Red Gold AR ,Metallic
 DB0507,127,98,66,,multi,24kt Pink Gold AB ,AB
 DB0508,117,105,79,,multi,24kt Green Gold AB ,AB
 DB0514,59,76,94,,multi,Nickel AB ,AB
@@ -325,7 +325,7 @@ DB0543,77,79,100,,multi,Violet Gold AB Palladium Plated AB ,AB
 DB0544,99,107,118,,multi,Blue Gold AB Palladium Plated AB ,AB
 DB0545,97,106,105,,multi,Silver Blue Gold AB Palladium Plated AB ,AB
 DB0546,124,115,98,,multi,Silver Gold AB Palladium Plated AB ,AB
-DB0551,186,182,173,,,Bright Sterling Silver Plated,
+DB0551,186,182,173,,,Bright Sterling Silver Plated,Metallic
 DB0601,112,35,25,silver lined,,Silver Lined Dark Burnt Orange ,SilverLined
 DB0602,138,28,27,silver lined,,Silver Lined Red ,SilverLined
 DB0603,109,32,26,silver lined,,Silver Lined Brick Red ,SilverLined
