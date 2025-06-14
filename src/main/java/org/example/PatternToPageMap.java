@@ -21,8 +21,8 @@ public class PatternToPageMap {
         String excelFilePath = Config.getXlsxPatternFilePath();
 
         // **Podaj liczbę wierszy i kolumn na pojedynczej stronie wydruku**
-        int colsPerPage = 30;  // Liczba kolumn na stronę (sprawdzone po wydruku)
-        int rowsPerPage = 37;  // Liczba wierszy na stronę (sprawdzone po wydruku)
+        int colsPerPage = Config.getColsPerPage();  // Liczba kolumn na stronę (sprawdzone po wydruku)
+        int rowsPerPage = Config.getRowsPerPage();  // Liczba wierszy na stronę (sprawdzone po wydruku)
 
 
         convertExcelToPageMap(excelFilePath, rowsPerPage, colsPerPage);

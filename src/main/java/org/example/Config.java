@@ -4,7 +4,7 @@ import java.io.File;
 
 public class Config {
     //General Image and paths properties
-    private static final String IMG_NAME = "ms3";
+    private static final String IMG_NAME = "bird3";
 
     private static final ColorMappingMode COLOR_MAPPING_MODE = ColorMappingMode.LAB;
 
@@ -38,6 +38,10 @@ public class Config {
     // Print properties
     private static final String COPYWRITE_NOTE = "©2025 Beadventure. This pattern is for personal use only.\n" +
             "You may not copy, share, modify, or resell this file in any form without written permission.";
+
+    //PageMap division settings
+    private static final int COLS_PER_PAGE = 30;
+    private static final int ROWS_PER_PAGE = 37;
 
     //Fonts properties
     private static final String HEADER_FONT = "Montserrat SemiBold";
@@ -154,6 +158,14 @@ public class Config {
 
     public static String getCopywriteNote() {
         return COPYWRITE_NOTE;
+    }
+
+    public static int getColsPerPage() {
+        return COLS_PER_PAGE;
+    }
+
+    public static int getRowsPerPage() {
+        return ROWS_PER_PAGE;
     }
 
     public static String getHeaderFont() {

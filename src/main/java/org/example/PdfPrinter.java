@@ -102,16 +102,41 @@ public class PdfPrinter {
                 pmapSheet.setMargin(PageMargin.LEFT, leftMarginDefault);
                 pmapSheet.setMargin(PageMargin.RIGHT, rightMarginDefault);
 
+                //Ustalenie wspolczynnika skalowania
+                int patternHeight = 0;
+                int patternWidth = 0;
+
+                    // **Odczytanie liczby wierszy i kolumn z arkusza Size**
+                Sheet sizeSheet = workbook.getSheet(Config.getSizeSheetName());
+                if (sizeSheet != null) {
+                    Row row = sizeSheet.getRow(1);
+                    if (row != null) {
+                        patternWidth = (int) row.getCell(0).getNumericCellValue();
+                        patternHeight = (int) row.getCell(1).getNumericCellValue();
+                    }
+                } else {
+                    System.out.println("Brak arkusza 'Size'");
+                    return;
+                }
+
+                double scaleWidthFactor = (double) patternWidth / Config.getColsPerPage();
+                double scaleHeightFactor = (double) patternHeight / Config.getRowsPerPage();
+                double scaleFactor = Math.max(scaleWidthFactor, scaleHeightFactor);
+                int baseFontSize = 10;
+                int adjustedFontSize = (int) Math.round(baseFontSize * scaleFactor);
+
                 // Header
                 Header header = pmapSheet.getHeader();
                 header.setLeft("");
-                header.setCenter("PAGE MAP - PAGE &P");
+                String headerNote = "&"+adjustedFontSize+" PAGE MAP ";
+                header.setCenter(headerNote);
                 header.setRight("");
 
                 // Footer
                 Footer footer = pmapSheet.getFooter();
                 footer.setLeft("");
-                footer.setCenter(Config.getCopywriteNote());
+                String footerNote = "&"+adjustedFontSize+" "+Config.getCopywriteNote();
+                footer.setCenter(footerNote);
                 footer.setRight("");
 
                 // Orientacja pozioma

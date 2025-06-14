@@ -44,6 +44,13 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             headerFont.setFontHeightInPoints((short) 10); // ustawiamy rozmiar czcionki
             headerFont.setBold(true); // ustawiamy, żeby czcionka była pogrubiona
 
+            // Font for headers
+            Font colsRowsNoFont = workbook.createFont();
+            colsRowsNoFont.setFontName("Montserrat SemiBold");
+            colsRowsNoFont.setFontHeightInPoints((short) 8); // ustawiamy rozmiar czcionki
+            colsRowsNoFont.setBold(true); // ustawiamy, żeby czcionka była pogrubiona
+
+
             // Mapa kolorów do liter oraz ich liczby wystąpień
             Map<Color, String> colorLegend = new HashMap<>();
             Map<Color, Integer> colorCount = new HashMap<>();
@@ -64,10 +71,12 @@ public class ImageToExcelWithLegendAndBeadNumbers {
                     } else if (row == 0) {
                         // Nagłówki kolumn (1, 2, 3, ...)
                         cell.setCellValue(col);
+                        cellStyle.setFont(colsRowsNoFont);
                         cell.setCellStyle(cellStyle);
                     } else if (col == 0) {
                         // Nagłówki wierszy (1, 2, 3, ...)
                         cell.setCellValue(row);
+                        cellStyle.setFont(colsRowsNoFont);
                         cell.setCellStyle(cellStyle);
                     } else {
                         Color pixelColor = new Color(image.getRGB(col - 1, row - 1));
