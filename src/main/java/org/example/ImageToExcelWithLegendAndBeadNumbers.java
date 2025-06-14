@@ -44,10 +44,10 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             headerFont.setFontHeightInPoints((short) 10); // ustawiamy rozmiar czcionki
             headerFont.setBold(true); // ustawiamy, żeby czcionka była pogrubiona
 
-            // Font for headers
+            // Font for cols and rows numbering in pattern
             Font colsRowsNoFont = workbook.createFont();
             colsRowsNoFont.setFontName("Montserrat SemiBold");
-            colsRowsNoFont.setFontHeightInPoints((short) 8); // ustawiamy rozmiar czcionki
+            colsRowsNoFont.setFontHeightInPoints((short) 7); // ustawiamy rozmiar czcionki
             colsRowsNoFont.setBold(true); // ustawiamy, żeby czcionka była pogrubiona
 
 
@@ -63,7 +63,11 @@ public class ImageToExcelWithLegendAndBeadNumbers {
                 for (int col = 0; col <= image.getWidth(); col++) {
                     Cell cell = excelRow.createCell(col);
                     XSSFCellStyle cellStyle = workbook.createCellStyle();
+                    XSSFCellStyle cellStyleForNo = workbook.createCellStyle();
                     setBorderedAndCenteredStyle(cellStyle);
+                    cellStyle.setFont(mainFont);
+                    setBorderedAndCenteredStyle(cellStyleForNo);
+                    cellStyleForNo.setFont(colsRowsNoFont);
 
                     if (row == 0 && col == 0) {
                         // Pusta lewa górna komórka
@@ -71,13 +75,11 @@ public class ImageToExcelWithLegendAndBeadNumbers {
                     } else if (row == 0) {
                         // Nagłówki kolumn (1, 2, 3, ...)
                         cell.setCellValue(col);
-                        cellStyle.setFont(colsRowsNoFont);
-                        cell.setCellStyle(cellStyle);
+                        cell.setCellStyle(cellStyleForNo);
                     } else if (col == 0) {
                         // Nagłówki wierszy (1, 2, 3, ...)
                         cell.setCellValue(row);
-                        cellStyle.setFont(colsRowsNoFont);
-                        cell.setCellStyle(cellStyle);
+                        cell.setCellStyle(cellStyleForNo);
                     } else {
                         Color pixelColor = new Color(image.getRGB(col - 1, row - 1));
 
@@ -131,12 +133,12 @@ public class ImageToExcelWithLegendAndBeadNumbers {
 
             // Nagłówki w legendzie
             Row headerRow = legendSheet.createRow(0);
-            headerRow.createCell(0).setCellValue("Symbol");
-            headerRow.createCell(1).setCellValue("Color");
-            headerRow.createCell(2).setCellValue("Number");
-            headerRow.createCell(3).setCellValue("Color Name");
-            headerRow.createCell(4).setCellValue("QTY");
-            headerRow.createCell(5).setCellValue("Approx. weight [g]");
+            headerRow.createCell(0).setCellValue(" Symbol ");
+            headerRow.createCell(1).setCellValue(" Color ");
+            headerRow.createCell(2).setCellValue(" Number ");
+            headerRow.createCell(3).setCellValue(" Color Name ");
+            headerRow.createCell(4).setCellValue(" QTY ");
+            headerRow.createCell(5).setCellValue(" Weight [g] ");
             headerRow.createCell(6).setCellValue("R");
             headerRow.createCell(7).setCellValue("G");
             headerRow.createCell(8).setCellValue("B");
@@ -222,17 +224,6 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             // Tworzymy styl
             CellStyle currentStyle;
 
-            // Iteracja po wierszach w patternSheet
-            for (int i = 0; i < patternSheet.getPhysicalNumberOfRows(); i++) {
-                Row row = patternSheet.getRow(i);
-                if (row != null) {  // Sprawdzamy, czy wiersz nie jest pusty
-                    for (Cell cell : row) {
-                        currentStyle = cell.getCellStyle();
-                        currentStyle.setFont(mainFont);
-                        cell.setCellStyle(currentStyle);
-                    }
-                }
-            }
 
             // Iteracja po wierszach w legendSheet
             for (int i = 1; i < legendSheet.getPhysicalNumberOfRows(); i++) {
