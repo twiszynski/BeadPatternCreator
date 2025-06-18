@@ -135,9 +135,9 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             Row headerRow = legendSheet.createRow(0);
             headerRow.createCell(0).setCellValue(" Symbol ");
             headerRow.createCell(1).setCellValue(" Color ");
-            headerRow.createCell(2).setCellValue(" Number ");
+            headerRow.createCell(2).setCellValue(" Bead # ");
             headerRow.createCell(3).setCellValue(" Color Name ");
-            headerRow.createCell(4).setCellValue(" QTY ");
+            headerRow.createCell(4).setCellValue(" Qty [pcs] ");
             headerRow.createCell(5).setCellValue(" Weight [g] ");
             headerRow.createCell(6).setCellValue("R");
             headerRow.createCell(7).setCellValue("G");
@@ -240,7 +240,10 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             legendSheet.setColumnHidden(6,true);
             legendSheet.setColumnHidden(7,true);
             legendSheet.setColumnHidden(8,true);
+            legendSheet.autoSizeColumn(0);
+            legendSheet.autoSizeColumn(2);
             legendSheet.autoSizeColumn(3);
+            legendSheet.autoSizeColumn(4);
             legendSheet.autoSizeColumn(5);
 
 
