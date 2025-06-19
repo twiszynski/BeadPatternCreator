@@ -253,10 +253,18 @@ public class ImageToExcelWithLegendAndBeadNumbers {
             Row rowHeader = dimSheet.createRow(0);
             rowHeader.createCell(0).setCellValue("Width");
             rowHeader.createCell(1).setCellValue("Height");
+            rowHeader.createCell(2).setCellValue("CM-Width");
+            rowHeader.createCell(3).setCellValue("CM-Height");
+            rowHeader.createCell(4).setCellValue("IN-Width");
+            rowHeader.createCell(5).setCellValue("IN-Height");
 
             Row rowValues = dimSheet.createRow(1);
             rowValues.createCell(0).setCellValue(image.getWidth());
             rowValues.createCell(1).setCellValue(image.getHeight());
+            rowValues.createCell(2).setCellValue(image.getWidth()*0.135);
+            rowValues.createCell(3).setCellValue(image.getHeight()*0.171);
+            rowValues.createCell(4).setCellValue(image.getWidth()*0.135/2.54);
+            rowValues.createCell(5).setCellValue(image.getHeight()*0.171/2.54);
 
             // Zapisanie pliku Excela
             try (FileOutputStream fileOut = new FileOutputStream(excelPath)) {

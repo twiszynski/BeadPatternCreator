@@ -66,8 +66,8 @@ public class WordChartGenerator {
 
             // Nagłówki
             Row headerRow = wordChartSheet.createRow(0);
-            headerRow.createCell(0).setCellValue("Row No.");
-            headerRow.createCell(1).setCellValue("Word Chart");
+            headerRow.createCell(0).setCellValue(" Row No. ");
+            headerRow.createCell(1).setCellValue(" Word Chart ");
 
             // Czcionka naglowkow
             Font headerFont = workbook.createFont();
@@ -169,7 +169,7 @@ public class WordChartGenerator {
                 if (count > 1) {
                     result.append("(").append(count).append(")");
                 }
-                result.append(", "); // Separator
+                result.append(" - "); // Separator
                 count = 1;
             } else {
                 count++;
