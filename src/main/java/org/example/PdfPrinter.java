@@ -96,17 +96,12 @@ public class PdfPrinter {
             XSSFSheet pmapSheet = workbook.getSheet(Config.getPageMapSheetName());
             if (pmapSheet != null) {
                 XSSFPrintSetup pmapPS = pmapSheet.getPrintSetup();
-                // margins
-                pmapSheet.setMargin(PageMargin.BOTTOM, bottomMarginDefault);
-                pmapSheet.setMargin(PageMargin.TOP, topMarginDefault);
-                pmapSheet.setMargin(PageMargin.LEFT, leftMarginDefault);
-                pmapSheet.setMargin(PageMargin.RIGHT, rightMarginDefault);
 
                 //Ustalenie wspolczynnika skalowania
                 int patternHeight = 0;
                 int patternWidth = 0;
 
-                    // **Odczytanie liczby wierszy i kolumn z arkusza Size**
+                // **Odczytanie liczby wierszy i kolumn z arkusza Size**
                 Sheet sizeSheet = workbook.getSheet(Config.getSizeSheetName());
                 if (sizeSheet != null) {
                     Row row = sizeSheet.getRow(1);
@@ -124,6 +119,12 @@ public class PdfPrinter {
                 double scaleFactor = Math.max(scaleWidthFactor, scaleHeightFactor);
                 int baseFontSize = 10;
                 int adjustedFontSize = (int) Math.round(baseFontSize * scaleFactor);
+
+                // margins
+                pmapSheet.setMargin(PageMargin.BOTTOM, bottomMarginDefault*scaleFactor);
+                pmapSheet.setMargin(PageMargin.TOP, topMarginDefault*scaleFactor);
+                pmapSheet.setMargin(PageMargin.LEFT, leftMarginDefault*scaleFactor);
+                pmapSheet.setMargin(PageMargin.RIGHT, rightMarginDefault*scaleFactor);
 
                 // Header
                 Header header = pmapSheet.getHeader();
@@ -180,7 +181,7 @@ public class PdfPrinter {
                 // Orientacja pozioma
                 wchartPS.setLandscape(false);
                 // Format papieru
-                wchartPS.setPaperSize(PaperSize.A3_PAPER);
+                wchartPS.setPaperSize(PaperSize.A4_PAPER);
                 // Centrowanie wydruku
                 wchartSheet.setHorizontallyCenter(true);
 

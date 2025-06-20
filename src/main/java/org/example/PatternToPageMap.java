@@ -2,6 +2,7 @@ package org.example;
 
 import org.apache.poi.openxml4j.util.ZipSecureFile;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFColor;
 
@@ -50,6 +51,11 @@ public class PatternToPageMap {
                 System.out.println("Brak arkusza 'Size'");
                 return;
             }
+
+            double scaleWidthFactor = (double) patternColumns / Config.getColsPerPage();
+            double scaleHeightFactor = (double) patternRows / Config.getRowsPerPage();
+            double scaleFactor = Math.max(scaleWidthFactor, scaleHeightFactor);
+            int scaleFactorInt = (int) scaleFactor;
 
 
             // Indeks wybranego koloru z predefiniowanej palety kolorow
@@ -101,9 +107,37 @@ public class PatternToPageMap {
                     addSelectiveBorders(pageMapSheet, startRow, endRow, startCol, endCol, borderColorIndex);
 
                     // **Dodanie numeru strony w lewym górnym rogu zakresu**
+//                    Row row = pageMapSheet.getRow(startRow);
+//                    Cell cell = row.createCell(startCol);
+//                    cell.setCellValue("" + pageNumber);
+
+
+
+                    // Scalanie obszaru
+                    int endRowMerged = startRow + scaleFactorInt;
+                    int endColMerged = startCol + scaleFactorInt;
+                    pageMapSheet.addMergedRegion(new CellRangeAddress(startRow, endRowMerged, startCol, endColMerged));
+
+                    // Utwórz komórkę i ustaw wartość
                     Row row = pageMapSheet.getRow(startRow);
+                    if (row == null) row = pageMapSheet.createRow(startRow);
                     Cell cell = row.createCell(startCol);
                     cell.setCellValue("" + pageNumber);
+
+                    // Ustaw styl
+                    Font font = workbook.createFont();
+                    font.setFontName("Montserrat");
+                    font.setFontHeightInPoints((short) (10*(scaleFactorInt + 1))); // przykładowe skalowanie
+                    font.setBold(true);
+
+                    CellStyle style = workbook.createCellStyle();
+                    style.setFont(font);
+                    style.setAlignment(HorizontalAlignment.CENTER);
+                    style.setVerticalAlignment(VerticalAlignment.CENTER);
+                    cell.setCellStyle(style);
+
+
+
                     pageNumber++;
                 }
             }
