@@ -4,9 +4,11 @@ import java.io.File;
 
 public class Config {
     //General Image and paths properties
-    private static final String IMG_NAME = "bird3";
+    private static final String IMG_NAME = "astro1";
+    private static final String DESIGN_NO = "BV001";
+    private static final String DESIGN_TITLE = "Astronaut";
 
-    private static final ColorMappingMode COLOR_MAPPING_MODE = ColorMappingMode.LAB;
+    private static final ColorMappingMode COLOR_MAPPING_MODE = ColorMappingMode.RGB;
 
     private static final String IMG_FORMAT_SUFFIX = ".png";
     private static final String MAPPED_COLORS_IMG_SUFFIX = "_M";
@@ -54,6 +56,10 @@ public class Config {
 
     public static String getImgName() {
         return IMG_NAME;
+    }
+
+    public static String getDesignNoAndName() {
+        return DESIGN_NO + " " + DESIGN_TITLE;
     }
 
     public static ColorMappingMode getColorMappingMode() {

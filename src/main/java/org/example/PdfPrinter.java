@@ -44,7 +44,7 @@ public class PdfPrinter {
                 // Header
                 Header header = patternSheet.getHeader();
                 header.setLeft("");
-                header.setCenter("BEAD PATTERN - PAGE &P");
+                header.setCenter("&\"Montserrat SemiBold\""+Config.getDesignNoAndName() + " - BEAD PATTERN");
                 header.setRight("");
 
                 // Footer
@@ -74,7 +74,7 @@ public class PdfPrinter {
                 // Header
                 Header header = legendSheet.getHeader();
                 header.setLeft("");
-                header.setCenter("BEAD LEGEND");
+                header.setCenter("&\"Montserrat SemiBold\""+Config.getDesignNoAndName() + " - BEAD LEGEND");
                 header.setRight("");
 
                 // Footer
@@ -118,7 +118,7 @@ public class PdfPrinter {
                 double scaleHeightFactor = (double) patternHeight / Config.getRowsPerPage();
                 double scaleFactor = Math.max(scaleWidthFactor, scaleHeightFactor);
                 int baseFontSize = 10;
-                int adjustedFontSize = (int) Math.round(baseFontSize * scaleFactor);
+                int adjustedFontSize = (int) Math.round(baseFontSize * scaleFactor)+2;
 
                 // margins
                 pmapSheet.setMargin(PageMargin.BOTTOM, bottomMarginDefault*scaleFactor);
@@ -129,7 +129,7 @@ public class PdfPrinter {
                 // Header
                 Header header = pmapSheet.getHeader();
                 header.setLeft("");
-                String headerNote = "&"+adjustedFontSize+" PAGE MAP ";
+                String headerNote = "&\"Montserrat SemiBold\"&"+adjustedFontSize+" "+Config.getDesignNoAndName() + " - PAGE MAP";
                 header.setCenter(headerNote);
                 header.setRight("");
 
@@ -169,7 +169,7 @@ public class PdfPrinter {
                 // Header
                 Header header = wchartSheet.getHeader();
                 header.setLeft("");
-                header.setCenter("WORD CHART - PAGE &P");
+                header.setCenter("&\"Montserrat SemiBold\""+Config.getDesignNoAndName() + " - WORD CHART");
                 header.setRight("");
 
                 // Footer
