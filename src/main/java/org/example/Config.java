@@ -14,6 +14,8 @@ public class Config {
     private static final String MAPPED_COLORS_IMG_SUFFIX = "_M";
     private static final String ADJUSTED_IMG_SUFFIX = "_adj";
     private static final String LIB_DIR_PATH = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\";
+    private static final String MERGE_DIR_PATH = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\ReadyToMerge\\";
+    private static final String PUBLISH_DIR_PATH = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\ReadyToPublish\\";
     private static final String PATTERN_FILE_SUFFIX = "_Pattern";
     private static final String PATTERN_FILE_FORMAT = ".xlsx";
     private static final String PALETTE_PATH = "src/main/resources/Palettes/MiyukiFullCSV.csv";
@@ -62,6 +64,18 @@ public class Config {
         return DESIGN_NO + " - " + DESIGN_TITLE;
     }
 
+    public static String getTitlePdfName(){
+        return DESIGN_NO + "_Title.pdf";
+    }
+
+    public static String getPatternPdfName(){
+        return DESIGN_NO + "_Pattern.pdf";
+    }
+
+    public static String getPublishPdfName(){
+        return DESIGN_NO + " " + DESIGN_TITLE + ".pdf";
+    }
+
     public static ColorMappingMode getColorMappingMode() {
         return COLOR_MAPPING_MODE;
     }
@@ -72,6 +86,14 @@ public class Config {
 
     public static String getLibraryBaseDirectoryPath() {
         return LIB_DIR_PATH;
+    }
+
+    public static String getMergeDirPath() {
+        return MERGE_DIR_PATH;
+    }
+
+    public static String getPublishDirPath() {
+        return PUBLISH_DIR_PATH;
     }
 
     public static String getXlsxPatternFileName() {
