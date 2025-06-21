@@ -59,7 +59,7 @@ public class Config {
     }
 
     public static String getDesignNoAndName() {
-        return DESIGN_NO + " " + DESIGN_TITLE;
+        return DESIGN_NO + " - " + DESIGN_TITLE;
     }
 
     public static ColorMappingMode getColorMappingMode() {

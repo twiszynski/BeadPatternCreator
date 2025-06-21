@@ -21,7 +21,7 @@ public class PdfPrinter {
     }
 
     public static void printSetup(String excelFilePath) {
-        final double bottomMarginDefault = 1.0;
+        final double bottomMarginDefault = 1.25;
         final double topMarginDefault = 0.75;
         final double leftMarginDefault = 0.5;
         final double rightMarginDefault = 0.5;
@@ -43,15 +43,15 @@ public class PdfPrinter {
 
                 // Header
                 Header header = patternSheet.getHeader();
-                header.setLeft("");
-                header.setCenter("&\"Montserrat SemiBold\""+Config.getDesignNoAndName() + " - BEAD PATTERN");
-                header.setRight("");
+                header.setCenter("&\"Montserrat SemiBold\"- &P -");
+                header.setLeft("&\"Montserrat SemiBold\""+Config.getDesignNoAndName());
+                header.setRight("&\"Montserrat SemiBold\"BEAD PATTERN");
 
                 // Footer
                 Footer footer = patternSheet.getFooter();
-                footer.setLeft("");
-                footer.setCenter(Config.getCopywriteNote());
-                footer.setRight("");
+                footer.setLeft("&9&\"Montserrat\""+Config.getCopywriteNote());
+                footer.setCenter("");
+                footer.setRight("&14<LOGO>");
 
                 // Orientacja pozioma
                 patternPS.setLandscape(false);
@@ -73,15 +73,15 @@ public class PdfPrinter {
 
                 // Header
                 Header header = legendSheet.getHeader();
-                header.setLeft("");
-                header.setCenter("&\"Montserrat SemiBold\""+Config.getDesignNoAndName() + " - BEAD LEGEND");
-                header.setRight("");
+                header.setLeft("&\"Montserrat SemiBold\""+Config.getDesignNoAndName());
+                header.setCenter("&\"Montserrat SemiBold\"- &P -");
+                header.setRight("&\"Montserrat SemiBold\" BEAD LEGEND");
 
                 // Footer
                 Footer footer = legendSheet.getFooter();
-                footer.setLeft("");
-                footer.setCenter(Config.getCopywriteNote());
-                footer.setRight("");
+                footer.setLeft("&9&\"Montserrat\""+Config.getCopywriteNote());
+                footer.setCenter("");
+                footer.setRight("&14<LOGO>");
 
                 // Orientacja pozioma
                 legendPS.setLandscape(false);
@@ -118,7 +118,9 @@ public class PdfPrinter {
                 double scaleHeightFactor = (double) patternHeight / Config.getRowsPerPage();
                 double scaleFactor = Math.max(scaleWidthFactor, scaleHeightFactor);
                 int baseFontSize = 10;
+                int baseFontSizeCN = 9;
                 int adjustedFontSize = (int) Math.round(baseFontSize * scaleFactor)+2;
+                int adjustedFontSizeCN = (int) Math.round(baseFontSizeCN * scaleFactor)+2;
 
                 // margins
                 pmapSheet.setMargin(PageMargin.BOTTOM, bottomMarginDefault*scaleFactor);
@@ -128,17 +130,16 @@ public class PdfPrinter {
 
                 // Header
                 Header header = pmapSheet.getHeader();
-                header.setLeft("");
-                String headerNote = "&\"Montserrat SemiBold\"&"+adjustedFontSize+" "+Config.getDesignNoAndName() + " - PAGE MAP";
-                header.setCenter(headerNote);
-                header.setRight("");
+                header.setLeft("&\"Montserrat SemiBold\"&"+adjustedFontSize+Config.getDesignNoAndName());
+                header.setCenter("&\"Montserrat SemiBold\"&"+adjustedFontSize+"- &P -");
+                header.setRight("&\"Montserrat SemiBold\"&"+adjustedFontSize+"PATTERN PAGE LAYOUT");
 
                 // Footer
                 Footer footer = pmapSheet.getFooter();
-                footer.setLeft("");
-                String footerNote = "&"+adjustedFontSize+" "+Config.getCopywriteNote();
-                footer.setCenter(footerNote);
-                footer.setRight("");
+                String footerNote = "&\"Montserrat\"&"+adjustedFontSizeCN+Config.getCopywriteNote();
+                footer.setLeft(footerNote);
+                footer.setCenter("");
+                footer.setRight("&"+adjustedFontSize+"<LOGO>");
 
                 // Orientacja pozioma
                 pmapPS.setLandscape(false);
@@ -168,15 +169,15 @@ public class PdfPrinter {
 
                 // Header
                 Header header = wchartSheet.getHeader();
-                header.setLeft("");
-                header.setCenter("&\"Montserrat SemiBold\""+Config.getDesignNoAndName() + " - WORD CHART");
-                header.setRight("");
+                header.setLeft("&\"Montserrat SemiBold\""+Config.getDesignNoAndName());
+                header.setCenter("&\"Montserrat SemiBold\"- &P -");
+                header.setRight("&\"Montserrat SemiBold\"WORD CHART");
 
                 // Footer
                 Footer footer = wchartSheet.getFooter();
-                footer.setLeft("");
-                footer.setCenter(Config.getCopywriteNote());
-                footer.setRight("");
+                footer.setLeft("&9&\"Montserrat\""+Config.getCopywriteNote());
+                footer.setCenter("");
+                footer.setRight("&14<LOGO>");
 
                 // Orientacja pozioma
                 wchartPS.setLandscape(false);
