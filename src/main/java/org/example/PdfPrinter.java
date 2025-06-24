@@ -117,16 +117,17 @@ public class PdfPrinter {
                 double scaleWidthFactor = (double) patternWidth / Config.getColsPerPage();
                 double scaleHeightFactor = (double) patternHeight / Config.getRowsPerPage();
                 double scaleFactor = Math.max(scaleWidthFactor, scaleHeightFactor);
+                short zoomFactor = (short) (100.0 / scaleFactor);
                 int baseFontSize = 10;
                 int baseFontSizeCN = 9;
-                int adjustedFontSize = (int) Math.round(baseFontSize * scaleFactor)+2;
-                int adjustedFontSizeCN = (int) Math.round(baseFontSizeCN * scaleFactor)+2;
+                int adjustedFontSize = (int) Math.round(baseFontSize * scaleFactor);
+                int adjustedFontSizeCN = (int) Math.round(baseFontSizeCN * scaleFactor);
 
                 // margins
                 pmapSheet.setMargin(PageMargin.BOTTOM, bottomMarginDefault*scaleFactor);
                 pmapSheet.setMargin(PageMargin.TOP, topMarginDefault*scaleFactor);
-                pmapSheet.setMargin(PageMargin.LEFT, leftMarginDefault*scaleFactor);
-                pmapSheet.setMargin(PageMargin.RIGHT, rightMarginDefault*scaleFactor);
+                pmapSheet.setMargin(PageMargin.LEFT, leftMarginDefault);
+                pmapSheet.setMargin(PageMargin.RIGHT, rightMarginDefault);
 
                 // Header
                 Header header = pmapSheet.getHeader();
@@ -149,11 +150,12 @@ public class PdfPrinter {
                 pmapSheet.setHorizontallyCenter(true);
 
                 // Dopasowanie do strony
-                pmapSheet.setFitToPage(true);
+                pmapSheet.setFitToPage(false);
+                pmapPS.setScale(zoomFactor);
 
                 // Skalowanie do jednej strony
-                pmapPS.setFitWidth((short) 1);
-                pmapPS.setFitHeight((short) 1);
+                pmapPS.setFitWidth((short) 0);
+                pmapPS.setFitHeight((short) 0);
 
             }
 
@@ -166,6 +168,8 @@ public class PdfPrinter {
                 wchartSheet.setMargin(PageMargin.TOP, topMarginDefault);
                 wchartSheet.setMargin(PageMargin.LEFT, leftMarginDefault);
                 wchartSheet.setMargin(PageMargin.RIGHT, rightMarginDefault);
+
+                wchartSheet.setRepeatingRows(CellRangeAddress.valueOf("1:1"));
 
                 // Header
                 Header header = wchartSheet.getHeader();
@@ -223,6 +227,7 @@ public class PdfPrinter {
     public static void printToPdf(String excelFilePath, String pdfOutputPath) {
         try {
             String command = "soffice --headless --convert-to pdf " + excelFilePath + " --outdir " + pdfOutputPath;
+            //System.out.println("Command: soffice --headless --convert-to pdf \"" + excelFilePath + "\" --outdir \"" + pdfOutputPath + "\"");
             Process process = Runtime.getRuntime().exec(command);
             process.waitFor();
             System.out.println("Wydruk zakończony! " + "Plik: " + Config.getXlsxPatternFileName() + ".pdf");

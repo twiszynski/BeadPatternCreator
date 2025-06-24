@@ -115,14 +115,14 @@ public class PatternToPageMap {
 
                     // Scalanie obszaru
                     int endRowMerged = startRow + scaleFactorInt;
-                    int endColMerged = startCol + scaleFactorInt;
+                    int endColMerged = startCol + scaleFactorInt + 1;
                     pageMapSheet.addMergedRegion(new CellRangeAddress(startRow, endRowMerged, startCol, endColMerged));
 
                     // Utwórz komórkę i ustaw wartość
                     Row row = pageMapSheet.getRow(startRow);
                     if (row == null) row = pageMapSheet.createRow(startRow);
                     Cell cell = row.createCell(startCol);
-                    cell.setCellValue("" + pageNumber);
+                    cell.setCellValue("" + pageNumber + ".");
 
                     // Ustaw styl
                     Font font = workbook.createFont();

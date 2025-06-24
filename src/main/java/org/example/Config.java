@@ -4,9 +4,10 @@ import java.io.File;
 
 public class Config {
     //General Image and paths properties
-    private static final String IMG_NAME = "astro1";
-    private static final String DESIGN_NO = "BV001";
+    private static final String IMG_NAME = "astronauta";
+    private static final String DESIGN_NO = "BV002";
     private static final String DESIGN_TITLE = "Astronaut";
+    private static final String DESIGN_TITLE_NO_SPACES = "Astronaut";
 
     private static final ColorMappingMode COLOR_MAPPING_MODE = ColorMappingMode.RGB;
 
@@ -14,8 +15,8 @@ public class Config {
     private static final String MAPPED_COLORS_IMG_SUFFIX = "_M";
     private static final String ADJUSTED_IMG_SUFFIX = "_adj";
     private static final String LIB_DIR_PATH = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\";
-    private static final String MERGE_DIR_PATH = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\ReadyToMerge\\";
-    private static final String PUBLISH_DIR_PATH = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\ReadyToPublish\\";
+    private static final String MERGE_DIR_PATH = LIB_DIR_PATH + "ReadyToMerge\\";
+    private static final String PUBLISH_DIR_PATH = LIB_DIR_PATH + "ReadyToPublish\\";
     private static final String PATTERN_FILE_SUFFIX = "_Pattern";
     private static final String PATTERN_FILE_FORMAT = ".xlsx";
     private static final String PALETTE_PATH = "src/main/resources/Palettes/MiyukiFullCSV.csv";
@@ -33,11 +34,11 @@ public class Config {
     private static final int CORNER_ARC_PX_HEIGHT = 25;
 
     //XLSX Pattern file properties
-    private static final String PATTERN_SHEET_NAME = "Pattern";
-    private static final String LEGEND_SHEET_NAME = "Legend";
-    private static final String WORD_CHART_SHEET_NAME = "Word_Chart";
+    private static final String PATTERN_SHEET_NAME = "Bead Pattern";
+    private static final String LEGEND_SHEET_NAME = "Bead Legend";
+    private static final String WORD_CHART_SHEET_NAME = "Word Chart";
     private static final String SIZE_SHEET_NAME = "Size";
-    private static final String PAGE_MAP_SHEET_NAME = "PageMap";
+    private static final String PAGE_MAP_SHEET_NAME = "Pattern Page Layout";
 
     // Print properties
     private static final String COPYWRITE_NOTE = "©2025 Beadventure. This pattern is for personal use only.\n" +
@@ -45,7 +46,7 @@ public class Config {
 
     //PageMap division settings
     private static final int COLS_PER_PAGE = 30;
-    private static final int ROWS_PER_PAGE = 37;
+    private static final int ROWS_PER_PAGE = 36;
 
     //Fonts properties
     private static final String HEADER_FONT = "Montserrat SemiBold";
@@ -65,15 +66,15 @@ public class Config {
     }
 
     public static String getTitlePdfName(){
-        return DESIGN_NO + "_Title.pdf";
+        return DESIGN_NO + "_" + DESIGN_TITLE_NO_SPACES + "_Title.pdf";
     }
 
     public static String getPatternPdfName(){
-        return DESIGN_NO + "_Pattern.pdf";
+        return DESIGN_NO + "_" + DESIGN_TITLE_NO_SPACES +  "_Pattern.pdf";
     }
 
     public static String getPublishPdfName(){
-        return DESIGN_NO + " " + DESIGN_TITLE + ".pdf";
+        return DESIGN_NO + " " + DESIGN_TITLE_NO_SPACES + ".pdf";
     }
 
     public static ColorMappingMode getColorMappingMode() {
@@ -96,8 +97,12 @@ public class Config {
         return PUBLISH_DIR_PATH;
     }
 
+    public static String getPublishPdfFilePath() {
+        return getPublishDirPath() + getPublishPdfName();
+    }
+
     public static String getXlsxPatternFileName() {
-        return IMG_NAME + MAPPED_COLORS_IMG_SUFFIX + PATTERN_FILE_SUFFIX;
+        return DESIGN_NO + "_" + DESIGN_TITLE_NO_SPACES + PATTERN_FILE_SUFFIX;
     }
 
     public static String getBaseColorsImgPath() {
@@ -117,7 +122,7 @@ public class Config {
     }
 
     public static String getXlsxPatternFilePath() {
-        return LIB_DIR_PATH + IMG_NAME + MAPPED_COLORS_IMG_SUFFIX + PATTERN_FILE_SUFFIX + PATTERN_FILE_FORMAT;
+        return LIB_DIR_PATH + DESIGN_NO + "_" + DESIGN_TITLE_NO_SPACES + PATTERN_FILE_SUFFIX + PATTERN_FILE_FORMAT;
     }
 
     public static String getBeadTemplateDirPathWithSeparator() {
@@ -137,7 +142,7 @@ public class Config {
     }
 
     public static String getVisualisationImgOutputPath() {
-        return LIB_DIR_PATH + IMG_NAME + MAPPED_COLORS_IMG_SUFFIX + VISUAL_IMG_SUFFIX + IMG_FORMAT_SUFFIX;
+        return LIB_DIR_PATH + DESIGN_NO + "_" + DESIGN_TITLE_NO_SPACES + VISUAL_IMG_SUFFIX + IMG_FORMAT_SUFFIX;
     }
 
     public static int getBeadImgPxWidth() {
