@@ -4,17 +4,17 @@ import java.io.File;
 
 public class Config {
     //General Image and paths properties
-    private static final String IMG_NAME = "astronauta";
-    private static final String DESIGN_NO = "BV002";
-    private static final String DESIGN_TITLE = "Astronaut";
-    private static final String DESIGN_TITLE_NO_SPACES = "Astronaut";
+    private static final String IMG_NAME = "snow_flower";
+    private static final String DESIGN_NO = "BV001";
+    private static final String DESIGN_TITLE = "Snow Flower";
+    private static final String DESIGN_TITLE_NO_SPACES = "Snow_flower";
 
-    private static final ColorMappingMode COLOR_MAPPING_MODE = ColorMappingMode.RGB;
+    private static final ColorMappingMode COLOR_MAPPING_MODE = ColorMappingMode.LAB;
 
     private static final String IMG_FORMAT_SUFFIX = ".png";
     private static final String MAPPED_COLORS_IMG_SUFFIX = "_M";
     private static final String ADJUSTED_IMG_SUFFIX = "_adj";
-    private static final String LIB_DIR_PATH = "C:\\Users\\Admin\\Desktop\\ImgToExcel\\";
+    private static final String LIB_DIR_PATH = "C:\\Users\\Admin\\Desktop\\Beadventure\\";
     private static final String MERGE_DIR_PATH = LIB_DIR_PATH + "ReadyToMerge\\";
     private static final String PUBLISH_DIR_PATH = LIB_DIR_PATH + "ReadyToPublish\\";
     private static final String PATTERN_FILE_SUFFIX = "_Pattern";
@@ -28,8 +28,8 @@ public class Config {
     private static final String VISUAL_IMG_SUFFIX = "_visual";
     private static final int BEAD_IMG_PX_WIDTH = 53;
     private static final int BEAD_IMG_PX_HEIGHT = 66;
-    private static final int HORIZONTAL_PX_SPACING = 2;
-    private static final int VERTICAL_PX_SPACING = 1;
+    private static final int HORIZONTAL_PX_SPACING = 1;
+    private static final int VERTICAL_PX_SPACING = 2;
     private static final int CORNER_ARC_PX_WIDTH = 25;
     private static final int CORNER_ARC_PX_HEIGHT = 25;
 
