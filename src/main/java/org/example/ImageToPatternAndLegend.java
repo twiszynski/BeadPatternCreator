@@ -11,7 +11,7 @@ import java.text.DecimalFormat;
 import java.util.*;
 import org.apache.commons.csv.*;
 
-public class ImageToExcelWithLegendAndBeadNumbers {
+public class ImageToPatternAndLegend {
 
     public static void main(String[] args) {
 

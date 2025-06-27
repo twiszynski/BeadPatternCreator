@@ -4,12 +4,12 @@ import java.io.File;
 
 public class Config {
     //General Image and paths properties
-    private static final String IMG_NAME = "snow_flower";
-    private static final String DESIGN_NO = "BV001";
-    private static final String DESIGN_TITLE = "Snow Flower";
-    private static final String DESIGN_TITLE_NO_SPACES = "Snow_flower";
+    private static final String IMG_NAME = "humm";
+    private static final String DESIGN_NO = "BV004";
+    private static final String DESIGN_TITLE = "Hummingbird";
+    private static final String DESIGN_TITLE_NO_SPACES = "Hummingbird";
 
-    private static final ColorMappingMode COLOR_MAPPING_MODE = ColorMappingMode.LAB;
+    private static final ColorMappingMode COLOR_MAPPING_MODE = ColorMappingMode.RGB;
 
     private static final String IMG_FORMAT_SUFFIX = ".png";
     private static final String MAPPED_COLORS_IMG_SUFFIX = "_M";
