@@ -75,7 +75,7 @@ public class FinishesConfig {
         // ABMatte
         Map<String, Integer> abMatte = new LinkedHashMap<>();
         abMatte.put("BaseColor", 100);
-        abMatte.put("AB.png", 55);
+        abMatte.put("AB.png", 45);
         abMatte.put("Matte.png", 65);
         EFFECT_CONFIGS.put("ABMatte", abMatte);
 
@@ -91,7 +91,7 @@ public class FinishesConfig {
         abOpaqueMatte.put("BaseColor", 100);
         abOpaqueMatte.put("Opaque.png", 40);
         abOpaqueMatte.put("BaseColor2", 20);
-        abOpaqueMatte.put("AB.png", 50);
+        abOpaqueMatte.put("AB.png", 40);
         abOpaqueMatte.put("Matte.png", 50);
         EFFECT_CONFIGS.put("ABOpaqueMatte", abOpaqueMatte);
 
@@ -100,7 +100,7 @@ public class FinishesConfig {
         abOpaqueMatteGlazed.put("BaseColor", 100);
         abOpaqueMatteGlazed.put("Opaque.png", 50);
         abOpaqueMatteGlazed.put("BaseColor2", 25);
-        abOpaqueMatteGlazed.put("AB.png", 60);
+        abOpaqueMatteGlazed.put("AB.png", 45);
         abOpaqueMatteGlazed.put("Matte.png", 50);
         EFFECT_CONFIGS.put("ABOpaqueMatteGlazed", abOpaqueMatteGlazed);
 
@@ -162,6 +162,7 @@ public class FinishesConfig {
         Map<String, Integer> galvanized = new LinkedHashMap<>();
         galvanized.put("BaseColor", 100);
         galvanized.put("Metallic_strong.png", 75);
+        galvanized.put("BaseColor2", 25);
         EFFECT_CONFIGS.put("Galvanized", galvanized);
 
         // GalvanizedFrosted
@@ -182,7 +183,7 @@ public class FinishesConfig {
 
         // Lined
         Map<String, Integer> lined = new LinkedHashMap<>();
-        lined.put("BaseColor", 90);
+        lined.put("BaseColor", 85);
         lined.put("Lined.png", 80);
         lined.put("BaseColor2", 20);
         EFFECT_CONFIGS.put("Lined", lined);

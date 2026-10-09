@@ -4,10 +4,10 @@ import java.io.File;
 
 public class Config {
     //General Image and paths properties
-    private static final String IMG_NAME = "humm";
-    private static final String DESIGN_NO = "BV004";
-    private static final String DESIGN_TITLE = "Hummingbird";
-    private static final String DESIGN_TITLE_NO_SPACES = "Hummingbird";
+    private static final String IMG_NAME = "owl2";
+    private static final String DESIGN_NO = "BV002";
+    private static final String DESIGN_TITLE = "owl";
+    private static final String DESIGN_TITLE_NO_SPACES = "owl";
 
     private static final ColorMappingMode COLOR_MAPPING_MODE = ColorMappingMode.RGB;
 
